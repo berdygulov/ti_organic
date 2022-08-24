@@ -8,15 +8,18 @@ body {
     font-family: 'Mulish', sans-serif;
     @apply text-sm;
     @apply text-blue-dark;
-    &.lock {
-        @apply overflow-hidden;
-        @apply relative;
-        &:before {
-            content: '';
-            @apply absolute left-0 top-0 w-full h-full;
-            background: rgba(0, 60, 68, 0.4);
+    @media (min-width: 320px) and (max-width: 992px) {
+        &.lock {
+            @apply overflow-hidden;
+            @apply relative;
+            &:before {
+                content: '';
+                @apply absolute left-0 top-0 w-full h-full;
+                background: rgba(0, 60, 68, 0.4);
+            }
         }
     }
+
 }
 
 .menu-item {

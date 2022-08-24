@@ -685,18 +685,20 @@ body {
   --tw-text-opacity: 1;
   color: rgb(30 43 76 / var(--tw-text-opacity));
 }
-body.lock{
-  overflow: hidden;
-  position: relative;
-}
-body.lock:before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 60, 68, 0.4);
+@media (min-width: 320px) and (max-width: 992px) {
+  body.lock{
+    overflow: hidden;
+    position: relative;
+  }
+  body.lock:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 60, 68, 0.4);
+  }
 }
 
 .menu-item{
