@@ -2477,11 +2477,11 @@ window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.
 
 $(document).ready(function () {
   $('.burger').click(function () {
-    $('.burger,.menu,.header').addClass('active');
+    $('.burger,.menu,.header, .header-mobile').addClass('active');
     $('body').addClass('lock');
   });
   $('.second-burger').click(function () {
-    $('.burger,.menu,.header').removeClass('active');
+    $('.burger,.menu,.header, .header-mobile').removeClass('active');
     $('body').removeClass('lock');
   });
 });

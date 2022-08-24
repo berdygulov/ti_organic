@@ -14,7 +14,7 @@
 
     <header class="header bg-yellow-extra-light">
         <div class="container">
-            <div class="header-body flex items-center justify-between py-7">
+            <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
                     <a href="#">
                         <svg class="w-24 h-16">
@@ -22,7 +22,7 @@
                         </svg>
                     </a>
                 </div>
-                <div>
+                <div class="hidden lg:block">
                     <nav class="menu">
                         <ul class="flex menu-list">
                             <li class="menu-item">
@@ -41,7 +41,6 @@
                                 <a href="#">Контакты</a>
                             </li>
                         </ul>
-                        <a href="" class="transition mt-6 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В каталог</a>
                     </nav>
                 </div>
                 <div class="flex items-center header-relative">
@@ -64,15 +63,48 @@
                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#hamburger') }}"></use>
                         </svg>
                     </div>
-                    <div class="second-burger">
-                        <svg class="w-10 h-10 ml-6 cursor-pointer lg:hidden">
-                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-hamburger') }}"></use>
-                        </svg>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="header-mobile">
+        <div class="header-mobile-body">
+            <div class="flex items-center justify-between px-9 py-5 lg:py-7">
+                <a href="#">
+                    <svg class="w-24 h-16">
+                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
+                    </svg>
+                </a>
+                <div class="second-burger">
+                    <svg class="w-8 h-8 cursor-pointer lg:hidden">
+                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-hamburger') }}"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile-menu py-10 px-9">
+            <nav>
+                <ul class="flex menu-list flex-col ">
+                    <li class="menu-item-second">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="menu-item-second">
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li class="menu-item-second">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="menu-item-second">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="menu-item-second">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <a href="" class="transition mt-6 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В каталог</a>
+            </nav>
+        </div>
+    </div>
 
     @yield('content')
 
@@ -105,7 +137,7 @@
                             <li class="mb-4">
                                 <a href="" class="text-gray-3 text-base">Персональный уход</a>
                             </li>
-                            <li >
+                            <li>
                                 <a href="" class="text-gray-3 text-base">Красота и здоровье</a>
                             </li>
                         </ul>
@@ -124,7 +156,7 @@
                             <li class="mb-4">
                                 <a href="" class="text-gray-3 text-base">Блог</a>
                             </li>
-                            <li >
+                            <li>
                                 <a href="" class="text-gray-3 text-base">Контакты</a>
                             </li>
                         </ul>
@@ -143,7 +175,7 @@
                             <li class="mb-4">
                                 <a href="" class="text-gray-3 text-base">Facebook</a>
                             </li>
-                            <li >
+                            <li>
                                 <a href="" class="text-gray-3 text-base">Facebook</a>
                             </li>
                         </ul>
@@ -161,13 +193,13 @@
                         <p class="mr-5">Методы оплаты</p>
                         <div class="flex items-center">
                             <a href="" class="mr-1 w-8 h-8">
-                                <img  src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
+                                <img src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
                             </a>
                             <a href="" class="mr-1 w-8 h-8">
-                                <img  src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
+                                <img src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
                             </a>
                             <a href="" class="mr-1 w-8 h-8">
-                                <img  src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
+                                <img src="{{ asset('assets/images/png/credit-card.png') }}" alt="">
                             </a>
                         </div>
                     </div>
