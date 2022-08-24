@@ -1,5 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Mulish', sans-serif;
+    @apply text-sm;
+    @apply text-blue-dark;
+    &.lock {
+        @apply overflow-hidden;
+        @apply relative;
+        &:before {
+            content: '';
+            @apply absolute left-0 top-0 w-full h-full;
+            background: rgba(0, 60, 68, 0.4);
+        }
+    }
+}
+
+.menu-item {
+    @apply mr-12;
+
+    a {
+        @apply transition ease-in delay-100 text-blue-dark text-lg font-bold hover:text-blue;
+    }
+
+    &:last-child {
+        @apply mr-0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+
+    .header {
+
+        .second-burger {
+            display: none;
+        }
+
+        &-relative {
+            @apply relative overflow-hidden    ;
+            z-index: 3;
+        }
+
+        &.active {
+            @apply fixed w-full top-0 left-0 z-50;
+            &:before {
+                content: '';
+                @apply absolute top-0 left-0 w-full h-full bg-yellow-extra-light;
+                z-index: 2;
+                box-shadow: 0px 5px 30px 5px rgba(0, 60, 68, 0.1);
+            }
+            .burger {
+                @apply hidden;
+            }
+            .second-burger {
+                @apply block;
+            }
+        }
+
+        &-body {
+            @apply flex relative justify-between items-center h-20;
+        }
+
+    }
+    .menu {
+        &-list {
+            @apply flex flex-col relative;
+            z-index: 2;
+
+            li {
+                margin-bottom: 25px;
+
+                &:last-child {
+                    @apply mb-0;
+                }
+            }
+        }
+
+        @apply fixed top-0 w-full h-4/5 bg-yellow-extra-light overflow-auto;
+        right: -200%;
+        padding: 120px 30px 0 50px;
+        transition: all .3s ease;
+
+        &.active {
+            @apply right-0;
+        }
+    }
+}
 

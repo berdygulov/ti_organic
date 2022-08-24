@@ -18,3 +18,11 @@ mix.js('resources/js/app.js', 'public/js')
         postCss: [tailwindcss('./tailwind.config.js')],
     })
     .version();
+
+mix.copyDirectory('resources/assets', 'public/assets')
+
+// < svg
+// className = "arrow arrow-prev w-16m h-16m" >
+//     < use
+// xlink:href = "{{ asset('assets/image/sprite.svg#arrow-prev') }}" > < /use>
+// </svg>

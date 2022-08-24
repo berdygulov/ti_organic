@@ -31,7 +31,16 @@ module.exports = {
         },
         extend: {
             colors: {
-                'red': "#ed1c24",
+                'black': "#000000",
+                'red': "#f1564c",
+                'yellow': "#F8BC4C",
+                'white': "#ffffff",
+                'blue': "#7B88A8",
+                'blue-dark': "#1e2b4c",
+                'green': "#003C44",
+                'yellow-extra-light': "#FFFBF0",
+                'gray-2': "#4F4F4F",
+                'gray-3': "#828282",
             },
         },
     },
