@@ -482,8 +482,8 @@ video {
 .ml-6{
   margin-left: 1.5rem;
 }
-.mt-6{
-  margin-top: 1.5rem;
+.mt-7{
+  margin-top: 1.75rem;
 }
 .mt-20{
   margin-top: 5rem;
@@ -612,9 +612,13 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.px-9{
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -631,6 +635,10 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -727,15 +735,16 @@ body {
 .header-mobile{
   position: fixed;
   top: 0px;
-  height: 75%;
   width: 100%;
   right: -200%;
 }
 
 @media (min-width: 320px) and (max-width: 992px) {
   .menu-item-second{
-    margin-bottom: 1.5rem;
     margin-right: 0px;
+  }
+  .menu-item-second:not(:last-child){
+    margin-bottom: 1.5rem;
   }
   .menu-item-second a{
     font-size: 1.125rem;
@@ -781,7 +790,6 @@ body {
   .header-mobile.active{
     top: 0px;
     right: 0px;
-    height: 75%;
     overflow-x: scroll;
   }
 }

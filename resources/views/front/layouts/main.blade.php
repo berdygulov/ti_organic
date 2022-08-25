@@ -45,14 +45,16 @@
                 </div>
                 <div class="flex items-center header-relative">
                     <div>
-                        <a href="#" class="items-center justify-center w-14 h-14 border-2 rounded-full border-red mr-6 hidden lg:flex">
+                        <a href="#"
+                           class="items-center justify-center w-14 h-14 border-2 rounded-full border-red mr-6 hidden lg:flex">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#heart') }}"></use>
                             </svg>
                         </a>
                     </div>
                     <div>
-                        <a href="#" class="flex items-center justify-center w-14 h-14 border-2 rounded-full bg-yellow border-yellow">
+                        <a href="#"
+                           class="flex items-center justify-center w-14 h-14 border-2 rounded-full bg-yellow border-yellow">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
                             </svg>
@@ -69,20 +71,18 @@
     </header>
     <div class="header-mobile">
         <div class="header-mobile-body">
-            <div class="flex items-center justify-between px-9 py-5 lg:py-7">
-                <a href="#">
-                    <svg class="w-24 h-16">
-                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
-                    </svg>
-                </a>
+            <div class="flex items-center justify-between px-8 py-6 lg:py-7">
+                <h6 class="text-2xl font-bold">
+                    Меню
+                </h6>
                 <div class="second-burger">
-                    <svg class="w-8 h-8 cursor-pointer lg:hidden">
+                    <svg class="w-6 h-6 cursor-pointer lg:hidden">
                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-hamburger') }}"></use>
                     </svg>
                 </div>
             </div>
         </div>
-        <div class="header-mobile-menu py-10 px-9">
+        <div class="header-mobile-menu py-10 px-8">
             <nav>
                 <ul class="flex menu-list flex-col ">
                     <li class="menu-item-second">
@@ -101,7 +101,9 @@
                         <a href="#">Контакты</a>
                     </li>
                 </ul>
-                <a href="" class="transition mt-6 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В каталог</a>
+                <a href=""
+                   class="transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
+                    каталог</a>
             </nav>
         </div>
     </div>
