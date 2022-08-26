@@ -3,5 +3,6 @@
 @section('title', 'Главная')
 
 @section('content')
-    <x-front.page-title/>
+    <x-front.page-title title="Some text"/>
+    <x-front.product-card/>
 @endsection

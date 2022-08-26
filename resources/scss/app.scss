@@ -22,6 +22,10 @@ body {
 
 }
 
+.shadow {
+    box-shadow: 0px 5px 30px 5px rgba(0, 60, 68, 0.1);
+}
+
 .btn-catalog {
     @apply transition ease-in delay-100 text-white bg-red py-4 px-8 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
 }
