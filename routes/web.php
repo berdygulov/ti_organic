@@ -18,4 +18,7 @@ Route::group([
     'as' => 'pages.'
 ], function () {
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
+    Route::get('/test', function () {
+        return view('front.test');
+    });
 });
