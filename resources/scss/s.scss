@@ -1,0 +1,18 @@
+.popular-slider {
+    overflow-x: hidden;
+    .container {
+        overflow: visible;
+    }
+    .popular-container {
+        overflow: visible;
+    }
+    .swiper-slide {
+        .popular-item {
+            width: 100%;
+        }
+    }
+    .popular-product {
+        width: 395px;
+    }
+}
+

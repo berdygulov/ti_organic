@@ -1,15 +1,19 @@
 window.$ = require('jquery');
-
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
 import './bootstrap';
+import './utilts/burger'
 
+Swiper.use([Navigation, Pagination]);
 
-$(document).ready(function() {
-	$('.burger').click(function() {
-		$('.burger,.menu,.header, .header-mobile').addClass('active');
-		$('body').addClass('lock');
-	});
-	$('.second-burger').click(function() {
-		$('.burger,.menu,.header, .header-mobile').removeClass('active');
-		$('body').removeClass('lock');
-	});
+const popularSlider = new Swiper(".popular-container", {
+	autoHeight: true,
+	slidesPerView: 3,
+	spaceBetween: 30,
+	clickable: true,
+	navigation: {
+		nextEl: '.popular-button-next',
+		prevEl: '.popular-button-prev',
+	},
+
 });
