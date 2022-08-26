@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper ">
 
-    <header class="header bg-yellow-extra-light">
+    <header class="header bg-yellow-extra-light relative">
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
