@@ -518,6 +518,12 @@ video {
 .mr-3{
   margin-right: 0.75rem;
 }
+.mt-3\.9{
+  margin-top: 15px;
+}
+.mt-3{
+  margin-top: 0.75rem;
+}
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -616,9 +622,6 @@ video {
 }
 .cursor-pointer{
   cursor: pointer;
-}
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -742,9 +745,11 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.pt-25{
+  padding-top: 100px;
+}
+.pb-25{
+  padding-bottom: 100px;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -823,6 +828,7 @@ body {
     position: relative;
   }
   body.lock:before {
+    z-index: 100;
     content: "";
     position: absolute;
     left: 0px;
@@ -833,8 +839,41 @@ body {
   }
 }
 
-.shadow {
-  box-shadow: 0px 5px 30px 5px rgba(0, 60, 68, 0.1);
+h1{
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 700;
+}
+h2{
+  font-size: 56px;
+  line-height: 100%;
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 992px) {
+  h2{
+    font-size: 40px;
+    line-height: 100%;
+  }
+}
+h3{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}
+h4{
+  font-size: 40px;
+  line-height: 100%;
+  font-weight: 700;
+}
+h5{
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 700;
+}
+h6{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 
 .btn-catalog{
@@ -950,8 +989,10 @@ body {
   }
   .header-mobile {
     transition: 0.3s all ease;
+    height: 70%;
     --tw-bg-opacity: 1;
     background-color: rgb(255 251 240 / var(--tw-bg-opacity));
+    z-index: 100;
   }
   .header-mobile-body{
     position: relative;
@@ -991,6 +1032,9 @@ body {
   .md\:mt-0{
     margin-top: 0px;
   }
+  .md\:block{
+    display: block;
+  }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1005,6 +1049,12 @@ body {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
+  .md\:pt-29{
+    padding-top: 120px;
+  }
+  .md\:pb-33{
+    padding-bottom: 130px;
+  }
 }
 
 @media (min-width: 992px){
@@ -1017,6 +1067,12 @@ body {
   .lg\:hidden{
     display: none;
   }
+  .lg\:w-2\/4{
+    width: 50%;
+  }
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1027,6 +1083,12 @@ body {
   .lg\:py-7{
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+  .lg\:pt-25{
+    padding-top: 100px;
+  }
+  .lg\:pb-56{
+    padding-bottom: 14rem;
   }
   .lg\:text-56{
     font-size: 56px;
