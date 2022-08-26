@@ -22,8 +22,16 @@ body {
 
 }
 
+.btn-catalog {
+    @apply transition ease-in delay-100 text-white bg-red py-4 px-8 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
+}
+
+.btn-yellow {
+    @apply transition ease-in delay-100 text-black bg-yellow py-4 px-8 text-lg font-bold border-yellow border-2 rounded-3xl inline-flex
+}
+
 .menu-item {
-    @apply mr-12;
+    @apply mr-12.5;
 
     a {
         @apply transition ease-in delay-100 text-blue-dark text-lg font-bold hover:text-blue;

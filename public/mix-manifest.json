@@ -1,12 +1,14 @@
 {
-    "/js/app.js": "/js/app.js?id=4948ea23443e686ef185a7cc207bf7d6",
-    "/css/app.css": "/css/app.css?id=c994c6e548bf6920d084233b5167af23",
+    "/js/app.js": "/js/app.js?id=797b3d0b236547146c2fde7ff6898269",
+    "/css/app.css": "/css/app.css?id=cf676f50e691ef5260c0d04df4c4998b",
     "/assets/images/png/credit-card.png": "/assets/images/png/credit-card.png?id=4c037b9ece029ec898dcabb1f4bd9928",
-    "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e8ee87420b03cc6dcde3d92427fc447b",
-    "/assets/images/svg/cart.svg": "/assets/images/svg/cart.svg?id=e8312937c4ab66c29ea22320b49b4e02",
-    "/assets/images/svg/dalacode.svg": "/assets/images/svg/dalacode.svg?id=5c30d210cf3780421fae1a463151e990",
-    "/assets/images/svg/hamburger.svg": "/assets/images/svg/hamburger.svg?id=4825b35baf469a9382675a4520315012",
-    "/assets/images/svg/heart.svg": "/assets/images/svg/heart.svg?id=e371f4fc368a5bd234f759892484b7ca",
-    "/assets/images/svg/logo.svg": "/assets/images/svg/logo.svg?id=67eb5b320ed8058e358932ca23f085a7",
-    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=655a31675aaf716b6f399af7790e2aee"
+    "/assets/images/png/hero.png": "/assets/images/png/hero.png?id=4b45921f92d83f915ea10f8fa990106c",
+    "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e4e4d3dd6bbee69480d26bbcab4516fb",
+    "/assets/images/svg/bag.svg": "/assets/images/svg/bag.svg?id=ed7e9fd16dbd27db1ddb063daa675733",
+    "/assets/images/svg/cart.svg": "/assets/images/svg/cart.svg?id=e2a32661eb4a42c0984aeef959e4800f",
+    "/assets/images/svg/dalacode.svg": "/assets/images/svg/dalacode.svg?id=ecd7643c7fb9c69df1196dd2758514e1",
+    "/assets/images/svg/hamburger.svg": "/assets/images/svg/hamburger.svg?id=3c54c743834b8b21d0f5d8fd179eb299",
+    "/assets/images/svg/heart.svg": "/assets/images/svg/heart.svg?id=3d16641739d6789fd256d9ca3a6eb95e",
+    "/assets/images/svg/logo.svg": "/assets/images/svg/logo.svg?id=05153dcdef9f01ecce64d45ca944b1c5",
+    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=2e8ccf0145578a0b4f7a59869a5cc152"
 }
