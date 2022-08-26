@@ -31,6 +31,7 @@ module.exports = {
 		extend: {
 			flexBasis: {
 				'30': "30%",
+				'60': "60%",
 				'70': "70%",
 			},
 			fontSize: {

@@ -596,6 +596,18 @@ video {
 .w-20{
   width: 5rem;
 }
+.basis-60{
+  flex-basis: 60%;
+}
+.basis-3\/6{
+  flex-basis: 50%;
+}
+.basis-2\/5{
+  flex-basis: 40%;
+}
+.basis-full{
+  flex-basis: 100%;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -704,17 +716,11 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.pt-29{
-  padding-top: 120px;
-}
-.pb-33{
-  padding-bottom: 130px;
+.pt-25{
+  padding-top: 100px;
 }
 .pb-25{
   padding-bottom: 100px;
-}
-.pt-25{
-  padding-top: 100px;
 }
 .text-lg{
   font-size: 1.125rem;
@@ -1016,8 +1022,8 @@ h6{
   .lg\:hidden{
     display: none;
   }
-  .lg\:w-2\/4{
-    width: 50%;
+  .lg\:basis-60{
+    flex-basis: 60%;
   }
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
