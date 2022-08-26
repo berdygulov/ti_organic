@@ -13,6 +13,7 @@ body {
             @apply overflow-hidden;
             @apply relative;
             &:before {
+                z-index: 100;
                 content: '';
                 @apply absolute left-0 top-0 w-full h-full;
                 background: rgba(0, 60, 68, 0.4);
@@ -20,6 +21,35 @@ body {
         }
     }
 
+}
+
+h {
+    &1 {
+        @apply text-64 font-bold;
+    }
+
+    &2 {
+        @apply text-56 font-bold;
+        @media (min-width: 320px) and (max-width: 992px) {
+            @apply text-40;
+        }
+    }
+
+    &3 {
+        @apply text-5xl font-bold;
+    }
+
+    &4 {
+        @apply text-40 font-bold;
+    }
+
+    &5 {
+        @apply text-32 font-bold;
+    }
+
+    &6 {
+        @apply text-2xl font-bold;
+    }
 }
 
 .btn-catalog {
@@ -61,7 +91,9 @@ body {
     }
     .header-mobile {
         transition: .3s all ease;
+        height: 70%;
         @apply bg-yellow-extra-light;
+        z-index: 100;
 
         &-body {
             @apply relative;
