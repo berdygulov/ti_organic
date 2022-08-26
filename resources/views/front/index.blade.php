@@ -4,7 +4,7 @@
 
 @section('content')
     <main>
-        <section class="bg-yellow-extra-light relative">
+        <section class="bg-yellow-extra-light relative pt-25 pb-56">
             <div class="container ">
                 <div class="hero-inner grid grid-cols-2 justify-between items-start">
                     <div class="hero-left relative z-10	">
