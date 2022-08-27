@@ -110,7 +110,7 @@
 
     @yield('content')
 
-    <footer class="mt-20">
+    <footer class="mt-15 lg:mt-23">
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 md:gap-7 justify-between items-start">

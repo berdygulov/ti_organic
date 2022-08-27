@@ -196,7 +196,7 @@
             </div>
         </section>
 
-        <section class="my-23">
+        <section class="pt-15 lg:pt-23">
             <div class="popular-inner">
                 <div class="container">
                     <h4 class="text-blue-dark">Категории товаров</h4>
@@ -223,7 +223,7 @@
                                 <div class="swiper-slide">
                                     <div class="category-product rounded bg-white-2 p-3.9">
                                         <div class="bg-white rounded">
-                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product-2.png') }}" alt="">
                                         </div>
                                         <h6 class="my-3.9">Уход за кожей</h6>
                                         <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
@@ -253,7 +253,7 @@
                                 <div class="swiper-slide">
                                     <div class="category-product rounded bg-white-2 p-3.9">
                                         <div class="bg-white rounded">
-                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product-2.png') }}" alt="">
                                         </div>
                                         <h6 class="my-3.9">Уход за кожей</h6>
                                         <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
@@ -283,7 +283,7 @@
                                 <div class="swiper-slide">
                                     <div class="category-product rounded bg-white-2 p-3.9">
                                         <div class="bg-white rounded">
-                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product-2.png') }}" alt="">
                                         </div>
                                         <h6 class="my-3.9">Уход за кожей</h6>
                                         <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
@@ -310,6 +310,24 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-15 lg:pt-23">
+            <div class="container">
+                <div class="buy-inner">
+                    <div class="flex justify-between bg-yellow-extra-light rounded shadow-shadow">
+                        <div class="basis-full xl:basis-2/4 py-10 lg:py-10 px-8 lg:pl-20">
+                            <p class="text-base text-blue-dark">-10% скидки</p>
+                            <p class="text-green text-lg mt-1.1 font-bold">Специальное предложение</p>
+                            <h5 class="leading-150 mt-5 mb-10">Красота, вдохновленная реальной жизнью</h5>
+                            <a href="" class="btn-yellow">Купить сейчас</a>
+                        </div>
+                        <div class="xl:basis-2/4 lg:pr-15 hidden md:grid justify-end">
+                            <img src="{{ asset('assets/images/png/buy.png') }}" alt="">
                         </div>
                     </div>
                 </div>

@@ -48,17 +48,20 @@ const categorySlider = new Swiper(".category-slider", {
 		320: {
 			slidesPerView: 1,
 		},
+		420: {
+			slidesPerView: 1.5,
+		},
 		470: {
 			slidesPerView: 2,
 		},
 		768: {
-			slidesPerView: 2,
+			slidesPerView: 2.5,
 		},
 		992: {
 			slidesPerView: 3,
 		},
 		1200: {
-			slidesPerView: 4
+			slidesPerView: 4.1
 		}
 	}
 });

@@ -51,6 +51,9 @@ h {
 
     &5 {
         @apply text-32 font-bold;
+        @media (min-width: 320px) and (max-width: 768px) {
+            @apply text-2xl;
+        }
     }
 
     &6 {
