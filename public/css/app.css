@@ -533,9 +533,6 @@ video {
 .ml-2{
   margin-left: 0.5rem;
 }
-.mb-12\.5{
-  margin-bottom: 50px;
-}
 .mr-6\.5{
   margin-right: 25px;
 }
@@ -611,6 +608,12 @@ video {
 .h-\[142px\]{
   height: 142px;
 }
+.h-11{
+  height: 2.75rem;
+}
+.h-5{
+  height: 1.25rem;
+}
 .h-\[197px\]{
   height: 197px;
 }
@@ -622,12 +625,6 @@ video {
 }
 .h-8{
   height: 2rem;
-}
-.h-11{
-  height: 2.75rem;
-}
-.h-5{
-  height: 1.25rem;
 }
 .w-6{
   width: 1.5rem;
@@ -643,6 +640,12 @@ video {
 }
 .w-\[150px\]{
   width: 150px;
+}
+.w-11{
+  width: 2.75rem;
+}
+.w-5{
+  width: 1.25rem;
 }
 .w-\[300px\]{
   width: 300px;
@@ -661,12 +664,6 @@ video {
 }
 .w-20{
   width: 5rem;
-}
-.w-11{
-  width: 2.75rem;
-}
-.w-5{
-  width: 1.25rem;
 }
 .basis-full{
   flex-basis: 100%;
@@ -937,9 +934,6 @@ video {
 .popular-slider .popular-container {
   overflow: visible;
 }
-.popular-slider .swiper-slide .popular-item {
-  width: 100%;
-}
 .popular-slider .popular-product {
   width: 395px;
 }
@@ -1146,11 +1140,6 @@ h6{
     right: 0px;
     overflow-x: scroll;
   }
-}
-
-.hover\:bg-red:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 86 76 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 576px){
