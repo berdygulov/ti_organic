@@ -1,6 +1,8 @@
 {
-    "/js/app.js": "/js/app.js?id=e1f45df064fb3dff6f38f093b4db763c",
-    "/css/app.css": "/css/app.css?id=63e417fa0eac12a7ea3eb39a6ef2c8a4",
+    "/js/app.js": "/js/app.js?id=e9520770779213855dd18e428c7a938e",
+    "/css/app.css": "/css/app.css?id=c2fcbe4880554c20a13292832c54175e",
+    "/assets/images/png/blog.png": "/assets/images/png/blog.png?id=e645a8ba28dfdb99fc62ed070f99f528",
+    "/assets/images/png/buy.png": "/assets/images/png/buy.png?id=ddc1d10490115973f260b9f3c51702d1",
     "/assets/images/png/category-product-2.png": "/assets/images/png/category-product-2.png?id=1176b149533cb6968cc29f128c566ad0",
     "/assets/images/png/category-product.png": "/assets/images/png/category-product.png?id=96f44c05f75a6d56dbc7f73f65b35880",
     "/assets/images/png/credit-card.png": "/assets/images/png/credit-card.png?id=4c037b9ece029ec898dcabb1f4bd9928",
@@ -20,6 +22,5 @@
     "/assets/images/svg/logo.svg": "/assets/images/svg/logo.svg?id=05153dcdef9f01ecce64d45ca944b1c5",
     "/assets/images/svg/product-element.svg": "/assets/images/svg/product-element.svg?id=ce76afd4d212dc62b7a8a23871344d47",
     "/assets/images/svg/readmore.svg": "/assets/images/svg/readmore.svg?id=5db42f8fc88f3a8012ea57301f3f22b9",
-    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=0197aefe7e9d663a6c7a167f9b05d5f9",
-    "/assets/images/png/buy.png": "/assets/images/png/buy.png?id=ddc1d10490115973f260b9f3c51702d1"
+    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=18c4d2829c77c5f3c655bd03a428ae46"
 }

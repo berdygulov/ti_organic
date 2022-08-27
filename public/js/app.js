@@ -2590,6 +2590,10 @@ var popularSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".popular
     }
   }
 });
+/*
+ Category or catalog slider
+ */
+
 var categorySlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".category-slider", {
   autoHeight: true,
   slidesPerView: 4,
@@ -2617,6 +2621,37 @@ var categorySlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".catego
     },
     1200: {
       slidesPerView: 4.1
+    }
+  }
+});
+/*
+ Category or catalog slider
+ */
+
+var blogSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".blog-slider", {
+  autoHeight: true,
+  slidesPerView: 4,
+  clickable: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.blog-button-next',
+    prevEl: '.blog-button-prev'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    470: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 2.5
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 3.2
     }
   }
 });

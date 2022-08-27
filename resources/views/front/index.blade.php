@@ -52,7 +52,7 @@
                                             </svg>
                                         </div>
                                         <div class="popular-item-left basis-3/6	mr-6.5">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
+                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
@@ -76,7 +76,7 @@
                                             </svg>
                                         </div>
                                         <div class="popular-item-left basis-3/6	mr-6.5">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
+                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
@@ -100,7 +100,7 @@
                                             </svg>
                                         </div>
                                         <div class="popular-item-left basis-3/6	mr-6.5">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
+                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
@@ -124,7 +124,7 @@
                                             </svg>
                                         </div>
                                         <div class="popular-item-left basis-3/6	mr-6.5">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
+                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
@@ -144,12 +144,12 @@
                             <div class="flex mt-7.5 justify-between items-center">
                                 <div class="flex">
                                     <div class="swiper-button-prev popular-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
-                                        <svg class="w-5 h-5">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                         </svg>
                                     </div>
                                     <div class="swiper-button-next popular-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
-                                        <svg class="w-5 h-5">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                         </svg>
                                     </div>
@@ -197,7 +197,7 @@
         </section>
 
         <section class="pt-15 lg:pt-23">
-            <div class="popular-inner">
+            <div>
                 <div class="container">
                     <h4 class="text-blue-dark">Категории товаров</h4>
                 </div>
@@ -299,12 +299,12 @@
                             <div class="mt-7.5">
                                 <div class="flex">
                                     <div class="category-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
-                                        <svg class="w-5 h-5">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                         </svg>
                                     </div>
                                     <div class="category-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
-                                        <svg class="w-5 h-5">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                         </svg>
                                     </div>
@@ -328,6 +328,138 @@
                         </div>
                         <div class="xl:basis-2/4 lg:pr-15 hidden md:grid justify-end">
                             <img src="{{ asset('assets/images/png/buy.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-15 lg:pt-23">
+            <div>
+                <div class="container">
+                    <h4 class="text-blue-dark">Наш блог</h4>
+                </div>
+                <div class="slider pt-12.5">
+                    <div class="container">
+                        <div class="slider-container blog-slider">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide">
+                                   <div class="blog-item rounded bg-white-2">
+                                       <div >
+                                           <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                       </div>
+                                       <div class="p-5">
+                                           <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                           <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                           <a class="btn-yellow-arrow" href="">
+                                               Читать
+                                               <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                   <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                               </svg>
+                                           </a>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item rounded bg-white-2">
+                                        <div >
+                                            <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                        </div>
+                                        <div class="p-5">
+                                            <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                            <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                            <a class="btn-yellow-arrow" href="">
+                                                Читать
+                                                <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item rounded bg-white-2">
+                                        <div >
+                                            <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                        </div>
+                                        <div class="p-5">
+                                            <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                            <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                            <a class="btn-yellow-arrow" href="">
+                                                Читать
+                                                <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item rounded bg-white-2">
+                                        <div >
+                                            <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                        </div>
+                                        <div class="p-5">
+                                            <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                            <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                            <a class="btn-yellow-arrow" href="">
+                                                Читать
+                                                <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item rounded bg-white-2">
+                                        <div >
+                                            <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                        </div>
+                                        <div class="p-5">
+                                            <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                            <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                            <a class="btn-yellow-arrow" href="">
+                                                Читать
+                                                <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="blog-item rounded bg-white-2">
+                                        <div >
+                                            <img class="rounded" src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                        </div>
+                                        <div class="p-5">
+                                            <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
+                                            <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
+                                            <a class="btn-yellow-arrow" href="">
+                                                Читать
+                                                <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
+                                                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-7.5">
+                                <div class="flex">
+                                    <div class="blog-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="blog-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
