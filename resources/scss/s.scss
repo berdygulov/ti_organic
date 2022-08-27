@@ -1,4 +1,4 @@
-.popular-slider {
+.slider {
     @apply overflow-x-hidden;
 
     .container {
@@ -8,7 +8,7 @@
         }
     }
 
-    .popular-container {
+    .slider-container {
         @apply overflow-visible;
         @media (min-width: 320px) and (max-width: 768px) {
             @apply overflow-hidden;

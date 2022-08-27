@@ -494,6 +494,18 @@ video {
 .z-10{
   z-index: 10;
 }
+.my-23{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.my-3\.9{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 .mr-2\.5{
   margin-right: 0.625rem;
 }
@@ -590,6 +602,12 @@ video {
 .mr-1{
   margin-right: 0.25rem;
 }
+.mb-6\.5{
+  margin-bottom: 25px;
+}
+.mb-6{
+  margin-bottom: 1.5rem;
+}
 .block{
   display: block;
 }
@@ -676,6 +694,12 @@ video {
 }
 .w-20{
   width: 5rem;
+}
+.w-\[254px\]{
+  width: 254px;
+}
+.w-\[255px\]{
+  width: 255px;
 }
 .basis-full{
   flex-basis: 100%;
@@ -786,6 +810,10 @@ video {
 .bg-\[\#FFE2E1\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 226 225 / var(--tw-bg-opacity));
+}
+.bg-white-2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 243 246 / var(--tw-bg-opacity));
 }
 .p-3\.9{
   padding: 15px;
@@ -965,22 +993,22 @@ video {
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
-.popular-slider{
+.slider{
   overflow-x: hidden;
 }
-.popular-slider .container{
+.slider .container{
   overflow: visible;
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  .popular-slider .container{
+  .slider .container{
     overflow: hidden;
   }
 }
-.popular-slider .popular-container{
+.slider .slider-container{
   overflow: visible;
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  .popular-slider .popular-container{
+  .slider .slider-container{
     overflow: hidden;
   }
 }
@@ -1081,6 +1109,34 @@ h6{
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-delay: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.btn-in-catalog{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(241 86 76 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 86 76 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -1272,6 +1328,9 @@ h6{
   }
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .lg\:py-16{
     padding-top: 4rem;

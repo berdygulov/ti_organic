@@ -62,6 +62,10 @@ h {
     @apply transition ease-in delay-100 text-white bg-red py-4 px-8 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
 }
 
+.btn-in-catalog {
+    @apply transition ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
+}
+
 .btn-yellow {
     @apply transition ease-in delay-100 text-black bg-yellow py-4 px-8 text-lg font-bold border-yellow border-2 rounded-3xl inline-flex
 }

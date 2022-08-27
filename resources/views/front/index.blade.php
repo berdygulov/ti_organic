@@ -35,15 +35,15 @@
             </div>
         </section>
 
-        <section class="popular py-23">
+        <section class="py-23">
             <div class="popular-inner">
                 <div class="container">
                     <h4 class="text-blue-dark">Cамые продаваемые продукты </h4>
                 </div>
-                <div class="popular-slider pt-12.5">
+                <div class="slider pt-12.5">
                     <div class="container">
-                        <div class="popular-container">
-                            <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-7.5">
+                        <div class="slider-container popular-container">
+                            <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 ">
                                 <div class="swiper-slide popular-product shadow-shadow">
                                     <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
@@ -190,6 +190,126 @@
                         </div>
                         <div class="ml-3.9 hidden md:block">
                             <img class="w-full h-full" src="{{ asset('assets/images/png/product-big-2.png') }}" alt="sale">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-23">
+            <div class="popular-inner">
+                <div class="container">
+                    <h4 class="text-blue-dark">Категории товаров</h4>
+                </div>
+                <div class="slider pt-12.5">
+                    <div class="container">
+                        <div class="slider-container category-slider">
+                            <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 ">
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                        </div>
+                                        <h6 class="my-3.9">Уход за кожей</h6>
+                                        <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a reader will be distracted by the readable.</p>
+                                        <a href="" class="btn-in-catalog">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-7.5">
+                                <div class="flex">
+                                    <div class="category-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="category-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                        <svg class="w-5 h-5">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
