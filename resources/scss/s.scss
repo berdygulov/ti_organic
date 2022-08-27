@@ -1,24 +1,32 @@
 .popular-slider {
-    overflow-x: hidden;
-    .container {
-        overflow: visible;
-        @media (min-width: 320px) and (max-width: 768px) {
-            overflow: hidden;
-        }
-    }
-    .popular-container {
-        overflow: visible;
-        @media (min-width: 320px) and (max-width: 768px) {
-            overflow: hidden;
-        }
-    }
-    .swiper-slide {
-        .popular-item {
+    @apply overflow-x-hidden;
 
+    .container {
+        @apply overflow-visible;
+        @media (min-width: 320px) and (max-width: 768px) {
+            @apply overflow-hidden;
         }
     }
-    .popular-product {
-        //width: 395px;
+
+    .popular-container {
+        @apply overflow-visible;
+        @media (min-width: 320px) and (max-width: 768px) {
+            @apply overflow-hidden;
+        }
     }
 }
 
+.readmore {
+    position: relative;
+    padding-right: 10px;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url("../assets/images/svg/readmore.svg");
+        background-repeat: no-repeat;
+        right: -10px;
+        top: 2px;
+        width: 20px;
+        height: 20px;
+    }
+}

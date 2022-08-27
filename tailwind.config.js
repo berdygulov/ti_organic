@@ -29,8 +29,11 @@ module.exports = {
 			},
 		},
 		extend: {
+			gap: {
+				'7.5': "30px",
+			},
 			boxShadow: {
-				'product-shadow': "0px 5px 30px 5px rgba(0, 60, 68, 0.1)"
+				'shadow': "0px 5px 30px 5px rgba(0, 60, 68, 0.1)"
 			},
 			flexBasis: {
 				'30': "30%",
@@ -62,6 +65,7 @@ module.exports = {
 				'3.9': "15px",
 				'6.5': "25px",
 				'7.5': "30px",
+				'8.5': "35px",
 				'12.5': "50px",
 				'12.9': "55px",
 				'23': "90px",

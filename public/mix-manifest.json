@@ -1,8 +1,10 @@
 {
-    "/js/app.js": "/js/app.js?id=0d615ffcb10c8782547069d4e261e624",
-    "/css/app.css": "/css/app.css?id=d9a687cf5f0ae9b92c54e63bd332c445",
+    "/js/app.js": "/js/app.js?id=16202bd371111bd65bd2445706528fa2",
+    "/css/app.css": "/css/app.css?id=6df191df9aa876498091ac3cca4539e1",
     "/assets/images/png/credit-card.png": "/assets/images/png/credit-card.png?id=4c037b9ece029ec898dcabb1f4bd9928",
     "/assets/images/png/hero.png": "/assets/images/png/hero.png?id=4b45921f92d83f915ea10f8fa990106c",
+    "/assets/images/png/product-big-2.png": "/assets/images/png/product-big-2.png?id=bf9b2b73e5d0a854a1364e6a74eb00a8",
+    "/assets/images/png/product-big.png": "/assets/images/png/product-big.png?id=36a40d81a8cafcfe1e3de80eaf2ddf5b",
     "/assets/images/png/product-card-image.png": "/assets/images/png/product-card-image.png?id=c31a7e84047439abcd5d1091da74553b",
     "/assets/images/png/product.png": "/assets/images/png/product.png?id=62d6d291a8ea6d1efb5689520a9259e5",
     "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e4e4d3dd6bbee69480d26bbcab4516fb",
@@ -15,5 +17,6 @@
     "/assets/images/svg/heart.svg": "/assets/images/svg/heart.svg?id=3d16641739d6789fd256d9ca3a6eb95e",
     "/assets/images/svg/logo.svg": "/assets/images/svg/logo.svg?id=05153dcdef9f01ecce64d45ca944b1c5",
     "/assets/images/svg/product-element.svg": "/assets/images/svg/product-element.svg?id=ce76afd4d212dc62b7a8a23871344d47",
-    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=0197aefe7e9d663a6c7a167f9b05d5f9"
+    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=0197aefe7e9d663a6c7a167f9b05d5f9",
+    "/assets/images/svg/readmore.svg": "/assets/images/svg/readmore.svg?id=5db42f8fc88f3a8012ea57301f3f22b9"
 }

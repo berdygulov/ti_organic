@@ -2472,43 +2472,14 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.min.css");
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
-
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
-var popularSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".popular-container", {
-  autoHeight: true,
-  slidesPerView: 3,
-  clickable: true,
-  navigation: {
-    nextEl: '.popular-button-next',
-    prevEl: '.popular-button-prev'
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1
-    },
-    576: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    992: {
-      slidesPerView: 2
-    },
-    1200: {
-      slidesPerView: 3
-    }
-  }
-});
 
 /***/ }),
 
@@ -2571,6 +2542,52 @@ $(document).ready(function () {
     $('.burger,.menu,.header, .header-mobile').removeClass('active');
     $('body').removeClass('lock');
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/utilts/sliders.js":
+/*!****************************************!*\
+  !*** ./resources/js/utilts/sliders.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.min.css");
+
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+/*
+ Popular product slider
+*/
+
+var popularSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".popular-container", {
+  autoHeight: true,
+  slidesPerView: 3,
+  clickable: true,
+  navigation: {
+    nextEl: '.popular-button-next',
+    prevEl: '.popular-button-prev'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 2
+    },
+    1200: {
+      slidesPerView: 3
+    }
+  }
 });
 
 /***/ }),
