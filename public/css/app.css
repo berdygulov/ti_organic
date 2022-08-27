@@ -602,6 +602,9 @@ video {
 .h-\[553px\]{
   height: 553px;
 }
+.h-\[172px\]{
+  height: 172px;
+}
 .h-20{
   height: 5rem;
 }
@@ -632,14 +635,11 @@ video {
 .w-\[772px\]{
   width: 772px;
 }
-.w-\[395px\]{
-  width: 395px;
-}
 .w-\[88px\]{
   width: 88px;
 }
-.w-\[150px\]{
-  width: 150px;
+.w-full{
+  width: 100%;
 }
 .w-11{
   width: 2.75rem;
@@ -671,6 +671,9 @@ video {
 .basis-2\/5{
   flex-basis: 40%;
 }
+.basis-3\/6{
+  flex-basis: 50%;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -697,6 +700,9 @@ video {
 }
 .justify-between{
   justify-content: space-between;
+}
+.gap-0{
+  gap: 0px;
 }
 .gap-9{
   gap: 2.25rem;
@@ -931,13 +937,19 @@ video {
 .popular-slider .container {
   overflow: visible;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .popular-slider .container {
+    overflow: hidden;
+  }
+}
 .popular-slider .popular-container {
   overflow: visible;
 }
-.popular-slider .popular-product {
-  width: 395px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .popular-slider .popular-container {
+    overflow: hidden;
+  }
 }
-
 body {
   font-family: "Mulish", sans-serif;
   font-size: 0.875rem;
@@ -987,6 +999,12 @@ h4{
   font-size: 40px;
   line-height: 100%;
   font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  h4{
+    font-size: 32px;
+    line-height: 100%;
+  }
 }
 h5{
   font-size: 32px;
@@ -1161,6 +1179,9 @@ h6{
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .md\:gap-8{
+    gap: 2rem;
+  }
   .md\:gap-7{
     gap: 1.75rem;
   }
@@ -1192,6 +1213,9 @@ h6{
   }
   .lg\:basis-60{
     flex-basis: 60%;
+  }
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));

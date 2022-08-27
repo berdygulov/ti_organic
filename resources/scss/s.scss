@@ -2,9 +2,15 @@
     overflow-x: hidden;
     .container {
         overflow: visible;
+        @media (min-width: 320px) and (max-width: 768px) {
+            overflow: hidden;
+        }
     }
     .popular-container {
         overflow: visible;
+        @media (min-width: 320px) and (max-width: 768px) {
+            overflow: hidden;
+        }
     }
     .swiper-slide {
         .popular-item {
@@ -12,7 +18,7 @@
         }
     }
     .popular-product {
-        width: 395px;
+        //width: 395px;
     }
 }
 

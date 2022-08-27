@@ -43,22 +43,22 @@
                 <div class="popular-slider pt-12.5">
                     <div class="container">
                         <div class="popular-container">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8">
                                 <div class="swiper-slide popular-product">
-                                    <div class="popular-item relative w-[395px] p-3.9 flex items-center justify-between bg-white shadow-product-shadow rounded cursor-pointer">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white shadow-product-shadow rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
-                                        <div class="popular-item-left">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center mr-6.5 w-[150px] h-[142px]">
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                             </div>
                                         </div>
-                                        <div class="popular-item-right py-3">
+                                        <div class="popular-item-right basis-3/6 py-3">
                                             <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный комплекс</p>
                                             <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
                                             <div class="flex items-end">
@@ -69,20 +69,20 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide popular-product">
-                                    <div class="popular-item relative w-[395px] p-3.9 flex items-center justify-between bg-white shadow-product-shadow rounded cursor-pointer">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white shadow-product-shadow rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
-                                        <div class="popular-item-left">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center mr-6.5 w-[150px] h-[142px]">
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                             </div>
                                         </div>
-                                        <div class="popular-item-right py-3">
+                                        <div class="popular-item-right basis-3/6 py-3">
                                             <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный комплекс</p>
                                             <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
                                             <div class="flex items-end">
@@ -93,20 +93,20 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide popular-product">
-                                    <div class="popular-item relative w-[395px] p-3.9 flex items-center justify-between bg-white shadow-product-shadow rounded cursor-pointer">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white shadow-product-shadow rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
-                                        <div class="popular-item-left">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center mr-6.5 w-[150px] h-[142px]">
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                             </div>
                                         </div>
-                                        <div class="popular-item-right py-3">
+                                        <div class="popular-item-right basis-3/6 py-3">
                                             <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный комплекс</p>
                                             <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
                                             <div class="flex items-end">
@@ -117,20 +117,20 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide popular-product">
-                                    <div class="popular-item relative w-[395px] p-3.9 flex items-center justify-between bg-white shadow-product-shadow rounded cursor-pointer">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white shadow-product-shadow rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
-                                        <div class="popular-item-left">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center mr-6.5 w-[150px] h-[142px]">
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                             </div>
                                         </div>
-                                        <div class="popular-item-right py-3">
+                                        <div class="popular-item-right basis-3/6 py-3">
                                             <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный комплекс</p>
                                             <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
                                             <div class="flex items-end">
@@ -141,20 +141,20 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide popular-product">
-                                    <div class="popular-item relative w-[395px] p-3.9 flex items-center justify-between bg-white shadow-product-shadow rounded cursor-pointer">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white shadow-product-shadow rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
-                                        <div class="popular-item-left">
-                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center mr-6.5 w-[150px] h-[142px]">
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-[#F2F3F6] relative flex items-center justify-center w-full h-[142px]">
                                                 <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                                 <a href="" class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50 %</a>
                                                 <a href="" class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                             </div>
                                         </div>
-                                        <div class="popular-item-right py-3">
+                                        <div class="popular-item-right basis-3/6 py-3">
                                             <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный комплекс</p>
                                             <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
                                             <div class="flex items-end">
@@ -178,26 +178,17 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="popular-bottom flex justify-between items-center">
-                                    <div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                    <div>
-                                        <a href="" class="btn-catalog mt-3.9 md:mt-0">
-                                            <div>Весь каталог</div>
-                                            <svg class="w-6 h-6 ml-2">
-                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
+                                <div class="hidden md:block">
+                                    <a href="" class="btn-catalog mt-3.9 md:mt-0">
+                                        <div>Весь каталог</div>
+                                        <svg class="w-6 h-6 ml-2">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container">
-
                 </div>
             </div>
         </section>
