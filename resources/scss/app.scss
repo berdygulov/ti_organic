@@ -29,12 +29,17 @@ body {
 h {
     &1 {
         @apply text-64 font-bold;
+        line-height: 74px;
+        @media (min-width: 320px) and (max-width: 992px) {
+            @apply text-40;
+            line-height: 50px;
+        }
     }
 
     &2 {
         @apply text-56 font-bold;
         @media (min-width: 320px) and (max-width: 992px) {
-            @apply text-40;
+            @apply text-32;
         }
     }
 
@@ -44,15 +49,17 @@ h {
 
     &4 {
         @apply text-40 font-bold;
-        @media (min-width: 320px) and (max-width: 768px) {
+        @media (min-width: 320px) and (max-width: 992px) {
             @apply text-32;
         }
     }
 
     &5 {
         @apply text-32 font-bold;
+        line-height: 48px;
         @media (min-width: 320px) and (max-width: 768px) {
             @apply text-2xl;
+            line-height: 36px;
         }
     }
 
@@ -61,16 +68,33 @@ h {
     }
 }
 
-.btn-catalog {
-    @apply transition ease-in delay-100 text-white bg-red py-4 px-8 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
-}
+.btn {
+    @apply font-bold rounded-3xl inline-flex justify-between items-center;
+    &-sm {
+        line-height: 20px;
+        padding: 13px 22px;
+        @apply text-sm;
+    }
 
-.btn-in-catalog {
-    @apply transition ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-flex justify-between items-center;
-}
+    &-md {
+        line-height: 24px;
+        padding: 14px 25px;
+        @apply text-base;
+    }
 
-.btn-yellow {
-    @apply transition ease-in delay-100 text-black bg-yellow py-4 px-8 text-lg font-bold border-yellow border-2 rounded-3xl inline-flex
+    &-lg {
+        line-height: 24px;
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+
+    &-red {
+        @apply bg-red text-white;
+    }
+
+    &-yellow {
+        @apply bg-yellow text-blue-dark
+    }
 }
 
 .btn-yellow-arrow {
