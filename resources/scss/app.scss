@@ -97,10 +97,6 @@ h {
     }
 }
 
-.btn-yellow-arrow {
-    @apply transition ease-in delay-100 inline-flex items-center bg-yellow font-bold rounded-full inline-block py-3.5 px-6.5 relative;
-}
-
 .menu-item {
     @apply mr-12.5;
 

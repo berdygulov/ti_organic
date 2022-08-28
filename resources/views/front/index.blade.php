@@ -386,7 +386,7 @@
                                             <p class="text-gray-2 text-base mb-3.9">Бесплатная доставка</p>
                                             <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной
                                                 доставкой вашей любимой косметики</p>
-                                            <a class="btn-yellow-arrow" href="">
+                                            <a class="btn btn-md btn-yellow" href="">
                                                 Читать
                                                 <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
                                                     <use
@@ -404,7 +404,7 @@
                                             <p class="mb-7.5 text-blue-dark text-lg font-bold">Наслаждайтесь бесплатной
                                                 доставкой вашей любимой косметики
                                                 Наслаждайтесь бесплатной доставкой вашей любимой косметики</p>
-                                            <a class="btn-yellow-arrow" href="">
+                                            <a class="btn btn-md btn-yellow" href="">
                                                 Читать
                                                 <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
                                                     <use
