@@ -11,8 +11,7 @@
 </head>
 <body>
 <div class="wrapper ">
-
-    <header class="header bg-yellow-extra-light relative">
+    <header class="header bg-yellow-extra-light relative @yield('box-show-header-class')" >
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">

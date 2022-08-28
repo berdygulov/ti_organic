@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\PagesController;
 
 /*
+ * Blog use controllers
+ */
+
+use App\Http\Controllers\Front\Blog\BlogIndexController;
+
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -21,4 +27,11 @@ Route::group([
     Route::get('/test', function () {
         return view('front.test');
     });
+});
+
+Route::group([
+    'prefix' => 'blog',
+    'as'     => 'blog.'
+], function () {
+    Route::get('/', BlogIndexController::class)->name('index');
 });
