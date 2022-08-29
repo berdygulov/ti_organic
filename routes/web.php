@@ -10,6 +10,12 @@ use App\Http\Controllers\Front\PagesController;
 use App\Http\Controllers\Front\Blog\BlogIndexController;
 
 /*
+ * Product use controllers
+ */
+
+use App\Http\Controllers\Front\Product\ProductShowController;
+
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -29,9 +35,24 @@ Route::group([
     });
 });
 
+/*
+ * Blog routes
+ */
+
 Route::group([
     'prefix' => 'blog',
     'as'     => 'blog.'
 ], function () {
     Route::get('/', BlogIndexController::class)->name('index');
+});
+
+/*
+ * Product routes
+ */
+
+Route::group([
+    'prefix' => 'product',
+    'as'     => 'product.'
+], function () {
+    Route::get('/', ProductShowController::class)->name('show');
 });

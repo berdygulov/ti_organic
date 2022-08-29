@@ -107,9 +107,9 @@
             </nav>
         </div>
     </div>
-
-    @yield('content')
-
+    <main>
+        @yield('content')
+    </main>
     <footer class="mt-15 lg:mt-23">
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">

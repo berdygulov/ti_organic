@@ -1,3 +1,4 @@
+// Slider index (home page) outside container <<< style >>>.
 .slider {
     @apply overflow-x-hidden;
 
@@ -15,10 +16,11 @@
         }
     }
 }
-
+// Readmore (Подробнее)
 .readmore {
     position: relative;
     padding-right: 10px;
+
     &::before {
         content: '';
         position: absolute;
@@ -31,3 +33,48 @@
     }
 }
 
+
+// Custom single product
+.select-count {
+    //appearance: none;
+    //position: relative;
+    //width: 84px;
+    //background:  url("../assets/images/svg/arrow-count.svg") no-repeat center right;
+}
+// Single product
+.product {
+    .swiper-container {
+        @apply overflow-hidden;
+    }
+    .products-gallery-slider {
+        @apply mt-5;
+        .swiper-wrapper {
+            .swiper-slide {
+                @apply border-2 border rounded border-2 border-[#BDBDBD] cursor-pointer w-[104px] h-[105px];
+                &.swiper-slide-thumb-active {
+                    @apply border-2 border-green rounded;
+                }
+            }
+        }
+
+    }
+}
+.swiper-pagination.single-product-pagination {
+    @apply flex;
+    span.swiper-pagination-bullet {
+        @apply cursor-pointer w-[12px] h-[12px] block bg-[#F2F2F2] mr-3 rounded-[30px];
+        &:last-child {
+            @apply mr-0;
+        }
+        &.swiper-pagination-bullet-active {
+            @apply bg-[#BDBDBD];
+        }
+    }
+}
+
+.product-content {
+    @apply mb-3.9;
+    &:last-child {
+        @apply mb-0;
+    }
+}

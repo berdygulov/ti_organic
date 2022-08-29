@@ -3,6 +3,7 @@ import 'swiper/css';
 
 Swiper.use([Navigation, Pagination]);
 
+
 /*
  Popular product slider
 */
@@ -98,6 +99,38 @@ const blogSlider = new Swiper(".blog-slider", {
 		},
 		1200: {
 			slidesPerView: 3.2
+		}
+	}
+});
+
+/*
+* Similar slider
+ */
+
+const similarSlider = new Swiper(".similar-slider", {
+	autoHeight: true,
+	slidesPerView: 4,
+	clickable: true,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.similar-button-next',
+		prevEl: '.similar-button-prev',
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		470: {
+			slidesPerView: 1.5,
+		},
+		768: {
+			slidesPerView: 2.5,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+		1200: {
+			slidesPerView: 4
 		}
 	}
 });

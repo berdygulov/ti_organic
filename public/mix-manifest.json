@@ -1,6 +1,6 @@
 {
-    "/js/app.js": "/js/app.js?id=e9520770779213855dd18e428c7a938e",
-    "/css/app.css": "/css/app.css?id=9696619c9619624acd8d6214d1309dec",
+    "/js/app.js": "/js/app.js?id=47a7079c02e0d15332f5f749bb44842c",
+    "/css/app.css": "/css/app.css?id=f9980849ad8e43498b5ae1bead4cd308",
     "/assets/images/png/blog.png": "/assets/images/png/blog.png?id=e645a8ba28dfdb99fc62ed070f99f528",
     "/assets/images/png/buy.png": "/assets/images/png/buy.png?id=ddc1d10490115973f260b9f3c51702d1",
     "/assets/images/png/category-product-2.png": "/assets/images/png/category-product-2.png?id=1176b149533cb6968cc29f128c566ad0",
@@ -11,16 +11,22 @@
     "/assets/images/png/product-big.png": "/assets/images/png/product-big.png?id=36a40d81a8cafcfe1e3de80eaf2ddf5b",
     "/assets/images/png/product-card-image.png": "/assets/images/png/product-card-image.png?id=c31a7e84047439abcd5d1091da74553b",
     "/assets/images/png/product.png": "/assets/images/png/product.png?id=62d6d291a8ea6d1efb5689520a9259e5",
+    "/assets/images/png/single-product-big.png": "/assets/images/png/single-product-big.png?id=d6203dc8d72a0bc287b560546d8b3612",
+    "/assets/images/svg/add-outline.svg": "/assets/images/svg/add-outline.svg?id=103e220c881a7e84bde6f60b9524dfdd",
     "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e4e4d3dd6bbee69480d26bbcab4516fb",
+    "/assets/images/svg/arrow-count.svg": "/assets/images/svg/arrow-count.svg?id=a92c042975f76c967405a9bf1bc92845",
     "/assets/images/svg/arrow-next.svg": "/assets/images/svg/arrow-next.svg?id=844815d947d629ef9a832640b4414452",
     "/assets/images/svg/arrow-prev.svg": "/assets/images/svg/arrow-prev.svg?id=663773338f85ee1641a8f534671c4a2d",
     "/assets/images/svg/bag.svg": "/assets/images/svg/bag.svg?id=ed7e9fd16dbd27db1ddb063daa675733",
     "/assets/images/svg/cart.svg": "/assets/images/svg/cart.svg?id=e2a32661eb4a42c0984aeef959e4800f",
+    "/assets/images/svg/counter.svg": "/assets/images/svg/counter.svg?id=46c9ef9b3280cb63e0158194e8ecbc84",
     "/assets/images/svg/dalacode.svg": "/assets/images/svg/dalacode.svg?id=ecd7643c7fb9c69df1196dd2758514e1",
+    "/assets/images/svg/favorite.svg": "/assets/images/svg/favorite.svg?id=779ebb92f2f88f10bd7eced1801cc700",
     "/assets/images/svg/hamburger.svg": "/assets/images/svg/hamburger.svg?id=3c54c743834b8b21d0f5d8fd179eb299",
     "/assets/images/svg/heart.svg": "/assets/images/svg/heart.svg?id=3d16641739d6789fd256d9ca3a6eb95e",
     "/assets/images/svg/logo.svg": "/assets/images/svg/logo.svg?id=05153dcdef9f01ecce64d45ca944b1c5",
+    "/assets/images/svg/plus.svg": "/assets/images/svg/plus.svg?id=195afed364750298faa5dba59a5d973a",
     "/assets/images/svg/product-element.svg": "/assets/images/svg/product-element.svg?id=ce76afd4d212dc62b7a8a23871344d47",
     "/assets/images/svg/readmore.svg": "/assets/images/svg/readmore.svg?id=5db42f8fc88f3a8012ea57301f3f22b9",
-    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=18c4d2829c77c5f3c655bd03a428ae46"
+    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=c01a37f0bd15975d5d4e53ed716be0b9"
 }
