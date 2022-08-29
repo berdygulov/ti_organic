@@ -26,6 +26,12 @@ body {
 
 }
 
+header {
+    &.box-show-header-class {
+        box-shadow: 0px 5px 30px 5px rgb(0 60 68 / 10%);
+    }
+}
+
 h {
     &1 {
         @apply text-64 font-bold;
