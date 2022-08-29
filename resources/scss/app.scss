@@ -70,6 +70,38 @@ h {
 
 .btn {
     @apply font-bold rounded-3xl inline-flex justify-between items-center;
+    &-icon {
+        @apply inline-block rounded-full border-2;
+        &-lg {
+            @apply p-3.5;
+            svg {
+                @apply w-6 h-6;
+            }
+        }
+
+        &-md {
+            padding: 13px;
+
+            svg {
+                @apply w-5 h-5;
+            }
+        }
+
+        &-yellow {
+            @apply bg-yellow border-yellow;
+            svg {
+                @apply fill-yellow;
+            }
+        }
+
+        &-red_outlined {
+            @apply bg-transparent border-red;
+            svg {
+                @apply fill-red;
+            }
+        }
+    }
+
     &-sm {
         line-height: 20px;
         padding: 13px 22px;

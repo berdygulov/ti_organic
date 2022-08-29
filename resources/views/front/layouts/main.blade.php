@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper ">
 
-    <header class="header bg-yellow-extra-light relative">
+    <header class="header bg-yellow-extra-light relative shadow-shadow">
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
@@ -46,7 +46,7 @@
                 <div class="flex items-center header-relative">
                     <div>
                         <a href="#"
-                           class="items-center justify-center w-14 h-14 border-2 rounded-full border-red mr-6 hidden lg:flex">
+                           class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#heart') }}"></use>
                             </svg>
@@ -54,7 +54,7 @@
                     </div>
                     <div>
                         <a href="#"
-                           class="flex items-center justify-center w-14 h-14 border-2 rounded-full bg-yellow border-yellow">
+                           class="btn-icon btn-icon-lg btn-icon-yellow">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
                             </svg>
