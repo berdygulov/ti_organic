@@ -19,65 +19,35 @@
 
 // Readmore (Подробнее)
 .readmore {
-    position: relative;
-    padding-right: 10px;
-
+    @apply relative pr-[10px];
     &::before {
         content: '';
-        position: absolute;
         background-image: url("../assets/images/svg/readmore.svg");
-        background-repeat: no-repeat;
-        right: -10px;
-        top: 2px;
-        width: 20px;
-        height: 20px;
+        @apply absolute w-[20px] h-[20px] top-[2px] right-[-10px] bg-no-repeat;
     }
 }
 
 
 // Custom single product
 .product-select {
-    position: relative;
-    display: flex;
-    width: 84px;
-    height: 34px;
-    background: #5c6664;
-    overflow: hidden;
-    border-radius: 4px;
     &::after {
         content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
         background: url("../assets/images/svg/arrow-count.svg") no-repeat center center;
-        width: 44px;
-        @apply flex justify-center items-center bg-green cursor-pointer px-3.9 h-full pointer-events-none;
-        transition:.25s all ease;
-    }
-    select {
-        flex: 1;
-        @apply appearance-none outline-none text-green font-bold text-lg px-3.9 cursor-pointer border-green border-2;
-    }
-    select::-ms-expand {
-        display: none;
+        @apply absolute w-[44px] top-0 right-0 flex justify-center items-center bg-green cursor-pointer px-3.9 h-full pointer-events-none;
     }
 }
 
 // Single product
 .product {
     &-left {
-        justify-content: center;
-        align-items: center;
+        @apply justify-center items-center;
     }
 
     &-inner {
-        display: grid;
+        @apply grid justify-center items-center;
         grid-template-columns: 40% 40%;
-        justify-content: center;
-        align-items: center;
         @media (min-width: 320px) and (max-width: 997px) {
-            justify-content: center;
-            align-items: center;
+            @apply justify-center items-center;
             grid-template-columns: 100%;
         }
     }
@@ -94,20 +64,13 @@
                 .products-gallery-item {
                     @apply flex items-center justify-center ;
                     img {
-                        @apply w-[104px] h-[105px];
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @apply w-[104px] h-[105px] flex items-center justify-center;
                     }
                 }
 
                 &.swiper-slide-thumb-active, {
                     @apply border-2 border-green rounded;
                 }
-
-                //&.swiper-slide-active {
-                //    @apply border-2 border-green rounded;
-                //}
             }
         }
 

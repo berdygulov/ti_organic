@@ -129,8 +129,8 @@
                         </div>
                         <div class="flex">
                             <div class="mr-15.5">
-                                <div class="product-select">
-                                    <select name="" id="" class="select-count">
+                                <div class="product-select relative flex w-[84px] h-[34px] overflow-hidden rounded">
+                                    <select name="product-select " class="select-count flex-[1] appearance-none outline-none text-green font-bold text-lg px-3.9 cursor-pointer border-green border-2">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
