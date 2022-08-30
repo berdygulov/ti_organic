@@ -44,7 +44,7 @@
     }
 
     &-inner {
-        @apply grid justify-center items-center;
+        @apply grid justify-center items-start;
         grid-template-columns: 40% 40%;
         @media (min-width: 320px) and (max-width: 997px) {
             @apply justify-center items-center;

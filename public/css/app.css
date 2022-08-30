@@ -831,9 +831,6 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
-.rounded-xl{
-  border-radius: 0.75rem;
-}
 .rounded-br{
   border-bottom-right-radius: 0.25rem;
 }
@@ -1167,7 +1164,7 @@ video {
 }
 .product-inner{
   display: grid;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   grid-template-columns: 40% 40%;
 }
