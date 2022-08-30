@@ -2,6 +2,7 @@ import Swiper, {Navigation, Pagination, Thumbs, Zoom} from "swiper";
 import {Fancybox, Carousel, Panzoom} from "@fancyapps/ui";
 import 'swiper/css';
 import "@fancyapps/ui/dist/fancybox.css";
+import "@fancyapps/ui/dist/panzoom.css"
 
 Swiper.use([Navigation, Pagination, Thumbs, Zoom]);
 
@@ -38,18 +39,12 @@ const productBigImage = new Swiper('.product-big-slider', {
 	}
 });
 
+// Zooms
+let panZooms = document.querySelectorAll(".zoom")
 
-// const myPanzoom = new Panzoom(document.querySelector("#zoom"), {
-// 	panOnlyZoomed: true,
-// 	resizeParent: true,
-// });
-
-
-// let panZooms = document.querySelectorAll(".panzoom")
-
-// panZooms.forEach(item => {
-// 	item.Panzoom = new Panzoom(item, {
-// 		panOnlyZoomed: true,
-// 		resizeParent: true,
-// 	})
-// })
+panZooms.forEach(item => {
+	item.Panzoom = new Panzoom(item, {
+		panOnlyZoomed: true,
+		resizeParent: true,
+	})
+})

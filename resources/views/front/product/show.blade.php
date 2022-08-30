@@ -4,7 +4,6 @@
 
 @section('content')
     <x-front.page-title title="Увлажняющая маска Yves Rocher"/>
-
     <section class="product">
         <div class="container">
             <div class="product-inner">
@@ -12,61 +11,61 @@
                     <div class="swiper-container product-big-slider">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
-                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="">
+                                    <div class="panzoom__content">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/product-big-2.png') }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                    <div>
+                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="">
+                                    <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="">
+                                    <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="">
-                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="">
+                                    <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
@@ -149,7 +148,6 @@
 
         </div>
     </section>
-
     <section class="pt-15 lg:pt-23">
         <div>
             <div class="container">

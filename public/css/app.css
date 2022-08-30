@@ -703,6 +703,12 @@ video {
 .h-10{
   height: 2.5rem;
 }
+.h-\[400px\]{
+  height: 400px;
+}
+.h-\[401px\]{
+  height: 401px;
+}
 .w-6{
   width: 1.5rem;
 }
@@ -741,6 +747,9 @@ video {
 }
 .w-10{
   width: 2.5rem;
+}
+.w-\[400px\]{
+  width: 400px;
 }
 .flex-auto{
   flex: 1 1 auto;
