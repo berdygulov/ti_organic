@@ -1,13 +1,13 @@
-import Swiper, {Navigation, Pagination, Thumbs} from "swiper";
+import Swiper, {Navigation, Pagination, Thumbs, Zoom} from "swiper";
 import {Fancybox, Carousel, Panzoom} from "@fancyapps/ui";
 import 'swiper/css';
 import "@fancyapps/ui/dist/fancybox.css";
 
-Swiper.use([Navigation, Pagination, Thumbs]);
+Swiper.use([Navigation, Pagination, Thumbs, Zoom]);
 
 const gallerySingleProducts = new Swiper('.products-gallery-slider', {
-	slidesPerView: "auto",
-	spaceBetween: 30,
+	slidesPerView: 3,
+	spaceBetween: "30",
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
 	centerInsufficientSlides: true,
@@ -23,8 +23,8 @@ const gallerySingleProducts = new Swiper('.products-gallery-slider', {
 });
 
 const productBigImage = new Swiper('.product-big-slider', {
-	spaceBetween: 10,
 	clickable: true,
+	zoom: true,
 	pagination: {
 		el: '.single-product-pagination',
 		clickable: true
@@ -39,10 +39,11 @@ const productBigImage = new Swiper('.product-big-slider', {
 });
 
 
-
-// const myPanzoom = new Panzoom(document.querySelectorAll(".panzoom"), {
-// 	// Your options go here
+// const myPanzoom = new Panzoom(document.querySelector("#zoom"), {
+// 	panOnlyZoomed: true,
+// 	resizeParent: true,
 // });
+
 
 // let panZooms = document.querySelectorAll(".panzoom")
 

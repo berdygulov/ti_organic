@@ -2583,10 +2583,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]);
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Zoom]);
 var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
-  slidesPerView: "auto",
-  spaceBetween: 30,
+  slidesPerView: 3,
+  spaceBetween: "30",
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   centerInsufficientSlides: true,
@@ -2601,8 +2601,8 @@ var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('
   }
 });
 var productBigImage = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product-big-slider', {
-  spaceBetween: 10,
   clickable: true,
+  zoom: true,
   pagination: {
     el: '.single-product-pagination',
     clickable: true
@@ -2614,8 +2614,9 @@ var productBigImage = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.produ
   thumbs: {
     swiper: gallerySingleProducts
   }
-}); // const myPanzoom = new Panzoom(document.querySelectorAll(".panzoom"), {
-// 	// Your options go here
+}); // const myPanzoom = new Panzoom(document.querySelector("#zoom"), {
+// 	panOnlyZoomed: true,
+// 	resizeParent: true,
 // });
 // let panZooms = document.querySelectorAll(".panzoom")
 // panZooms.forEach(item => {
@@ -2763,7 +2764,7 @@ var similarSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".similar
       slidesPerView: 3
     },
     1200: {
-      slidesPerView: 4
+      slidesPerView: 3.9
     }
   }
 });

@@ -700,9 +700,6 @@ video {
 .h-8{
   height: 2rem;
 }
-.h-\[388px\]{
-  height: 388px;
-}
 .h-10{
   height: 2.5rem;
 }
@@ -742,9 +739,6 @@ video {
 .w-20{
   width: 5rem;
 }
-.w-\[372px\]{
-  width: 372px;
-}
 .w-10{
   width: 2.5rem;
 }
@@ -765,9 +759,6 @@ video {
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-rows-1{
   grid-template-rows: repeat(1, minmax(0, 1fr));
@@ -1000,12 +991,6 @@ video {
 .pt-15{
   padding-top: 60px;
 }
-.pl-1{
-  padding-left: 0.25rem;
-}
-.pt-1{
-  padding-top: 0.25rem;
-}
 .text-center{
   text-align: center;
 }
@@ -1130,6 +1115,23 @@ video {
   height: 20px;
 }
 
+.product-left {
+  justify-content: center;
+  align-items: center;
+}
+.product-inner {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 997px) {
+  .product-inner {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+  }
+}
 .product .swiper-container{
   overflow: hidden;
 }
@@ -1144,6 +1146,18 @@ video {
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(189 189 189 / var(--tw-border-opacity));
+}
+.product .products-gallery-slider .swiper-wrapper .swiper-slide .products-gallery-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product .products-gallery-slider .swiper-wrapper .swiper-slide .products-gallery-item img{
+  height: 105px;
+  width: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .product .products-gallery-slider .swiper-wrapper .swiper-slide.swiper-slide-thumb-active{
   border-radius: 0.25rem;
@@ -1485,6 +1499,9 @@ h6{
   .lg\:mt-23{
     margin-top: 90px;
   }
+  .lg\:mr-25{
+    margin-right: 100px;
+  }
   .lg\:block{
     display: block;
   }
@@ -1543,6 +1560,9 @@ h6{
 }
 
 @media (min-width: 1200px){
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
   .xl\:basis-2\/4{
     flex-basis: 50%;
   }

@@ -5,110 +5,99 @@
 @section('content')
     <x-front.page-title title="Увлажняющая маска Yves Rocher"/>
 
-    <section class="product hidden">
+    <section class="product">
         <div class="container">
-            <div class="grid grid-cols-2">
-                <div>
-                    <div class="swiper-container w-[372px] product-big-slider ">
+            <div class="product-inner">
+                <div class="mb-6 xl:mb-0 lg:mr-25 product-left">
+                    <div class="swiper-container product-big-slider">
                         <div class="swiper-wrapper rounded ">
-                            <div class="swiper-slide  ">
-                                <div class="w-[372px] h-[388px] bg-white shadow-shadow rounded cursor-pointer relative">
+                            <div class="swiper-slide">
+                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    <div class="">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide  ">
-                                <div class="w-[372px] h-[388px] bg-white shadow-shadow rounded cursor-pointer relative">
+                            <div class="swiper-slide">
+                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    <div class="">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide  ">
-                                <div class="w-[372px] h-[388px] bg-white shadow-shadow rounded cursor-pointer relative">
+                            <div class="swiper-slide">
+                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    <div class="">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide  ">
-                                <div class="w-[372px] h-[388px] bg-white shadow-shadow rounded cursor-pointer relative">
+                            <div class="swiper-slide">
+                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    <div class="">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide  ">
-                                <div class="w-[372px] h-[388px] bg-white shadow-shadow rounded cursor-pointer relative">
+                            <div class="swiper-slide">
+                                <div class=" bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div>
                                         <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                         </svg>
                                     </div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    <div class="">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="swiper-container w-[372px] products-gallery-slider">
+                    <div class="swiper-container products-gallery-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
+                                <div class="products-gallery-item">
+                                    <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
+                                <div class="products-gallery-item">
+                                    <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
+                                <div class="products-gallery-item">
+                                    <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
+                                <div class="products-gallery-item">
+                                    <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div>
-                                    <div class="panzoom">
-                                        <img class="w-full h-full panzoom__content" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
+                                <div class="products-gallery-item">
+                                    <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -127,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="">
                     <div>
                         <h4 class="mb-8.5">Увлажняющая маска Yves Rocher</h4>
                         <div>
