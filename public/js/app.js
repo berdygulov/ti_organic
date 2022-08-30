@@ -2593,8 +2593,7 @@ panZooms.forEach(function (item) {
     panOnlyZoomed: true,
     resizeParent: true
   });
-}); // Product many images gallery slider
-
+});
 var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
   spaceBetween: 30,
   centeredSlides: true,
@@ -2610,9 +2609,11 @@ var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product
   pagination: {
     el: '.single-product-pagination',
     clickable: true
-  }
-}); // Product head big image slider
-
+  },
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  centerInsufficientSlides: true
+});
 var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product-big-slider', {
   spaceBetween: 10,
   navigation: {

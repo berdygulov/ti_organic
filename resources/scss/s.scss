@@ -16,6 +16,7 @@
         }
     }
 }
+
 // Readmore (Подробнее)
 .readmore {
     position: relative;
@@ -35,18 +36,42 @@
 
 
 // Custom single product
-.select-count {
-    //appearance: none;
-    //position: relative;
-    //width: 84px;
-    //background:  url("../assets/images/svg/arrow-count.svg") no-repeat center right;
+.product-select {
+    @apply relative bg-green flex w-[85px] border-2 border-green rounded;
+    overflow: hidden;
+
+    //&::before {
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    right: 0;
+    //    cursor: pointer;
+    //    pointer-events: none;
+    //    transition: .25s all ease;
+    //}
+
+    select {
+        appearance:none;
+        outline:0;
+        box-shadow:none;
+        border:0!important;
+        background-image: none;
+        flex: 1;
+        @apply cursor-pointer bg-white text-green font-bold text-lg py-1.1 px-3.9;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
 }
+
 // Single product
 .product {
     &-left {
         justify-content: center;
         align-items: center;
     }
+
     &-inner {
         display: grid;
         grid-template-columns: 40% 40%;
@@ -58,9 +83,11 @@
             grid-template-columns: 100%;
         }
     }
+
     .swiper-container {
         @apply overflow-hidden;
     }
+
     .products-gallery-slider {
         @apply mt-5;
         .swiper-wrapper {
@@ -75,9 +102,11 @@
                         justify-content: center;
                     }
                 }
-                &.swiper-slide-thumb-active,   {
+
+                &.swiper-slide-thumb-active, {
                     @apply border-2 border-green rounded;
                 }
+
                 //&.swiper-slide-active {
                 //    @apply border-2 border-green rounded;
                 //}
@@ -86,6 +115,7 @@
 
     }
 }
+
 .swiper-pagination.single-product-pagination {
     @apply flex;
     span.swiper-pagination-bullet {
@@ -93,6 +123,7 @@
         &:last-child {
             @apply mr-0;
         }
+
         &.swiper-pagination-bullet-active {
             @apply bg-[#BDBDBD];
         }

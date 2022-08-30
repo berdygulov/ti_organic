@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div>
                     <div>
                         <h4 class="mb-8.5">Увлажняющая маска Yves Rocher</h4>
                         <div>
@@ -129,11 +129,13 @@
                         </div>
                         <div class="flex">
                             <div class="mr-15.5">
-                                <select name="" id="" class="select-count cursor-pointer border-2 border-green rounded text-green font-bold text-lg py-1.1 px-3.9">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
+                                <div class="product-select">
+                                    <select name="" id="" class="select-count">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="btn-yellow btn btn-md inline-flex items-center">
                                 <svg class="w-6 h-6 mr-2 hover:stroke-red">
@@ -145,7 +147,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section class="pt-15 lg:pt-23">

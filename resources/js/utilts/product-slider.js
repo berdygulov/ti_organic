@@ -16,7 +16,7 @@ panZooms.forEach(item => {
 	})
 })
 
-// Product many images gallery slider
+
 let galleryThumbs = new Swiper('.products-gallery-slider', {
 	spaceBetween: 30,
 	centeredSlides: true,
@@ -33,8 +33,11 @@ let galleryThumbs = new Swiper('.products-gallery-slider', {
 		el: '.single-product-pagination',
 		clickable: true
 	},
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+	centerInsufficientSlides: true,
 });
-// Product head big image slider
+
 let gallerySingleProducts = new Swiper('.product-big-slider', {
 	spaceBetween: 10,
 	navigation: {
