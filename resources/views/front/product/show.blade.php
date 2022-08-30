@@ -8,10 +8,10 @@
         <div class="container">
             <div class="product-inner">
                 <div class="mb-6 xl:mb-0 lg:mr-25 product-left">
-                    <div class="swiper-container product-big-slider shadow-shadow">
+                    <div class="swiper-container product-big-slider rounded shadow-shadow">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
