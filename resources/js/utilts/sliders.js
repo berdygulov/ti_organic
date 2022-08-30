@@ -118,19 +118,21 @@ const similarSlider = new Swiper(".similar-slider", {
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 1,
+			slidesPerView: "auto",
+			spaceBetween: 0,
 		},
 		470: {
 			slidesPerView: 1.5,
 		},
 		768: {
-			slidesPerView: 2.5,
+			slidesPerView: 2.2,
 		},
 		992: {
 			slidesPerView: 3,
 		},
 		1200: {
-			slidesPerView: 3.9
+			slidesPerView: 3.8,
+			spaceBetween: 30,
 		}
 	}
 });

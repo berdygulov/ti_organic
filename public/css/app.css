@@ -1495,6 +1495,9 @@ h6{
 }
 
 @media (min-width: 576px){
+  .sm\:w-\[300px\]{
+    width: 300px;
+  }
   .sm\:flex-row{
     flex-direction: row;
   }
