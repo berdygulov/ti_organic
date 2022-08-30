@@ -11,63 +11,63 @@
                     <div class="swiper-container product-big-slider">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
-                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="panzoom__content">
-                                        <img class="w-full h-full" src="{{ asset('assets/images/png/product-big-2.png') }}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
+                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
+                                <div>
+                                    <svg class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
+                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
+                                <div>
+                                    <svg class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
+                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
                                 </div>
+                                <div>
+                                    <svg class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="panzoom zoom h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
-                                    <div>
-                                        <svg class="absolute z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                        </svg>
-                                    </div>
+                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                     </div>
+                                </div>
+                                <div>
+                                    <svg class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="panzoom zooms h-[401px] bg-white shadow-shadow rounded cursor-pointer relative ">
+                                    <div class="panzoom__content">
+                                        <img class="w-full h-full" src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <svg class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </div>

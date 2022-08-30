@@ -75,9 +75,12 @@
                         justify-content: center;
                     }
                 }
-                &.swiper-slide-thumb-active {
+                &.swiper-slide-thumb-active,   {
                     @apply border-2 border-green rounded;
                 }
+                //&.swiper-slide-active {
+                //    @apply border-2 border-green rounded;
+                //}
             }
         }
 

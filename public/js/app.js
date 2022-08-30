@@ -2585,45 +2585,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs, swiper__WEBPACK_IMPORTED_MODULE_0__.Zoom]);
-var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
-  slidesPerView: 3,
-  spaceBetween: "30",
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  centerInsufficientSlides: true,
-  slideToClickedSlide: true,
-  pagination: {
-    el: '.single-product-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.single-product-button-next',
-    prevEl: '.single-product-button-prev'
-  }
-});
-var productBigImage = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product-big-slider', {
-  clickable: true,
-  zoom: true,
-  pagination: {
-    el: '.single-product-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.single-product-button-next',
-    prevEl: '.single-product-button-prev'
-  },
-  thumbs: {
-    swiper: gallerySingleProducts
-  }
-}); // Zooms
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]); // Zooms
 
-var panZooms = document.querySelectorAll(".zoom");
+var panZooms = document.querySelectorAll(".zooms");
 panZooms.forEach(function (item) {
   item.Panzoom = new _fancyapps_ui__WEBPACK_IMPORTED_MODULE_1__.Panzoom(item, {
     panOnlyZoomed: true,
     resizeParent: true
   });
+}); // Product many images gallery slider
+
+var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 3,
+  touchRatio: 0.2,
+  slideToClickedSlide: true,
+  loop: true,
+  loopedSlides: 4,
+  navigation: {
+    nextEl: '.single-product-button-next',
+    prevEl: '.single-product-button-prev'
+  },
+  pagination: {
+    el: '.single-product-pagination',
+    clickable: true
+  }
+}); // Product head big image slider
+
+var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product-big-slider', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.single-product-button-next',
+    prevEl: '.single-product-button-prev'
+  },
+  clickable: true,
+  pagination: {
+    el: '.single-product-pagination',
+    clickable: true
+  },
+  loop: true,
+  loopedSlides: 4,
+  thumbs: {
+    swiper: galleryThumbs
+  }
 });
 
 /***/ }),
