@@ -37,29 +37,27 @@
 
 // Custom single product
 .product-select {
-    @apply relative bg-green flex w-[85px] border-2 border-green rounded;
+    position: relative;
+    display: flex;
+    width: 84px;
+    height: 34px;
+    background: #5c6664;
     overflow: hidden;
-
-    //&::before {
-    //    content: '';
-    //    position: absolute;
-    //    top: 0;
-    //    right: 0;
-    //    cursor: pointer;
-    //    pointer-events: none;
-    //    transition: .25s all ease;
-    //}
-
-    select {
-        appearance:none;
-        outline:0;
-        box-shadow:none;
-        border:0!important;
-        background-image: none;
-        flex: 1;
-        @apply cursor-pointer bg-white text-green font-bold text-lg py-1.1 px-3.9;
+    border-radius: 4px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("../assets/images/svg/arrow-count.svg") no-repeat center center;
+        width: 44px;
+        @apply flex justify-center items-center bg-green cursor-pointer px-3.9 h-full pointer-events-none;
+        transition:.25s all ease;
     }
-
+    select {
+        flex: 1;
+        @apply appearance-none outline-none text-green font-bold text-lg px-3.9 cursor-pointer border-green border-2;
+    }
     select::-ms-expand {
         display: none;
     }

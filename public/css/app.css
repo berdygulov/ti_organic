@@ -1110,32 +1110,43 @@ video {
   height: 20px;
 }
 
-.product-select{
+.product-select {
   position: relative;
   display: flex;
-  width: 85px;
-  border-radius: 0.25rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 60 68 / var(--tw-border-opacity));
+  width: 84px;
+  height: 34px;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.product-select::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(/images/arrow-count.svg?b182ab94ac60973da481819578d5a477) no-repeat center center;
+  width: 44px;
+  pointer-events: none;
+  display: flex;
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(0 60 68 / var(--tw-bg-opacity));
-  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.25s all ease;
 }
 .product-select select {
+  flex: 1;
+  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background-image: none;
-  flex: 1;
-  cursor: pointer;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 60 68 / var(--tw-border-opacity));
   padding-left: 15px;
   padding-right: 15px;
   font-size: 1.125rem;
@@ -1143,6 +1154,8 @@ video {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 60 68 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 .product-select select::-ms-expand {
   display: none;
