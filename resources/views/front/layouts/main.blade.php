@@ -12,6 +12,7 @@
 <body>
 <div class="wrapper ">
 
+    {{--  Header start  --}}
     <header class="header bg-yellow-extra-light relative shadow-shadow">
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
@@ -44,7 +45,7 @@
                     </nav>
                 </div>
                 <div class="flex items-center header-relative">
-                    <div>
+                    <div class="hidden lg:block">
                         <a href="#"
                            class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex">
                             <svg class="w-6 h-6">
@@ -53,7 +54,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="#"
+                        <a href="" data-fancybox data-src="#open_cart_popup"
                            class="btn-icon btn-icon-lg btn-icon-yellow">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
@@ -107,9 +108,77 @@
             </nav>
         </div>
     </div>
+    {{-- Header end --}}
+
+    {{-- Popup start --}}
+    <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="open_cart_popup">
+        <div class="popup-inner">
+            <div class="popup-top py-7.5 px-2 md:px-12 flex justify-between items-center bg-yellow-extra-light shadow-shadow">
+                <h5>Корзина</h5>
+                <button data-fancybox-close data-value="1">
+                    <svg class="w-10 h-10 cursor-pointer">
+                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="popup-center bg-white mt-10 md:mt-12.5 mb-5">
+                <div class="flex justify-between items-center px-2 md:px-12.5 text-gray-2 text-sm">
+                    <p class="flex basis-[40%] md:basis-[50%]">продукт</p>
+                    <p class="flex basis-[30%] md:basis-[25%]">кол-во</p>
+                    <p class="flex basis-[30%] md:basis-[25%]">цена</p>
+                </div>
+                <div class="popup-center-scroll h-[408px] overflow-y-scroll px-2 md:px-12.5">
+                    <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
+                        <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
+                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
+                                <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
+                            </div>
+                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="product-select relative flex w-[84px] h-[34px] overflow-hidden rounded">
+                                    <select name="product-select " class="select-count flex-[1] appearance-none outline-none text-green font-bold text-lg px-3.9 cursor-pointer border-green border-2">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
+                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                    <svg class="w-[24px] h-[24px] cursor-pointer">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-bottom mt-10 md:mt-12.5 px-2 md:px-12.5 mb-5">
+                <div class="popup-bottom-inner flex justify-between items-center">
+                    <div class="flex items-center">
+                        <span class="text-lg">Итого:</span>
+                        <h6 class="ml-2.5">12 000 ₸</h6>
+                    </div>
+                    <a href="" class="btn-yellow btn-md rounded-[25px]">К оплате</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Popup end --}}
+
+    {{--  Content start  --}}
     <main>
         @yield('content')
     </main>
+    {{-- Content end --}}
+
+    {{-- Footer start  --}}
     <footer class="mt-15 lg:mt-23">
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
@@ -214,6 +283,7 @@
             </div>
         </div>
     </footer>
+    {{-- Footer end  --}}
 </div>
 <script src="{{ mix('js/app.js') }}" defer></script>
 </body>

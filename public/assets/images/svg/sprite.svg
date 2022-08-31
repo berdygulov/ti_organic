@@ -134,4 +134,10 @@
     <symbol id="plus" viewBox="0 0 24 24" fill="none">
         <path d="M12 5.25V18.75M18.75 12H5.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="close" viewBox="0 0 40 40" fill="none">
+        <path d="M12.045 28.2047L27.9549 12.2948M12.2218 12.4716L27.7782 28.028" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="line" viewBox="0 0 24 24" fill="none">
+        <path d="M5 12H18.5" stroke="#FFFBF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 </svg>

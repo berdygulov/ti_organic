@@ -1,5 +1,5 @@
 import Swiper, {Navigation, Pagination, Thumbs} from "swiper";
-import {Fancybox, Carousel, Panzoom} from "@fancyapps/ui";
+import {Fancybox, Panzoom} from "@fancyapps/ui";
 import 'swiper/css';
 import "@fancyapps/ui/dist/fancybox.css";
 import "@fancyapps/ui/dist/panzoom.css"
