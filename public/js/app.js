@@ -2625,12 +2625,8 @@ panZooms.forEach(function (item) {
 });
 var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
   spaceBetween: 30,
-  centeredSlides: true,
   slidesPerView: 3,
-  touchRatio: 0.2,
   slideToClickedSlide: true,
-  loop: true,
-  loopedSlides: 4,
   navigation: {
     nextEl: '.single-product-button-next',
     prevEl: '.single-product-button-prev'
@@ -2655,8 +2651,6 @@ var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('
     el: '.single-product-pagination',
     clickable: true
   },
-  loop: true,
-  loopedSlides: 4,
   thumbs: {
     swiper: galleryThumbs
   }
