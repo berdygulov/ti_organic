@@ -54,7 +54,8 @@
                         </a>
                     </div>
                     <div>
-                        <a href="" data-fancybox data-src="#open_cart_popup"
+                        <a data-fancybox="trigger-popup"
+                           href="#popup-cart"
                            class="btn-icon btn-icon-lg btn-icon-yellow">
                             <svg class="w-6 h-6">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
@@ -111,15 +112,13 @@
     {{-- Header end --}}
 
     {{-- Popup start --}}
-    <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="open_cart_popup">
+    <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
         <div class="popup-inner">
             <div class="popup-top py-7.5 px-2 md:px-12 flex justify-between items-center bg-yellow-extra-light shadow-shadow">
                 <h5>Корзина</h5>
-                <button data-fancybox-close data-value="1">
-                    <svg class="w-10 h-10 cursor-pointer">
-                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
-                    </svg>
-                </button>
+                <svg class="w-10 h-10 cursor-pointer" data-fancybox-close data-value="1">
+                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
+                </svg>
             </div>
             <div class="popup-center bg-white mt-10 md:mt-12.5 mb-5">
                 <div class="flex justify-between items-center px-2 md:px-12.5 text-gray-2 text-sm">

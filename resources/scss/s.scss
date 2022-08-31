@@ -100,6 +100,9 @@
 
 // Popup
 .popup {
+    button.carousel__button.is-close {
+        display: none;
+    }
     &.fancybox__content {
         padding: 0;
     }
@@ -118,3 +121,8 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 590px) {
+    .fancybox__slide.is-selected.has-inline {
+        padding: 0;
+    }
+}
