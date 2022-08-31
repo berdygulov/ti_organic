@@ -131,7 +131,7 @@
                             <div class="mr-15.5">
                                 <div class="flex">
                                     <input id="input-number-product" class="input-number" type="number" value="1" min="1" max="100">
-                                    <span id="input-number-increment-product" class="input-number-increment">+</span>
+                                    <span id="input-number-increment-product" class="input-number-increment transition ease-in delay-100 hover:filter hover:brightness-[80%]">+</span>
                                 </div>
                             </div>
                             <button class="btn-yellow btn btn-md inline-flex items-center">

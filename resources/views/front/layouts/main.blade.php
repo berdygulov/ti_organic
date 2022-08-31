@@ -138,14 +138,14 @@
                             <div>
                                 <div class="flex">
                                     <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
-                                    <span id="input-number-increment" class="input-number-increment">+</span>
+                                    <span id="input-number-increment" class="input-number-increment transition ease-in delay-100 hover:filter hover:brightness-[80%]">+</span>
                                 </div>
                             </div>
                         </div>
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%]  right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
@@ -171,7 +171,7 @@
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
