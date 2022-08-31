@@ -2650,6 +2650,7 @@ var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('
     prevEl: '.single-product-button-prev'
   },
   clickable: true,
+  allowTouchMove: false,
   pagination: {
     el: '.single-product-pagination',
     clickable: true
