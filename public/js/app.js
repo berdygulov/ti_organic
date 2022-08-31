@@ -2472,14 +2472,19 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
+/* harmony import */ var _utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilts/inputCount */ "./resources/js/utilts/inputCount.js");
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
+/* harmony import */ var _utilts_product_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utilts/product-slider */ "./resources/js/utilts/product-slider.js");
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
+
+
+(0,_utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
 
 /***/ }),
 
@@ -2542,6 +2547,99 @@ $(document).ready(function () {
     $('.burger,.menu,.header, .header-mobile').removeClass('active');
     $('body').removeClass('lock');
   });
+});
+
+/***/ }),
+
+/***/ "./resources/js/utilts/inputCount.js":
+/*!*******************************************!*\
+  !*** ./resources/js/utilts/inputCount.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var inputCount = function inputCount(increment) {
+  var incrementValues = document.querySelectorAll(increment);
+  incrementValues.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      var countValue = event.target.parentElement.children[0];
+      var parseValue = parseInt(countValue.value) + 1;
+      countValue.value = parseValue;
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputCount);
+
+/***/ }),
+
+/***/ "./resources/js/utilts/product-slider.js":
+/*!***********************************************!*\
+  !*** ./resources/js/utilts/product-slider.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '@fancyapps/ui'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var swiper_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/css */ "./node_modules/swiper/swiper.min.css");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '@fancyapps/ui/dist/fancybox.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '@fancyapps/ui/dist/panzoom.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+
+
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Thumbs]); // Zooms
+
+var panZooms = document.querySelectorAll(".zooms");
+panZooms.forEach(function (item) {
+  item.Panzoom = new Object(function webpackMissingModule() { var e = new Error("Cannot find module '@fancyapps/ui'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(item, {
+    panOnlyZoomed: true,
+    resizeParent: true
+  });
+});
+var galleryThumbs = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.products-gallery-slider', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 3,
+  touchRatio: 0.2,
+  slideToClickedSlide: true,
+  loop: true,
+  loopedSlides: 4,
+  navigation: {
+    nextEl: '.single-product-button-next',
+    prevEl: '.single-product-button-prev'
+  },
+  pagination: {
+    el: '.single-product-pagination',
+    clickable: true
+  },
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  centerInsufficientSlides: true
+});
+var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.product-big-slider', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.single-product-button-next',
+    prevEl: '.single-product-button-prev'
+  },
+  clickable: true,
+  pagination: {
+    el: '.single-product-pagination',
+    clickable: true
+  },
+  loop: true,
+  loopedSlides: 4,
+  thumbs: {
+    swiper: galleryThumbs
+  }
 });
 
 /***/ }),
@@ -2652,6 +2750,39 @@ var blogSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".blog-slide
     },
     1200: {
       slidesPerView: 3.2
+    }
+  }
+});
+/*
+* Similar slider
+ */
+
+var similarSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".similar-slider", {
+  autoHeight: true,
+  slidesPerView: 4,
+  clickable: true,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.similar-button-next',
+    prevEl: '.similar-button-prev'
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 0
+    },
+    470: {
+      slidesPerView: 1.5
+    },
+    768: {
+      slidesPerView: 2.2
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 3.8,
+      spaceBetween: 30
     }
   }
 });

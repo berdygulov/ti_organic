@@ -10,6 +10,24 @@ use App\Http\Controllers\Front\PagesController;
 use App\Http\Controllers\Front\Blog\BlogIndexController;
 
 /*
+ * Category use controllers
+ */
+
+use App\Http\Controllers\Front\Category\CategoryIndexController;
+
+/*
+ * Product use controllers
+ */
+
+use App\Http\Controllers\Front\Product\ProductShowController;
+
+/*
+ * Order use controllers
+ */
+
+use App\Http\Controllers\Front\Order\OrderIndexController;
+
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -29,9 +47,46 @@ Route::group([
     });
 });
 
+/*
+ * Blogs routes
+ */
+
 Route::group([
     'prefix' => 'blog',
     'as'     => 'blog.'
 ], function () {
     Route::get('/', BlogIndexController::class)->name('index');
+});
+
+/*
+ * Categories routes
+ */
+
+Route::group([
+    'prefix' => 'category',
+    'as'     => 'category.'
+], function () {
+    Route::get('/', CategoryIndexController::class)->name('index');
+});
+
+/*
+ * Products routes
+ */
+
+Route::group([
+    'prefix' => 'product',
+    'as'     => 'product.'
+], function () {
+    Route::get('/', ProductShowController::class)->name('show');
+});
+
+/*
+ * Orders routes
+ */
+
+Route::group([
+    'prefix' => 'order',
+    'as'     => 'order.'
+], function () {
+    Route::get('/', OrderIndexController::class)->name('index');
 });

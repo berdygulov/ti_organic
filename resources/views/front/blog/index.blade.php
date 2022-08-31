@@ -2,8 +2,6 @@
 
 @section('title', 'Блог')
 
-@section('box-show-header-class', 'box-show-header-class')
-
 @section('content')
     <x-front.page-title title="Блог"/>
     <section>

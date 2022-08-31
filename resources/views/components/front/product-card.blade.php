@@ -1,6 +1,6 @@
 <div>
     <div
-        class="product_card rounded p-3.9 w-[300px] shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in">
+        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in">
         @if($discount !== null && !$new)
             <div class="product-top mb-3.9 grid-rows-1 gap-1">
                 @if($discount !== null)
