@@ -2501,6 +2501,14 @@ window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.
 
 
 
+var count = document.querySelector('#input-number');
+var increment = document.querySelector('#input-number-increment');
+var counter = 0;
+count.value = counter;
+increment.addEventListener('click', function () {
+  counter += 1;
+  count.value = counter;
+});
 
 /***/ }),
 

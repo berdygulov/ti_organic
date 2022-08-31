@@ -136,12 +136,9 @@
                         </div>
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
-                                <div class="product-select relative flex w-[84px] h-[34px] overflow-hidden rounded">
-                                    <select name="product-select " class="select-count flex-[1] appearance-none outline-none text-green font-bold text-lg px-3.9 cursor-pointer border-green border-2">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                <div class="flex">
+                                    <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
+                                    <span id="input-number-increment" class="input-number-increment">+</span>
                                 </div>
                             </div>
                         </div>

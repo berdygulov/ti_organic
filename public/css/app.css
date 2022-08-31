@@ -1336,6 +1336,55 @@ video {
   background: rgba(0, 60, 68, 0.4);
 }
 
+.input-number {
+  width: 80px;
+  padding: 0 5px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.input-number::-webkit-outer-spin-button, .input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-number, 
+.input-number-increment{
+  display: flex;
+  height: 34px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 60 68 / var(--tw-border-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.input-number-increment{
+  width: 44px;
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 60 68 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   font-size: 0.875rem;
