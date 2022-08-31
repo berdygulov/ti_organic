@@ -2501,14 +2501,20 @@ window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.
 
 
 
-var count = document.querySelector('#input-number');
-var increment = document.querySelector('#input-number-increment');
-var counter = 0;
-count.value = counter;
-increment.addEventListener('click', function () {
-  counter += 1;
-  count.value = counter;
-});
+
+var inputCount = function inputCount(count, increment) {
+  var countValue = document.querySelector(count);
+  var incrementValue = document.querySelector(increment);
+  var counter = 1;
+  countValue.value = counter;
+  incrementValue.addEventListener('click', function () {
+    counter += 1;
+    countValue.value = counter;
+  });
+};
+
+inputCount('#input-number', '#input-number-increment');
+inputCount('#input-number-product', '#input-number-increment-product');
 
 /***/ }),
 

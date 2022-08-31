@@ -5,14 +5,23 @@ import './utilts/burger'
 import './utilts/sliders'
 import './utilts/product-slider'
 
-let count = document.querySelector('#input-number')
-let increment = document.querySelector('#input-number-increment')
 
-let counter = 0;
+let inputCount = (count, increment) => {
+	let countValue = document.querySelector(count)
+	let incrementValue = document.querySelector(increment)
 
-count.value = counter
+	let counter = 1;
 
-increment.addEventListener('click',  () => {
-	counter += 1;
-	count.value = counter;
-})
+	countValue.value = counter
+
+	incrementValue.addEventListener('click', () => {
+		counter += 1;
+		countValue.value = counter;
+	})
+}
+inputCount('#input-number', '#input-number-increment')
+inputCount('#input-number-product', '#input-number-increment-product')
+
+
+
+
