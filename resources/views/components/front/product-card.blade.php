@@ -1,5 +1,5 @@
 <div>
-    <div class="product_card rounded p-3.9 w-full sm:w-[300px] shadow-shadow">
+    <div class="product_card rounded p-3.9 w-full  shadow-shadow">
         <div class="product-top mb-3.9 grid-rows-1 gap-1">
             @if($discount !== null)
                 <span class="discount inline-block px-[7px] py-[5px] bg-green text-white text-sm rounded">

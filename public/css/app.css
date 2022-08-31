@@ -1609,4 +1609,10 @@ h6{
   .xl\:basis-2\/4{
     flex-basis: 50%;
   }
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
