@@ -45,6 +45,7 @@ let gallerySingleProducts = new Swiper('.product-big-slider', {
 		prevEl: '.single-product-button-prev',
 	},
 	clickable: true,
+	allowTouchMove: false,
 	pagination: {
 		el: '.single-product-pagination',
 		clickable: true
