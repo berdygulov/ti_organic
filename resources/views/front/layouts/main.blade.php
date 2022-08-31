@@ -47,8 +47,8 @@
                 <div class="flex items-center header-relative">
                     <div class="hidden lg:block">
                         <a href="#"
-                           class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex">
-                            <svg class="w-6 h-6">
+                           class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex ">
+                            <svg class="w-6 h-6 fill-red stroke-red ">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#heart') }}"></use>
                             </svg>
                         </a>
@@ -104,7 +104,7 @@
                     </li>
                 </ul>
                 <a href=""
-                   class="transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
+                   class="btn-red transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
                     каталог</a>
             </nav>
         </div>
@@ -129,23 +129,23 @@
                 <div class="popup-center-scroll h-[408px] overflow-y-scroll px-2 md:px-12.5">
                     <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
                         <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
-                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
+                            <div class="shadow-shadow rounded mr-3.9 flex basis-[50%] w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
                                 <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
                             </div>
-                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
+                            <p class="font-bold text-base mb-1 md:mb-0 flex basis-[50%]">Тоник восстановления </p>
                         </div>
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="flex">
                                     <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
-                                    <span id="input-number-increment" class="input-number-increment">+</span>
+                                    <span id="input-number-increment" class="input-number-increment transition ease-in delay-100 hover:filter hover:brightness-[80%]">+</span>
                                 </div>
                             </div>
                         </div>
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%]  right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
@@ -155,10 +155,10 @@
                     </div>
                     <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
                         <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
-                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
+                            <div class="shadow-shadow rounded mr-3.9 flex basis-[50%] w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
                                 <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
                             </div>
-                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
+                            <p class="font-bold text-base mb-1 md:mb-0 flex basis-[50%]">Тоник восстановления </p>
                         </div>
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
@@ -171,33 +171,7 @@
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
-                                    <svg class="w-[24px] h-[24px] cursor-pointer">
-                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
-                        <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
-                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
-                                <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
-                            </div>
-                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
-                        </div>
-                        <div class="flex basis-[30%] md:basis-[25%]">
-                            <div>
-                                <div class="flex">
-                                    <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
-                                    <span id="input-number-increment" class="input-number-increment">+</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex basis-[30%] md:basis-[25%]">
-                            <div>
-                                <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
