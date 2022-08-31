@@ -101,13 +101,13 @@
                             </div>
                         </div>
                         <div class="flex justify-between items-center mt-6.5">
-                            <div class="swiper-button-prev single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
+                            <div class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                 </svg>
                             </div>
                             <div class="swiper-pagination single-product-pagination"></div>
-                            <div class="swiper-button-next single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
+                            <div class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                 </svg>
@@ -201,14 +201,14 @@
                         <div class="mt-7.5">
                             <div class="flex">
                                 <div
-                                        class="similar-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                        class="similar-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
                                                 xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                     </svg>
                                 </div>
                                 <div
-                                        class="similar-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                        class="similar-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
                                                 xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>

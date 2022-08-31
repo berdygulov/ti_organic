@@ -93,9 +93,12 @@ h {
         }
 
         &-yellow {
-            @apply bg-yellow border-yellow;
+            @apply bg-yellow border-yellow transition ease-in delay-100;
             svg {
                 @apply fill-yellow;
+            }
+            &:hover {
+                filter: brightness(80%);
             }
         }
 
@@ -126,11 +129,17 @@ h {
     }
 
     &-red {
-        @apply bg-red text-white;
+        @apply bg-red text-white transition ease-in delay-100;
+        &:hover {
+            filter: brightness(80%);
+        }
     }
 
     &-yellow {
-        @apply bg-yellow text-blue-dark
+        @apply bg-yellow text-blue-dark transition ease-in delay-100;
+        &:hover {
+            filter: brightness(80%);
+        }
     }
 }
 

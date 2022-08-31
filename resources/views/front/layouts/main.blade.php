@@ -47,8 +47,8 @@
                 <div class="flex items-center header-relative">
                     <div class="hidden lg:block">
                         <a href="#"
-                           class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex">
-                            <svg class="w-6 h-6">
+                           class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex ">
+                            <svg class="w-6 h-6 fill-red stroke-red ">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#heart') }}"></use>
                             </svg>
                         </a>
@@ -104,7 +104,7 @@
                     </li>
                 </ul>
                 <a href=""
-                   class="transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
+                   class="btn-red transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
                     каталог</a>
             </nav>
         </div>
