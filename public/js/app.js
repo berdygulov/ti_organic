@@ -2491,30 +2491,19 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
-/* harmony import */ var _utilts_product_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilts/product-slider */ "./resources/js/utilts/product-slider.js");
+/* harmony import */ var _utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilts/inputCount */ "./resources/js/utilts/inputCount.js");
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
+/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
+/* harmony import */ var _utilts_product_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utilts/product-slider */ "./resources/js/utilts/product-slider.js");
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
 
 
 
-var inputCount = function inputCount(count, increment) {
-  var countValue = document.querySelector(count);
-  var incrementValue = document.querySelector(increment);
-  var counter = 1;
-  countValue.value = counter;
-  incrementValue.addEventListener('click', function () {
-    counter += 1;
-    countValue.value = counter;
-  });
-};
-
-inputCount('#input-number', '#input-number-increment');
-inputCount('#input-number-product', '#input-number-increment-product');
+(0,_utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
 
 /***/ }),
 
@@ -2578,6 +2567,32 @@ $(document).ready(function () {
     $('body').removeClass('lock');
   });
 });
+
+/***/ }),
+
+/***/ "./resources/js/utilts/inputCount.js":
+/*!*******************************************!*\
+  !*** ./resources/js/utilts/inputCount.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var inputCount = function inputCount(increment) {
+  var incrementValues = document.querySelectorAll(increment);
+  incrementValues.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+      var countValue = event.target.parentElement.children[0];
+      var parseValue = parseInt(countValue.value) + 1;
+      countValue.value = parseValue;
+    });
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputCount);
 
 /***/ }),
 

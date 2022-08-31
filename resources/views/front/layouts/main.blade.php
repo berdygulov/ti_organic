@@ -153,6 +153,58 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
+                        <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
+                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
+                                <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
+                            </div>
+                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="flex">
+                                    <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
+                                    <span id="input-number-increment" class="input-number-increment">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
+                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                    <svg class="w-[24px] h-[24px] cursor-pointer">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center py-5 my-5 border-b-2 border-[#E0E0E0] relative">
+                        <div class="flex flex-col-reverse baseline md:flex-row basis-[40%] md:basis-[50%] md:items-center">
+                            <div class="shadow-shadow rounded mr-3.9 w-[110px] h-[118px] md:w-[135px] md:h-[145px]">
+                                <img class="w-full h-full object-cover" src="{{ asset('assets/images/png/cart.png') }}" alt="">
+                            </div>
+                            <p class="font-bold text-base mb-1 md:mb-0">Тоник восстановления </p>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="flex">
+                                    <input id="input-number" class="input-number" type="number" value="1" min="1" max="100">
+                                    <span id="input-number-increment" class="input-number-increment">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex basis-[30%] md:basis-[25%]">
+                            <div>
+                                <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
+                                <button class="absolute top-[20px] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                    <svg class="w-[24px] h-[24px] cursor-pointer">
+                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="popup-bottom mt-10 md:mt-12.5 px-2 md:px-12.5 mb-5">
