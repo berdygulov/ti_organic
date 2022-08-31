@@ -22,6 +22,12 @@ use App\Http\Controllers\Front\Category\CategoryIndexController;
 use App\Http\Controllers\Front\Product\ProductShowController;
 
 /*
+ * Order use controllers
+ */
+
+use App\Http\Controllers\Front\Order\OrderIndexController;
+
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -42,7 +48,7 @@ Route::group([
 });
 
 /*
- * Blog routes
+ * Blogs routes
  */
 
 Route::group([
@@ -53,7 +59,7 @@ Route::group([
 });
 
 /*
- * Category routes
+ * Categories routes
  */
 
 Route::group([
@@ -64,7 +70,7 @@ Route::group([
 });
 
 /*
- * Product routes
+ * Products routes
  */
 
 Route::group([
@@ -72,4 +78,15 @@ Route::group([
     'as'     => 'product.'
 ], function () {
     Route::get('/', ProductShowController::class)->name('show');
+});
+
+/*
+ * Orders routes
+ */
+
+Route::group([
+    'prefix' => 'order',
+    'as'     => 'order.'
+], function () {
+    Route::get('/', OrderIndexController::class)->name('index');
 });
