@@ -10,6 +10,12 @@ use App\Http\Controllers\Front\PagesController;
 use App\Http\Controllers\Front\Blog\BlogIndexController;
 
 /*
+ * Category use controllers
+ */
+
+use App\Http\Controllers\Front\Category\CategoryIndexController;
+
+/*
  * Product use controllers
  */
 
@@ -44,6 +50,17 @@ Route::group([
     'as'     => 'blog.'
 ], function () {
     Route::get('/', BlogIndexController::class)->name('index');
+});
+
+/*
+ * Category routes
+ */
+
+Route::group([
+    'prefix' => 'category',
+    'as'     => 'category.'
+], function () {
+    Route::get('/', CategoryIndexController::class)->name('index');
 });
 
 /*
