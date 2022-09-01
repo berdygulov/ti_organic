@@ -7,19 +7,15 @@ use App\Http\Controllers\Front\PagesController;
  * Blog use controllers
  */
 
-use App\Http\Controllers\Front\Blog\BlogIndexController;
+use App\Http\Controllers\Blog\IndexController as BlogIndex;
 
-/*
- * Category use controllers
- */
-
-use App\Http\Controllers\Front\Category\CategoryIndexController;
 
 /*
  * Product use controllers
  */
 
-use App\Http\Controllers\Front\Product\ProductShowController;
+use App\Http\Controllers\Product\ShowController as ProductShow;
+use App\Http\Controllers\Product\IndexController as ProductIndex;
 
 
 /*
@@ -47,10 +43,10 @@ Route::group([
  */
 
 Route::group([
-    'prefix' => 'blog',
-    'as' => 'blog.'
+    'prefix' => 'blogs',
+    'as' => 'blogs.'
 ], function () {
-    Route::get('/', BlogIndexController::class)->name('index');
+    Route::get('/', BlogIndex::class)->name('index');
 });
 
 /*
@@ -58,10 +54,10 @@ Route::group([
  */
 
 Route::group([
-    'prefix' => 'category',
-    'as' => 'category.'
+    'prefix' => 'categories',
+    'as' => 'categories.'
 ], function () {
-    Route::get('/', CategoryIndexController::class)->name('index');
+    //
 });
 
 /*
@@ -69,10 +65,10 @@ Route::group([
  */
 
 Route::group([
-    'prefix' => 'product',
-    'as' => 'product.'
+    'prefix' => 'products',
+    'as' => 'products.'
 ], function () {
-    Route::get('/', ProductShowController::class)->name('show');
-    Route::get('/', ProductShowController::class)->name('show');
+    Route::get('/', ProductIndex::class)->name('index');
+    Route::get('/1', ProductShow::class)->name('show');
 });
 
