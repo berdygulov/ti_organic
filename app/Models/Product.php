@@ -23,6 +23,7 @@ class Product extends Model
         'description',
         'thumbnail_id',
         'status',
+        'novelty',
     ];
     protected $allowerFilters = [
         'title',

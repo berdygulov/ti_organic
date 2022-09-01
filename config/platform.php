@@ -95,7 +95,7 @@ return [
     |
     */
 
-    'index' => 'products.index',
+    'index' => 'platform.products.index',
 
     /*
     |--------------------------------------------------------------------------

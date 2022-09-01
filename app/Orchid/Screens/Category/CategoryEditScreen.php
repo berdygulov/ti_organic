@@ -85,6 +85,6 @@ class CategoryEditScreen extends Screen
 
         Toast::success('Категория сохранена');
 
-        return redirect()->route('categories.index');
+        return redirect()->route('platform.categories.index');
     }
 }

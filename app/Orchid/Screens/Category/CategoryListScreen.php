@@ -45,7 +45,7 @@ class CategoryListScreen extends Screen
             Link::make('Добавить')
                 ->icon('plus')
                 ->type(Color::PRIMARY())
-                ->route('categories.create')
+                ->route('platform.categories.create')
         ];
     }
 

@@ -32,6 +32,9 @@ class ProductEditLayout extends Rows
             CheckBox::make('product.status')
                 ->sendTrueOrFalse()
                 ->title('Опубликован'),
+            CheckBox::make('product.novelty')
+                ->sendTrueOrFalse()
+                ->title('Новинка'),
             Input::make('product.title')
                 ->title('Название продукта'),
             Relation::make('product.categories')

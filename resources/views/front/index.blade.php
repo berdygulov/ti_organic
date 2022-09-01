@@ -40,140 +40,50 @@
     <section class="py-[90px]">
         <div class="popular-inner">
             <div class="container">
-                <h4 class="text-blue-dark">Cамые продаваемые продукты </h4>
+                <h4 class="text-blue-dark">Товары</h4>
             </div>
             <div class="slider pt-12.5">
                 <div class="container">
                     <div class="slider-container popular-container">
                         <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 ">
-                            <div class="swiper-slide popular-product shadow-shadow">
-                                <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
-                                    <div class="absolute top-0 right-0">
-                                        <svg class="w-[88px] h-20 ml-2">
-                                            <use
-                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="popular-item-left basis-3/6	mr-6.5">
-                                        <div
-                                                class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                            <a href="#">
-                                                <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
-                                            </a>
-                                            <a href="#"
-                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
-                                                %</a>
-                                            <a href="#"
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                            @foreach($products as $product)
+                                <div class="swiper-slide popular-product shadow-shadow">
+                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
+                                        <div class="absolute top-0 right-0">
+                                            <svg class="w-[88px] h-20 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
+                                            </svg>
                                         </div>
-                                    </div>
-                                    <div class="popular-item-right basis-3/6 py-3">
-                                        <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный
-                                            комплекс</p>
-                                        <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
-                                        <div class="flex items-end">
-                                            <p class="text-lg text-green font-bold mr-3.9">9 000 ₸</p>
-                                            <p class="old-price text-blue font-bold line-through">18 000 ₸</p>
+                                        <div class="popular-item-left basis-3/6	mr-6.5">
+                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
+                                                <a href="#">
+                                                    <img src="{{ $product->thumbnail?->url }}" alt="{{ $product->title }}">
+                                                </a>
+                                                @if($product->old_price)
+                                                    <a href="#" class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</a>
+                                                @endif
+                                                @if($product->novelty)
+                                                    <a href="#" class="sale absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                                @endif
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide popular-product shadow-shadow">
-                                <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
-                                    <div class="absolute top-0 right-0">
-                                        <svg class="w-[88px] h-20 ml-2">
-                                            <use
-                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="popular-item-left basis-3/6	mr-6.5">
-                                        <div
-                                                class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                            <a href="#">
-                                                <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
-                                            </a>
-                                            <a href="#"
-                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
-                                                %</a>
-                                            <a href="#"
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
-                                        </div>
-                                    </div>
-                                    <div class="popular-item-right basis-3/6 py-3">
-                                        <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный
-                                            комплекс</p>
-                                        <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
-                                        <div class="flex items-end">
-                                            <p class="text-lg text-green font-bold mr-3.9">9 000 ₸</p>
-                                            <p class="old-price text-blue font-bold line-through">18 000 ₸</p>
+                                        <div class="popular-item-right basis-3/6 py-3">
+                                            <p class="text-lg text-blue-dark mb-2.5 font-bold">{{ $product->title }}</p>
+                                            <p class="text-gray-2 text-sm mb-3.9">
+                                                @foreach($product->categories as $category)
+                                                    {{ $category->title }} @if(!$loop->last) / @endif
+                                                @endforeach
+                                            </p>
+                                            <div class="flex items-end">
+                                                <p class="text-lg text-green font-bold mr-3.9">{{ currencyFormat($product->price) }}</p>
+                                                @if($product->old_price)
+                                                    <p class="old-price text-blue font-bold line-through">{{ currencyFormat($product->old_price) }}</p>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide popular-product shadow-shadow">
-                                <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
-                                    <div class="absolute top-0 right-0">
-                                        <svg class="w-[88px] h-20 ml-2">
-                                            <use
-                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="popular-item-left basis-3/6	mr-6.5">
-                                        <div
-                                                class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                            <a href="#">
-                                                <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
-                                            </a>
-                                            <a href="#"
-                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
-                                                %</a>
-                                            <a href="#"
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
-                                        </div>
-                                    </div>
-                                    <div class="popular-item-right basis-3/6 py-3">
-                                        <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный
-                                            комплекс</p>
-                                        <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
-                                        <div class="flex items-end">
-                                            <p class="text-lg text-green font-bold mr-3.9">9 000 ₸</p>
-                                            <p class="old-price text-blue font-bold line-through">18 000 ₸</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide popular-product shadow-shadow">
-                                <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
-                                    <div class="absolute top-0 right-0">
-                                        <svg class="w-[88px] h-20 ml-2">
-                                            <use
-                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="popular-item-left basis-3/6	mr-6.5">
-                                        <div
-                                                class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                            <a href="#">
-                                                <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
-                                            </a>
-                                            <a href="#"
-                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
-                                                %</a>
-                                            <a href="#"
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
-                                        </div>
-                                    </div>
-                                    <div class="popular-item-right basis-3/6 py-3">
-                                        <p class="text-lg text-blue-dark mb-2.5 font-bold">Восстановительный
-                                            комплекс</p>
-                                        <p class="text-gray-2 text-sm mb-3.9">уход за лицом / маски</p>
-                                        <div class="flex items-end">
-                                            <p class="text-lg text-green font-bold mr-3.9">9 000 ₸</p>
-                                            <p class="old-price text-blue font-bold line-through">18 000 ₸</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                         <div class="flex mt-7.5 justify-between items-center">
                             <div class="flex">

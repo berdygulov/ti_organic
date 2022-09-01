@@ -101,7 +101,7 @@ class ProductEditScreen extends Screen
 
         Toast::success('Сохранено');
 
-        return redirect()->route('products.index');
+        return redirect()->route('platform.products.index');
     }
 
     public function delete (Product $product)
