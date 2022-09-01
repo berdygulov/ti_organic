@@ -46,6 +46,7 @@ h {
         @apply text-56 font-bold;
         @media (min-width: 320px) and (max-width: 992px) {
             @apply text-32;
+            line-height: 42px;
         }
     }
 

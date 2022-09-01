@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function __invoke(Request $request)
+    public function front(Request $request)
     {
         return view('front.product.index');
     }

@@ -84,33 +84,33 @@
                     </div>
                     <div class="swiper-container products-gallery-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="products-gallery-item">
-                                    <img class="object-cover w-full h-full"
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="products-gallery-item w-full h-full">
+                                    <img class="object-cover w-full h-auto"
+                                         src="{{ asset('assets/images/png/blog.png') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="products-gallery-item w-full h-full">
+                                    <img class="object-cover w-full h-auto"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="products-gallery-item">
-                                    <img class="object-cover w-full h-full"
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="products-gallery-item w-full h-full">
+                                    <img class="object-cover w-full h-auto"
+                                         src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="products-gallery-item w-full h-full">
+                                    <img class="object-cover w-full h-auto"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="products-gallery-item">
-                                    <img class="object-cover w-full h-full"
-                                         src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="products-gallery-item">
-                                    <img class="object-cover w-full h-full"
-                                         src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="products-gallery-item">
-                                    <img class="object-cover w-full h-full"
+                            <div class="swiper-slide overflow-hidden">
+                                <div class="products-gallery-item w-full h-full">
+                                    <img class="object-cover w-full h-auto"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>

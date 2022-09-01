@@ -13,7 +13,7 @@ class IndexController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function __invoke(Request $request)
+    public function front(Request $request)
     {
         return view('front.category.index');
     }

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ShowController extends Controller
 {
-    public function __invoke()
+    public function front()
     {
         return view('front.product.show');
     }

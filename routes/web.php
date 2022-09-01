@@ -46,7 +46,7 @@ Route::group([
     'prefix' => 'blogs',
     'as' => 'blogs.'
 ], function () {
-    Route::get('/', BlogIndex::class)->name('index');
+    Route::get('/', [BlogIndex::class, 'front'])->name('index');
 });
 
 /*
@@ -68,7 +68,7 @@ Route::group([
     'prefix' => 'products',
     'as' => 'products.'
 ], function () {
-    Route::get('/', ProductIndex::class)->name('index');
-    Route::get('/1', ProductShow::class)->name('show');
+    Route::get('/', [ProductIndex::class, 'front'])->name('index');
+    Route::get('/1', [ProductShow::class, 'front'])->name('show');
 });
 

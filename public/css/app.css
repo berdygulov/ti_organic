@@ -665,6 +665,9 @@ video {
 .mb-\[40px\]{
   margin-bottom: 40px;
 }
+.mr-\[7px\]{
+  margin-right: 7px;
+}
 .mr-\[70px\]{
   margin-right: 70px;
 }
@@ -685,18 +688,6 @@ video {
 }
 .mt-auto{
   margin-top: auto;
-}
-.mr-\[70px\]{
-  margin-right: 70px;
-}
-.mt-\[90px\]{
-  margin-top: 90px;
-}
-.mr-\[10px\]{
-  margin-right: 10px;
-}
-.mr-\[7px\]{
-  margin-right: 7px;
 }
 .block{
   display: block;
@@ -1128,6 +1119,24 @@ video {
 .pt-15{
   padding-top: 60px;
 }
+.pl-4{
+  padding-left: 1rem;
+}
+.pb-4{
+  padding-bottom: 1rem;
+}
+.pr-12\.5{
+  padding-right: 50px;
+}
+.pt-7\.5{
+  padding-top: 30px;
+}
+.pr-12{
+  padding-right: 3rem;
+}
+.pt-7{
+  padding-top: 1.75rem;
+}
 .pt-3{
   padding-top: 0.75rem;
 }
@@ -1185,7 +1194,7 @@ video {
 }
 .text-32{
   font-size: 32px;
-  line-height: 100%;
+  line-height: 40px;
 }
 .text-2xl{
   font-size: 1.5rem;
@@ -1360,6 +1369,11 @@ video {
     grid-template-columns: 100%;
   }
 }
+@media screen and (min-width: 998px) and (max-width: 1300px) {
+  .product-inner {
+    grid-template-columns: 50% 50%;
+  }
+}
 .product .swiper-container{
   overflow: hidden;
 }
@@ -1475,7 +1489,7 @@ video {
   -moz-appearance: textfield;
 }
 
-.input-number,
+.input-number, 
 .input-number-increment{
   display: flex;
   height: 34px;
@@ -1534,26 +1548,24 @@ header.box-show-header-class {
 
 h1{
   font-size: 64px;
-  line-height: 100%;
   font-weight: 700;
   line-height: 74px;
 }
 @media (min-width: 320px) and (max-width: 992px) {
   h1{
     font-size: 40px;
-    line-height: 100%;
     line-height: 50px;
   }
 }
 h2{
   font-size: 56px;
-  line-height: 100%;
+  line-height: 60px;
   font-weight: 700;
 }
 @media (min-width: 320px) and (max-width: 992px) {
   h2{
     font-size: 32px;
-    line-height: 100%;
+    line-height: 42px;
   }
 }
 h3{
@@ -1563,18 +1575,17 @@ h3{
 }
 h4{
   font-size: 40px;
-  line-height: 100%;
+  line-height: 48px;
   font-weight: 700;
 }
 @media (min-width: 320px) and (max-width: 992px) {
   h4{
     font-size: 32px;
-    line-height: 100%;
+    line-height: 40px;
   }
 }
 h5{
   font-size: 32px;
-  line-height: 100%;
   font-weight: 700;
   line-height: 42px;
 }
@@ -1825,6 +1836,14 @@ h6{
   .sm\:items-center{
     align-items: center;
   }
+  .sm\:px-12\.5{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sm\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -1873,13 +1892,13 @@ h6{
   .md\:gap-7{
     gap: 1.75rem;
   }
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
   .md\:px-12\.5{
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .md\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .md\:py-12{
     padding-top: 3rem;
@@ -1904,23 +1923,8 @@ h6{
   .lg\:mt-\[90px\]{
     margin-top: 90px;
   }
-  .lg\:mb-8{
-    margin-bottom: 2rem;
-  }
-  .lg\:mb-12\.5{
-    margin-bottom: 50px;
-  }
-  .lg\:mt-8{
-    margin-top: 2rem;
-  }
-  .lg\:mb-12{
-    margin-bottom: 3rem;
-  }
-  .lg\:mt-\[110px\]{
-    margin-top: 110px;
-  }
-  .lg\:mr-\[100px\]{
-    margin-right: 100px;
+  .lg\:mr-\[50px\]{
+    margin-right: 50px;
   }
   .lg\:mb-\[35px\]{
     margin-bottom: 35px;
@@ -1990,7 +1994,7 @@ h6{
   }
   .lg\:text-40{
     font-size: 40px;
-    line-height: 100%;
+    line-height: 48px;
   }
 }
 
