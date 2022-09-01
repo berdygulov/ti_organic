@@ -1,23 +1,23 @@
 @component($typeForm, get_defined_vars())
     <div
-        data-controller="upload"
-        data-upload-storage="{{$storage ?? 'public'}}"
-        data-upload-name="{{$name}}"
-        data-upload-id="dropzone-{{$id}}"
-        data-upload-data='@json($value)'
-        data-upload-groups="{{$attributes['groups'] ?? ''}}"
-        data-upload-multiple="{{$attributes['multiple']}}"
-        data-upload-parallel-uploads="{{$parallelUploads }}"
-        data-upload-max-file-size="{{$maxFileSize }}"
-        data-upload-max-files="{{$maxFiles}}"
-        data-upload-timeout="{{$timeOut}}"
-        data-upload-accepted-files="{{$acceptedFiles }}"
-        data-upload-resize-quality="{{$resizeQuality }}"
-        data-upload-resize-width="{{$resizeWidth }}"
-        data-upload-is-media-library="{{ $media }}"
-        data-upload-close-on-add="{{ $closeOnAdd }}"
-        data-upload-resize-height="{{$resizeHeight }}"
-        data-upload-path="{{ $attributes['path'] ?? '' }}"
+            data-controller="upload"
+            data-upload-storage="{{$storage ?? 'public'}}"
+            data-upload-name="{{$name}}"
+            data-upload-id="dropzone-{{$id}}"
+            data-upload-data='@json($value)'
+            data-upload-groups="{{$attributes['groups'] ?? ''}}"
+            data-upload-multiple="{{$attributes['multiple']}}"
+            data-upload-parallel-uploads="{{$parallelUploads }}"
+            data-upload-max-file-size="{{$maxFileSize }}"
+            data-upload-max-files="{{$maxFiles}}"
+            data-upload-timeout="{{$timeOut}}"
+            data-upload-accepted-files="{{$acceptedFiles }}"
+            data-upload-resize-quality="{{$resizeQuality }}"
+            data-upload-resize-width="{{$resizeWidth }}"
+            data-upload-is-media-library="{{ $media }}"
+            data-upload-close-on-add="{{ $closeOnAdd }}"
+            data-upload-resize-height="{{$resizeHeight }}"
+            data-upload-path="{{ $attributes['path'] ?? '' }}"
     >
         <div id="dropzone-{{$id}}" class="dropzone-wrapper">
             <div class="fallback">
@@ -167,11 +167,11 @@
 
                 <template id="dropzone-{{$id}}-media">
                     <div class="col-4 col-sm-3 my-3 position-relative media-item">
-                      <div data-action="click->upload#addFile" data-key="{index}">
-                         <img src="{element.url}" class="rounded mw-100" style="height: 50px;width: 100%;object-fit: cover;">
-                          <p class="text-ellipsis small text-muted mt-1 mb-0" title="{element.original_name}">{element.original_name}</p>
+                        <div data-action="click->upload#addFile" data-key="{index}">
+                            <img src="{element.url}" class="rounded mw-100" style="height: 50px;width: 100%;object-fit: cover;">
+                            <p class="text-ellipsis small text-muted mt-1 mb-0" title="{element.original_name}">{element.original_name}</p>
                         </div>
-                      </div>
+                    </div>
                 </template>
             @endif
 

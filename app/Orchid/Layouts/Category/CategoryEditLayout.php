@@ -3,6 +3,9 @@
 namespace App\Orchid\Layouts\Category;
 
 use Orchid\Screen\Field;
+use Orchid\Screen\Fields\Input;
+use Orchid\Screen\Fields\Quill;
+use Orchid\Screen\Fields\Upload;
 use Orchid\Screen\Layouts\Rows;
 
 class CategoryEditLayout extends Rows
@@ -19,8 +22,18 @@ class CategoryEditLayout extends Rows
      *
      * @return Field[]
      */
-    protected function fields(): iterable
+    protected function fields (): iterable
     {
-        return [];
+        return [
+            Input::make('category.title')
+                ->title('Заголовок'),
+            Quill::make('category.description')
+                ->title('Описание'),
+            Upload::make('category.thumbnail_id')
+                ->title('Изображение')
+                ->media()
+                ->maxFileSize(5)
+                ->maxFiles(1),
+        ];
     }
 }

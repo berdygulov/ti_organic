@@ -16,7 +16,8 @@ class Category extends Model
 
     protected $fillable = [
         'title',
-        'description'
+        'description',
+        'thumbnail_id',
     ];
 
     public function thumbnail ()

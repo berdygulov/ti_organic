@@ -4,7 +4,9 @@ namespace App\Orchid\Screens\Category;
 
 use App\Models\Category;
 use App\Orchid\Layouts\Category\CategoryListTable;
+use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
+use Orchid\Support\Color;
 
 class CategoryListScreen extends Screen
 {
@@ -39,7 +41,12 @@ class CategoryListScreen extends Screen
      */
     public function commandBar (): iterable
     {
-        return [];
+        return [
+            Link::make('Добавить')
+                ->icon('plus')
+                ->type(Color::PRIMARY())
+                ->route('categories.create')
+        ];
     }
 
     /**
