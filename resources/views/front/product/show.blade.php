@@ -7,7 +7,7 @@
     <section class="product">
         <div class="container">
             <div class="product-inner">
-                <div class="mb-6 xl:mb-0 lg:mr-25 product-left">
+                <div class="mb-6 xl:mb-0 lg:mr-[100px] product-left">
                     <div class="swiper-container product-big-slider rounded shadow-shadow">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
@@ -117,18 +117,18 @@
                 </div>
                 <div>
                     <div>
-                        <h4 class="mb-8.5">Увлажняющая маска Yves Rocher</h4>
+                        <h4 class="mb-[35px]">Увлажняющая маска Yves Rocher</h4>
                         <div>
                             <p class="product-content text-base	">Мягкая текстура, которая в момент устраняет все несовершенства и дарит приятное ощущение свежести после нанесения. Бережный и очень воздушный крем. </p>
                             <p class="product-content text-base	">Мягкая текстура, которая в момент устраняет все несовершенства и дарит приятное ощущение свежести после нанесения. Бережный и очень воздушный крем. </p>
                         </div>
-                        <div class="mt-8.5 flex items-end mb-12.5">
+                        <div class="mt-[35px] flex items-end mb-12.5">
                             <p class="text-green text-32 font-bold mr-3.9">
                                 <span class="text-2xl text-blue-dark mr-3.9">Цена:</span> 12 000 ₸</p>
                             <p class="text-2xl text-blue line-through	">15 000 ₸</p>
                         </div>
                         <div class="flex">
-                            <div class="mr-15.5">
+                            <div class="mr-[70px]">
                                 <div class="flex">
                                     <input id="input-number-product" class="input-number" type="number" value="1" min="1" max="100">
                                     <span id="input-number-increment-product" class="input-number-increment transition ease-in delay-100 hover:filter hover:brightness-[80%]">+</span>

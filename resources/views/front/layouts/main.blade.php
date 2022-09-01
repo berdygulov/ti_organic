@@ -145,7 +145,7 @@
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%]  right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%]  right-0 bg-red border-red rounded py-[5px] px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
@@ -171,7 +171,7 @@
                         <div class="flex basis-[30%] md:basis-[25%]">
                             <div>
                                 <div class="text-lg text-blue-dark font-bold">12 000 ₸</div>
-                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%] right-0 bg-red border-red rounded py-1.1 px-2 border-2 flex justify-center items-center">
+                                <button class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%] right-0 bg-red border-red rounded py-[5px] px-2 border-2 flex justify-center items-center">
                                     <svg class="w-[24px] h-[24px] cursor-pointer">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#line') }}"></use>
                                     </svg>
@@ -201,7 +201,7 @@
     {{-- Content end --}}
 
     {{-- Footer start  --}}
-    <footer class="mt-15 lg:mt-23">
+    <footer class="mt-15 lg:mt-[90px]">
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 md:gap-7 justify-between items-start">

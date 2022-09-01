@@ -3,7 +3,7 @@
 @section('title', 'Главная')
 
 @section('content')
-    <section class="bg-yellow-extra-light relative pt-25 md:pt-29 lg:pt-25 pb-25 md:pb-33 lg:pb-72">
+    <section class="bg-yellow-extra-light relative pt-[100px] md:pt-[120px] lg:pt-[100px] pb-[100px] md:pb-[130px] lg:pb-72">
         <div class="container ">
             <div class="flex justify-between items-start">
                 <div class="relative z-10 basis-full lg:basis-60">
@@ -14,7 +14,7 @@
                             <span class="font-bold">скидки на все товары</span>
                         </div>
                         <h1 class="text-blue-dark mt-2.5 mb-7.5">Cамый популярный уход за кожей для вас</h1>
-                        <p class="text-lg text-blue-dark mb-12.9">It is a long established fact that a reader will
+                        <p class="text-lg text-blue-dark mb-[55px]">It is a long established fact that a reader will
                             be distracted by the readable content of a page when looking at its layout.</p>
                         <div>
                             <a href="" class="btn btn-lg btn-yellow mr-3.9 ">О нас</a>
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <section class="py-23">
+    <section class="py-[90px]">
         <div class="popular-inner">
             <div class="container">
                 <h4 class="text-blue-dark">Cамые продаваемые продукты </h4>
@@ -60,10 +60,10 @@
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                             <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                             <a href=""
-                                               class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50
+                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
                                                 %</a>
                                             <a href=""
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                         </div>
                                     </div>
                                     <div class="popular-item-right basis-3/6 py-3">
@@ -91,10 +91,10 @@
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                             <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                             <a href=""
-                                               class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50
+                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
                                                 %</a>
                                             <a href=""
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                         </div>
                                     </div>
                                     <div class="popular-item-right basis-3/6 py-3">
@@ -122,10 +122,10 @@
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                             <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                             <a href=""
-                                               class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50
+                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
                                                 %</a>
                                             <a href=""
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                         </div>
                                     </div>
                                     <div class="popular-item-right basis-3/6 py-3">
@@ -153,10 +153,10 @@
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                             <img src="{{ asset('assets/images/png/product.png') }}" alt="product">
                                             <a href=""
-                                               class="sale  absolute top-0 left-0 bg-red py-1.1 px-1.6 text-white font-bold text-xs rounded-br rounded-tl">-50
+                                               class="sale  absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">-50
                                                 %</a>
                                             <a href=""
-                                               class="sale hidden absolute top-0 left-0 bg-yellow py-1.1 px-1.6 text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                               class="sale hidden absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                         </div>
                                     </div>
                                     <div class="popular-item-right basis-3/6 py-3">
@@ -206,7 +206,7 @@
     <section class="sale">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-7.5">
-                <div class="flex justify-between items-center bg-[#D3E3E6] rounded shadow-shadow py-6.5 px-8.5">
+                <div class="flex justify-between items-center bg-[#D3E3E6] rounded shadow-shadow py-6.5 px-[35px]">
                     <div class="left">
                         <p class="text-lg text-green">Самые популярные товары</p>
                         <h5 class="mt-5 mb-10">20% Скидки</h5>
@@ -217,7 +217,7 @@
                              alt="sale">
                     </div>
                 </div>
-                <div class="flex justify-between items-center bg-[#FFE2E1] rounded shadow-shadow py-6.5 px-8.5">
+                <div class="flex justify-between items-center bg-[#FFE2E1] rounded shadow-shadow py-6.5 px-[35px]">
                     <div class="left">
                         <p class="text-lg text-green">Самые популярные товары</p>
                         <h5 class="mt-5 mb-10">50% Скидки</h5>
@@ -232,7 +232,7 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-23">
+    <section class="pt-15 lg:pt-[90px]">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Категории товаров</h4>
@@ -351,13 +351,13 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-23">
+    <section class="pt-15 lg:pt-[90px]">
         <div class="container">
             <div class="buy-inner">
                 <div class="flex justify-between bg-yellow-extra-light rounded shadow-shadow">
                     <div class="basis-full xl:basis-2/4 py-10 lg:py-10 px-8 lg:pl-20">
                         <p class="text-base text-blue-dark">-10% скидки</p>
-                        <p class="text-green text-lg mt-1.1 font-bold">Специальное предложение</p>
+                        <p class="text-green text-lg mt-[5px] font-bold">Специальное предложение</p>
                         <h5 class="leading-150 mt-5 mb-10">Красота, вдохновленная реальной жизнью</h5>
                         <a href="" class="btn btn-lg btn-yellow">Купить сейчас</a>
                     </div>
@@ -369,7 +369,7 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-23">
+    <section class="pt-15 lg:pt-[90px]">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Наш блог</h4>
