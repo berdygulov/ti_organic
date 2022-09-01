@@ -7,7 +7,7 @@
     <section class="product">
         <div class="container">
             <div class="product-inner">
-                <div class="mb-7.5 xl:mb-0 lg:mr-[100px] product-left">
+                <div class="mb-7.5 xl:mb-0 lg:mr-[50px] product-left">
                     <div class="swiper-container product-big-slider rounded shadow-shadow">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">

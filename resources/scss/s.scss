@@ -65,6 +65,9 @@
             @apply justify-center items-center;
             grid-template-columns: 100%;
         }
+        @media screen and (min-width: 998px) and (max-width:1300px) {
+            grid-template-columns: 50% 50%;
+        }
     }
 
     .swiper-container {
