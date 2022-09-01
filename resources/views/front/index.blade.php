@@ -155,91 +155,25 @@
                 <div class="container">
                     <div class="slider-container category-slider">
                         <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 ">
-                            <div class="swiper-slide">
-                                <div class="category-product rounded bg-white-2 p-3.9">
-                                    <div class="bg-white rounded">
-                                        <img class="rounded w-full h-full"
-                                             src="{{ asset('assets/images/png/category-product.png') }}" alt="">
+                            @foreach($categories as $category)
+                                <div class="swiper-slide">
+                                    <div class="category-product rounded bg-white-2 p-3.9">
+                                        <div class="bg-white rounded">
+                                            <img class="rounded w-full h-full" src="{{ $category->thumbnail?->url }}" alt="{{ $category->title }}">
+                                        </div>
+                                        <span class="text-lg font-bold block my-3.9">{{ $category->title }}</span>
+                                        @if($category->excerpt)
+                                            <p class="text-base text-gray-2 mb-6.5">{{ $category->excerpt }}</p>
+                                        @endif
+                                        <a href="#" class="btn btn-sm btn-red">
+                                            <div>В каталог</div>
+                                            <svg class="w-6 h-6 ml-2">
+                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
+                                            </svg>
+                                        </a>
                                     </div>
-                                    <span class="text-lg font-bold block my-3.9">Уход за кожей</span>
-                                    <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a
-                                        reader will be distracted by the readable.</p>
-                                    <a href="#" class="btn btn-sm btn-red">
-                                        <div>В каталог</div>
-                                        <svg class="w-6 h-6 ml-2">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                        </svg>
-                                    </a>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-product rounded bg-white-2 p-3.9">
-                                    <div class="bg-white rounded">
-                                        <img class="rounded w-full h-full"
-                                             src="{{ asset('assets/images/png/category-product-2.png') }}" alt="">
-                                    </div>
-                                    <span class="text-lg font-bold block my-3.9">Уход за кожей</span>
-                                    <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a
-                                        reader will be distracted by the readable.</p>
-                                    <a href="#" class="btn btn-sm btn-red">
-                                        <div>В каталог</div>
-                                        <svg class="w-6 h-6 ml-2">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-product rounded bg-white-2 p-3.9">
-                                    <div class="bg-white rounded">
-                                        <img class="rounded w-full h-full"
-                                             src="{{ asset('assets/images/png/category-product.png') }}" alt="">
-                                    </div>
-                                    <span class="text-lg font-bold block my-3.9">Уход за кожей</span>
-                                    <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a
-                                        reader will be distracted by the readable.</p>
-                                    <a href="#" class="btn btn-sm btn-red">
-                                        <div>В каталог</div>
-                                        <svg class="w-6 h-6 ml-2">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-product rounded bg-white-2 p-3.9">
-                                    <div class="bg-white rounded">
-                                        <img class="rounded w-full h-full"
-                                             src="{{ asset('assets/images/png/category-product-2.png') }}" alt="">
-                                    </div>
-                                    <span class="text-lg font-bold block my-3.9">Уход за кожей</span>
-                                    <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a
-                                        reader will be distracted by the readable.</p>
-                                    <a href="#" class="btn btn-sm btn-red">
-                                        <div>В каталог</div>
-                                        <svg class="w-6 h-6 ml-2">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="category-product rounded bg-white-2 p-3.9">
-                                    <div class="bg-white rounded">
-                                        <img class="rounded w-full h-full"
-                                             src="{{ asset('assets/images/png/category-product.png') }}" alt="">
-                                    </div>
-                                    <span class="text-lg font-bold block my-3.9">Уход за кожей</span>
-                                    <p class="text-base text-gray-2 mb-6.5">It is a long established fact that a
-                                        reader will be distracted by the readable.</p>
-                                    <a href="#" class="btn btn-sm btn-red">
-                                        <div>В каталог</div>
-                                        <svg class="w-6 h-6 ml-2">
-                                            <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                         <div class="mt-7.5">
                             <div class="flex">

@@ -5,6 +5,7 @@ namespace App\Orchid\Layouts\Category;
 use Orchid\Screen\Field;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Quill;
+use Orchid\Screen\Fields\TextArea;
 use Orchid\Screen\Fields\Upload;
 use Orchid\Screen\Layouts\Rows;
 
@@ -27,6 +28,8 @@ class CategoryEditLayout extends Rows
         return [
             Input::make('category.title')
                 ->title('Заголовок'),
+            TextArea::make('category.excerpt')
+                ->title('Краткое описание'),
             Quill::make('category.description')
                 ->title('Описание'),
             Upload::make('category.thumbnail_id')
