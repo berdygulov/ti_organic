@@ -80,13 +80,3 @@ Route::group([
     Route::get('/', ProductShowController::class)->name('show');
 });
 
-/*
- * Orders routes
- */
-
-Route::group([
-    'prefix' => 'order',
-    'as'     => 'order.'
-], function () {
-    Route::get('/', OrderIndexController::class)->name('index');
-});
