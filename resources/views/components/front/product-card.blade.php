@@ -20,7 +20,7 @@
             <img class="max-h-full" src="{{ asset('assets/images/png/product-card-image.png') }}" alt="product-image">
         </a>
         <div class="product-content">
-            <a href="#" class="product-title text-lg mb-[3px] inline-block font-bold lg:text-left text-center">
+            <a href="#" class="product-title text-lg mb-[3px] block font-bold lg:text-left text-center">
                 {{ $title ? $title : 'Название товара' }}
             </a>
             <p class="block product-cat text-sm text-gray-2 mb-2.5 lowercase lg:text-left text-center">

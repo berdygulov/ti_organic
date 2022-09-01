@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Front\Product;
+namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ProductShowController extends Controller
+class ShowController extends Controller
 {
-    public function __invoke ()
+    public function front()
     {
         return view('front.product.show');
     }

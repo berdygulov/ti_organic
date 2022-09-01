@@ -40,6 +40,21 @@
 // Single product
 .product {
     &-left {
+        @media (min-width: 576px) {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                left: -8px;
+                border: 4px solid #f2f2f2;
+                border-radius: 4px;
+                width: 100%;
+                background: #f2f2f2;
+                height: 401px;
+            }
+        }
+
         @apply justify-center items-center;
     }
 
@@ -49,6 +64,9 @@
         @media (min-width: 320px) and (max-width: 997px) {
             @apply justify-center items-center;
             grid-template-columns: 100%;
+        }
+        @media screen and (min-width: 998px) and (max-width:1300px) {
+            grid-template-columns: 50% 50%;
         }
     }
 
