@@ -21,11 +21,6 @@ use App\Http\Controllers\Front\Category\CategoryIndexController;
 
 use App\Http\Controllers\Front\Product\ProductShowController;
 
-/*
- * Order use controllers
- */
-
-use App\Http\Controllers\Front\Order\OrderIndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +48,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'blog',
-    'as'     => 'blog.'
+    'as' => 'blog.'
 ], function () {
     Route::get('/', BlogIndexController::class)->name('index');
 });
@@ -64,7 +59,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'category',
-    'as'     => 'category.'
+    'as' => 'category.'
 ], function () {
     Route::get('/', CategoryIndexController::class)->name('index');
 });
@@ -75,7 +70,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'product',
-    'as'     => 'product.'
+    'as' => 'product.'
 ], function () {
     Route::get('/', ProductShowController::class)->name('show');
 });
