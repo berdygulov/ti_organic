@@ -86,31 +86,31 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="products-gallery-item">
-                                    <img class="w-full h-full"
+                                    <img class="object-cover w-full h-full"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="products-gallery-item">
-                                    <img class="w-full h-full"
+                                    <img class="object-cover w-full h-full"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="products-gallery-item">
-                                    <img class="w-full h-full"
+                                    <img class="object-cover w-full h-full"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="products-gallery-item">
-                                    <img class="w-full h-full"
+                                    <img class="object-cover w-full h-full"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="products-gallery-item">
-                                    <img class="w-full h-full"
+                                    <img class="object-cover w-full h-full"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
                                 </div>
                             </div>
@@ -144,9 +144,9 @@
                                 воздушный крем. </p>
                         </div>
                         <div class="lg:mt-[35px] mt-6.5 flex items-end mb-[40px] lg:mb-12.5">
-                            <p class="text-green text-32 font-bold mr-3.9">
-                                <span class="text-2xl text-blue-dark mr-3.9">Цена:</span> 12 000 ₸</p>
-                            <p class="text-2xl text-blue line-through	">15 000 ₸</p>
+                            <p class="text-green text-32 font-bold mr-[7px] sm:mr-3.9">
+                                <span class="text-2xl text-blue-dark mr-[7px] sm:mr-3.9">Цена:</span> 12 000 ₸</p>
+                            <p class="text-2xl text-blue line-through">15 000 ₸</p>
                         </div>
                         <div class="flex items-center">
                             <div class="mr-[70px]">
