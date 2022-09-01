@@ -73,5 +73,6 @@ Route::group([
     'as' => 'product.'
 ], function () {
     Route::get('/', ProductShowController::class)->name('show');
+    Route::get('/', ProductShowController::class)->name('show');
 });
 
