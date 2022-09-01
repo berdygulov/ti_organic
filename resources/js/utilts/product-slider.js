@@ -10,43 +10,43 @@ Swiper.use([Navigation, Pagination, Thumbs]);
 let panZooms = document.querySelectorAll(".zooms")
 
 panZooms.forEach(item => {
-	item.Panzoom = new Panzoom(item, {
-		panOnlyZoomed: true,
-		resizeParent: true,
-	})
+    item.Panzoom = new Panzoom(item, {
+        panOnlyZoomed: true,
+        resizeParent: true,
+    })
 })
 
 
 let galleryThumbs = new Swiper('.products-gallery-slider', {
-	spaceBetween: 30,
-	slidesPerView: 3,
-	slideToClickedSlide: true,
-	navigation: {
-		nextEl: '.single-product-button-next',
-		prevEl: '.single-product-button-prev',
-	},
-	pagination: {
-		el: '.single-product-pagination',
-		clickable: true
-	},
-	watchSlidesVisibility: true,
-	watchSlidesProgress: true,
-	centerInsufficientSlides: true,
+    spaceBetween: 30,
+    slidesPerView: 3,
+    slideToClickedSlide: true,
+    navigation: {
+        nextEl: '.single-product-button-next',
+        prevEl: '.single-product-button-prev',
+    },
+    pagination: {
+        el: '.single-product-pagination',
+        clickable: true
+    },
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    centerInsufficientSlides: true,
 });
 
 let gallerySingleProducts = new Swiper('.product-big-slider', {
-	spaceBetween: 10,
-	navigation: {
-		nextEl: '.single-product-button-next',
-		prevEl: '.single-product-button-prev',
-	},
-	clickable: true,
-	allowTouchMove: false,
-	pagination: {
-		el: '.single-product-pagination',
-		clickable: true
-	},
-	thumbs: {
-		swiper: galleryThumbs
-	}
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.single-product-button-next',
+        prevEl: '.single-product-button-prev',
+    },
+    clickable: true,
+    allowTouchMove: false,
+    pagination: {
+        el: '.single-product-pagination',
+        clickable: true
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    }
 });
