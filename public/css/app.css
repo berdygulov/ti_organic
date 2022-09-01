@@ -686,6 +686,18 @@ video {
 .mt-auto{
   margin-top: auto;
 }
+.mr-\[70px\]{
+  margin-right: 70px;
+}
+.mt-\[90px\]{
+  margin-top: 90px;
+}
+.mr-\[10px\]{
+  margin-right: 10px;
+}
+.mr-\[7px\]{
+  margin-right: 7px;
+}
 .block{
   display: block;
 }
@@ -1463,7 +1475,7 @@ video {
   -moz-appearance: textfield;
 }
 
-.input-number, 
+.input-number,
 .input-number-increment{
   display: flex;
   height: 34px;
@@ -1798,6 +1810,12 @@ h6{
 }
 
 @media (min-width: 576px){
+  .sm\:mr-3\.9{
+    margin-right: 15px;
+  }
+  .sm\:mr-3{
+    margin-right: 0.75rem;
+  }
   .sm\:w-\[580px\]{
     width: 580px;
   }
@@ -1885,6 +1903,21 @@ h6{
   }
   .lg\:mt-\[90px\]{
     margin-top: 90px;
+  }
+  .lg\:mb-8{
+    margin-bottom: 2rem;
+  }
+  .lg\:mb-12\.5{
+    margin-bottom: 50px;
+  }
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+  .lg\:mb-12{
+    margin-bottom: 3rem;
+  }
+  .lg\:mt-\[110px\]{
+    margin-top: 110px;
   }
   .lg\:mr-\[100px\]{
     margin-right: 100px;
