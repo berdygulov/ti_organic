@@ -45,7 +45,7 @@ class ProductListScreen extends Screen
             Link::make('Добавить')
                 ->icon('plus')
                 ->type(Color::PRIMARY())
-                ->route('products.create')
+                ->route('platform.products.create')
         ];
     }
 

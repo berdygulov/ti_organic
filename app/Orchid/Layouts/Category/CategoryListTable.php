@@ -37,7 +37,7 @@ class CategoryListTable extends Table
                         ->icon('options-vertical')
                         ->list([
                             Link::make('Редактировать')
-                                ->route('categories.edit', $category->id)
+                                ->route('platform.categories.edit', $category->id)
                                 ->icon('pencil'),
 
                             Button::make('Удалить')

@@ -2,6 +2,7 @@
 
 namespace App\Orchid\Screens\Product;
 
+use App\Http\Requests\ProductRequest;
 use App\Models\Product;
 use App\Orchid\Layouts\Product\ProductEditLayout;
 use Illuminate\Http\Request;
@@ -51,7 +52,7 @@ class ProductEditScreen extends Screen
                 ->icon('trash')
                 ->confirm('Уверены что хотите удалить запись?')
                 ->method('delete'),
-            Link::make('Отмена')
+            Link::make('Выйти')
                 ->icon('cross')
                 ->route('products.index'),
             Button::make('Сохранить')
@@ -73,19 +74,34 @@ class ProductEditScreen extends Screen
         ];
     }
 
-    public function save (Request $request, Product $product)
+    public function save (ProductRequest $request, Product $product)
     {
-        $thumbnail_id = $request->input('product.thumbnail_id', [])[ 0 ];
+        $thumbnail_id = null;
+
+        if ($request->input('product.thumbnail_id')) {
+            $thumbnail_id = $request->input('product.thumbnail_id', [])[ 0 ];
+        }
+
+        $status = (bool) $request->input('product.status');
 
         $product
-            ->fill(array_merge($request->collect('product')->except(['thumbnail_id'])->toArray(), [
-                'thumbnail_id' => $thumbnail_id
+            ->fill(array_merge($request->collect('product')->except([
+                'thumbnail_id',
+                'status',
+                'categories',
+                'gallery',
+            ])->toArray(), [
+                'thumbnail_id' => $thumbnail_id,
+                'status'       => $status,
             ]))
             ->save();
 
-        Toast::success('Ok');
+        $product->categories()->sync($request->input('product.categories'));
+        $product->gallery()->sync($request->input('product.gallery'));
 
-        return back();
+        Toast::success('Сохранено');
+
+        return redirect()->route('platform.products.index');
     }
 
     public function delete (Product $product)

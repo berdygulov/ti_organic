@@ -228,6 +228,10 @@
         </div>
     </footer>
     {{-- Footer end  --}}
+
+    @auth
+        <a href="/adminzone" class="go-to-panel fixed p-3 text-black bg-yellow z-10 top-1/2 right-0 rounded-tl-2xl rounded-bl-2xl translate-x-24 hover:translate-x-0 transition duration-300 ease-in">Админ. зона</a>
+    @endauth
 </div>
 <script src="{{ mix('js/app.js') }}" defer></script>
 @livewireScripts

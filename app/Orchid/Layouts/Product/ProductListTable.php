@@ -39,7 +39,7 @@ class ProductListTable extends Table
                         ->icon('options-vertical')
                         ->list([
                             Link::make('Редактировать')
-                                ->route('products.edit', $product->id)
+                                ->route('platform.products.edit', $product->id)
                                 ->icon('pencil'),
 
                             Button::make('Удалить')
