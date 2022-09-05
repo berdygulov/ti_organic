@@ -1192,13 +1192,13 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.text-32{
-  font-size: 32px;
-  line-height: 40px;
-}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-32{
+  font-size: 32px;
+  line-height: 40px;
 }
 .font-bold{
   font-weight: 700;
@@ -1991,10 +1991,6 @@ h6{
   }
   .lg\:text-left{
     text-align: left;
-  }
-  .lg\:text-40{
-    font-size: 40px;
-    line-height: 48px;
   }
 }
 

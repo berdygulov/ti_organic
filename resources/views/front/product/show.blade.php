@@ -149,14 +149,7 @@
                             <p class="text-2xl text-blue line-through">15 000 ₸</p>
                         </div>
                         <div class="flex items-center">
-                            <div class="mr-[70px]">
-                                <div class="flex">
-                                    <input id="input-number-product" class="input-number" type="number" value="1"
-                                           min="1" max="100">
-                                    <span id="input-number-increment-product"
-                                          class="input-number-increment transition ease-in delay-100 hover:filter hover:brightness-[80%]">+</span>
-                                </div>
-                            </div>
+                            <x-front.cart-counter class="mr-[70px]"/>
                             <button class="btn-yellow btn btn-md inline-flex items-center">
                                 <svg class="w-6 h-6 mr-2 hover:stroke-red">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#plus') }}"></use>
@@ -169,79 +162,80 @@
             </div>
         </div>
     </section>
-    <section class="mt-[90px] lg:mt-[110px]">
-        <div>
-            <div class="container">
-                <h5 class="text-blue-dark">Похожие товары</h5>
-            </div>
-            <div class="slider pt-12.5">
+    <livewire:test-c param="Some data">
+        <section class="mt-[90px] lg:mt-[110px]">
+            <div>
                 <div class="container">
-                    <div class="slider-container similar-slider">
-                        <div class="swiper-wrapper flex">
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                            <div class="swiper-slide h-full">
-                                <x-front.product-card
-                                    title="Увлажняющая маска Yves Rocher"
-                                    category="уход за лицом"
-                                    price=12000
-                                ></x-front.product-card>
-                            </div>
-                        </div>
-                        <div class="mt-7.5">
-                            <div class="flex">
-                                <div
-                                    class="similar-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
-                                    <svg class="w-5 h-5 stroke-white fill-white">
-                                        <use
-                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
-                                    </svg>
+                    <h5 class="text-blue-dark">Похожие товары</h5>
+                </div>
+                <div class="slider pt-12.5">
+                    <div class="container">
+                        <div class="slider-container similar-slider">
+                            <div class="swiper-wrapper flex">
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
                                 </div>
-                                <div
-                                    class="similar-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
-                                    <svg class="w-5 h-5 stroke-white fill-white">
-                                        <use
-                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
-                                    </svg>
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
+                                </div>
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
+                                </div>
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
+                                </div>
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
+                                </div>
+                                <div class="swiper-slide h-full">
+                                    <x-front.product-card
+                                        title="Увлажняющая маска Yves Rocher"
+                                        category="уход за лицом"
+                                        price=12000
+                                    ></x-front.product-card>
+                                </div>
+                            </div>
+                            <div class="mt-7.5">
+                                <div class="flex">
+                                    <div
+                                        class="similar-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
+                                            <use
+                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                        </svg>
+                                    </div>
+                                    <div
+                                        class="similar-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                        <svg class="w-5 h-5 stroke-white fill-white">
+                                            <use
+                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 @endsection
