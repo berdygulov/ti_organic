@@ -1,0 +1,15 @@
+// Classes for notification block at the bottom
+.note {
+    @apply translate-y-full ease-in transition-transform duration-100;
+    &.active {
+        @apply translate-y-0;
+    }
+
+    &.danger {
+        @apply bg-red text-white;
+    }
+
+    &.warning {
+        @apply bg-yellow text-black;
+    }
+}

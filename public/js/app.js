@@ -2497,7 +2497,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
 /* harmony import */ var _utilts_product_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utilts/product-slider */ "./resources/js/utilts/product-slider.js");
+/* harmony import */ var _utilts_note__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utilts/note */ "./resources/js/utilts/note.js");
+/* harmony import */ var _utilts_note__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_utilts_note__WEBPACK_IMPORTED_MODULE_5__);
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
 
 
 
@@ -2593,6 +2596,36 @@ var inputCount = function inputCount(increment) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputCount);
+
+/***/ }),
+
+/***/ "./resources/js/utilts/note.js":
+/*!*************************************!*\
+  !*** ./resources/js/utilts/note.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+$(document).ready(function () {
+  var noteBlock = $('footer #note');
+  var noteCloseBtn = $('footer #note_close');
+  var noteContent = $('footer #note_content');
+  $(noteCloseBtn).on('click', function (e) {
+    e.preventDefault();
+    $(noteBlock).removeClass('active');
+  }); // Livewire.on('addedToCart', (id, image_url, title) => {
+  //     $(noteBlock).addClass('active');
+  //     $(noteContent).text(`Товар - ${title} - был добавлен в корзину. Количество в корзине - 1`);
+  // })
+  // Livewire.on('productQuantityIncreased', (title, quantity) => {
+  //     $(noteBlock).addClass('active');
+  // })
+  // Livewire.on('alreadyInCart', (id, image_url, title) => {
+  //     $(noteBlock).removeClass('warning');
+  //     $(noteBlock).addClass('active danger');
+  //     $(noteContent).text(`Товар - ${title} - уже в корзине`);
+  // })
+});
 
 /***/ }),
 

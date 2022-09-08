@@ -3,7 +3,8 @@
 @section('title', 'Главная')
 
 @section('content')
-    <section class="bg-yellow-extra-light relative pt-[100px] md:pt-[120px] lg:pt-[100px] pb-[100px] md:pb-[130px] lg:pb-72">
+    <section
+        class="bg-yellow-extra-light relative pt-[100px] md:pt-[120px] lg:pt-[100px] pb-[100px] md:pb-[130px] lg:pb-72">
         <div class="container ">
             <div class="flex justify-between items-start">
                 <div class="relative z-10 basis-full lg:basis-60">
@@ -48,22 +49,28 @@
                         <div class="swiper-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 ">
                             @foreach($products as $product)
                                 <div class="swiper-slide popular-product shadow-shadow">
-                                    <div class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
+                                    <div
+                                        class="popular-item relative h-[172px] p-3.9 flex items-center bg-white rounded cursor-pointer">
                                         <div class="absolute top-0 right-0">
                                             <svg class="w-[88px] h-20 ml-2">
-                                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
+                                                <use
+                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#product-element') }}"></use>
                                             </svg>
                                         </div>
                                         <div class="popular-item-left basis-3/6	mr-6.5">
-                                            <div class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
+                                            <div
+                                                class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
                                                 <a href="#">
-                                                    <img src="{{ $product->thumbnail?->url }}" alt="{{ $product->title }}">
+                                                    <img src="{{ $product->thumbnail?->url }}"
+                                                         alt="{{ $product->title }}">
                                                 </a>
                                                 @if($product->old_price)
-                                                    <a href="#" class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</a>
+                                                    <a href="#"
+                                                       class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</a>
                                                 @endif
                                                 @if($product->novelty)
-                                                    <a href="#" class="sale absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                                    <a href="#"
+                                                       class="sale absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
                                                 @endif
                                             </div>
                                         </div>
@@ -88,17 +95,17 @@
                         <div class="flex mt-7.5 justify-between items-center">
                             <div class="flex">
                                 <div
-                                        class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] popular-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                    class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] popular-button-prev flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                     </svg>
                                 </div>
                                 <div
-                                        class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] popular-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                    class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] popular-button-next flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -159,7 +166,8 @@
                                 <div class="swiper-slide">
                                     <div class="category-product rounded bg-white-2 p-3.9">
                                         <div class="bg-white rounded">
-                                            <img class="rounded w-full h-full" src="{{ $category->thumbnail?->url }}" alt="{{ $category->title }}">
+                                            <img class="rounded w-full h-full" src="{{ $category->thumbnail?->url }}"
+                                                 alt="{{ $category->title }}">
                                         </div>
                                         <span class="text-lg font-bold block my-3.9">{{ $category->title }}</span>
                                         @if($category->excerpt)
@@ -178,17 +186,17 @@
                         <div class="mt-7.5">
                             <div class="flex">
                                 <div
-                                        class="category-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                    class="category-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                     </svg>
                                 </div>
                                 <div
-                                        class="category-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                    class="category-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -237,7 +245,7 @@
                                             Читать
                                             <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
                                                 <use
-                                                        xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -255,7 +263,7 @@
                                             Читать
                                             <svg class="w-5 h-5 fill-blue-dark stroke-blue-dark ml-2">
                                                 <use
-                                                        xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                    xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -265,17 +273,17 @@
                         <div class="mt-7.5">
                             <div class="flex">
                                 <div
-                                        class="blog-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                    class="blog-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                     </svg>
                                 </div>
                                 <div
-                                        class="blog-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                    class="blog-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                     </svg>
                                 </div>
                             </div>

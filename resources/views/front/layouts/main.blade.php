@@ -14,7 +14,7 @@
 <div class="wrapper ">
 
     {{--  Header start  --}}
-    <header class="header bg-yellow-extra-light relative shadow-shadow">
+    <header class="header bg-yellow-extra-light shadow-shadow fixed w-full left-0 top-0 z-[999]">
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
@@ -54,15 +54,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div>
-                        <a data-fancybox="open_cart"
-                           href="#popup-cart"
-                           class="btn-icon btn-icon-lg btn-icon-yellow">
-                            <svg class="w-6 h-6">
-                                <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
-                            </svg>
-                        </a>
-                    </div>
+                    <livewire:front.cart-icon/>
                     <div class="burger">
                         <svg class="w-14 h-14 ml-6 cursor-pointer block lg:hidden">
                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#hamburger') }}"></use>
@@ -113,17 +105,22 @@
     {{-- Header end --}}
 
     {{-- Popup start --}}
-    <livewire:front.cart/>
+    <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
+        <livewire:front.cart/>
+    </div>
     {{-- Popup end --}}
 
     {{--  Content start  --}}
-    <main>
+    <main class="mt-[102px] lg:mt-[120px]">
         @yield('content')
     </main>
     {{-- Content end --}}
 
     {{-- Footer start  --}}
     <footer class="mt-15 lg:mt-[90px]">
+        {{-- Notification block starts--}}
+        <livewire:front.footer-note/>
+        {{-- Notification block ends--}}
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 md:gap-7 justify-between items-start">
@@ -230,7 +227,9 @@
     {{-- Footer end  --}}
 
     @auth
-        <a href="/adminzone" class="go-to-panel fixed p-3 text-black bg-yellow z-10 top-1/2 right-0 rounded-tl-2xl rounded-bl-2xl translate-x-24 hover:translate-x-0 transition duration-300 ease-in">Админ. зона</a>
+        <a href="/adminzone"
+           class="go-to-panel fixed p-3 text-black bg-yellow z-10 top-1/2 right-0 rounded-tl-2xl rounded-bl-2xl translate-x-24 hover:translate-x-0 transition duration-300 ease-in">Админ.
+            зона</a>
     @endauth
 </div>
 <script src="{{ mix('js/app.js') }}" defer></script>

@@ -5,10 +5,10 @@ import './bootstrap';
 import './utilts/burger'
 import './utilts/sliders'
 import './utilts/product-slider'
+import './utilts/note'
 
 
 inputCount('.input-number-increment')
-
 
 
 
