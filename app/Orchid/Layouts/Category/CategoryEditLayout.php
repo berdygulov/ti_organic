@@ -35,6 +35,7 @@ class CategoryEditLayout extends Rows
             Upload::make('category.thumbnail_id')
                 ->title('Изображение')
                 ->media()
+                ->getAttributes()
                 ->maxFileSize(5)
                 ->maxFiles(1),
         ];
