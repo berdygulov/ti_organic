@@ -1,11 +1,11 @@
 <?php
 
-function currencyFormat ($str): string
+function currencyFormat($str): string
 {
     return number_format($str, 0, ',', ' ') . "₸";
 }
 
-function discountPercentage ($old_price, $new_price): string
+function discountPercentage($old_price, $new_price): string
 {
     if ($old_price > $new_price) {
         return '-' . ceil(100 - (($new_price * 100) / $old_price)) . '%';
@@ -14,4 +14,9 @@ function discountPercentage ($old_price, $new_price): string
     } else {
         return '0%';
     }
+}
+
+function basket()
+{
+    return app(\App\Repositories\Contracts\BasketRepositoryContract::class);
 }

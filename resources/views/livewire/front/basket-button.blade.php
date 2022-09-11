@@ -7,8 +7,8 @@
                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#cart') }}"></use>
             </svg>
         </a>
-        @if($cart_items > 0)
-            <span class="inline-block absolute font-bold text-lg -right-px">+{{ $cart_items }}</span>
+        @if($qty > 0)
+            <span class="inline-block absolute font-bold text-lg -right-px">+{{ $qty }}</span>
         @endif
     </div>
 </div>

@@ -46,7 +46,7 @@
                     </nav>
                 </div>
                 <div class="flex items-center header-relative">
-                    <div class="hidden lg:block">
+                    <div class="hidden">
                         <a href="#"
                            class="btn-icon btn-icon-lg btn-icon-red_outlined mr-6 hidden lg:flex ">
                             <svg class="w-6 h-6 fill-red stroke-red ">
@@ -54,7 +54,7 @@
                             </svg>
                         </a>
                     </div>
-                    <livewire:front.cart-icon/>
+                    <livewire:front.basket-button/>
                     <div class="burger">
                         <svg class="w-14 h-14 ml-6 cursor-pointer block lg:hidden">
                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#hamburger') }}"></use>
@@ -106,7 +106,7 @@
 
     {{-- Popup start --}}
     <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
-        <livewire:front.cart/>
+        <livewire:front.basket/>
     </div>
     {{-- Popup end --}}
 
@@ -119,7 +119,22 @@
     {{-- Footer start  --}}
     <footer class="mt-15 lg:mt-[90px]">
         {{-- Notification block starts--}}
-        <livewire:front.footer-note/>
+        <div class="fixed right-[5px] top-[15%] z-[1000] note-wrapper">
+            <div
+                class="note max-w-96 warning rounded shadow-shadow relative mt-1">
+                <div class="note-inner">
+                    <div class="note-content row py-2 pl-3 pr-10">
+                        Какой то текст
+                    </div>
+                </div>
+                <button type="button"
+                        class="note-close absolute right-3 top-0 bottom-0 rotate-45">
+                    <svg class="w-6 h-6">
+                        <use xlink:href="http://127.0.0.1:8000/assets/images/svg/sprite.svg#add-outline"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
         {{-- Notification block ends--}}
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">

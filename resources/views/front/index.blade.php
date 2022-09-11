@@ -60,13 +60,13 @@
                                         <div class="popular-item-left basis-3/6	mr-6.5">
                                             <div
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                                <a href="#">
-                                                    <img src="{{ $product->thumbnail?->url }}"
+                                                <a href="#" class="flex items-center justify-center w-full h-full">
+                                                    <img src="{{ $product->thumbnail?->url }}" class="h-full w-auto"
                                                          alt="{{ $product->title }}">
                                                 </a>
                                                 @if($product->old_price)
-                                                    <a href="#"
-                                                       class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</a>
+                                                    <span
+                                                        class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</span>
                                                 @endif
                                                 @if($product->novelty)
                                                     <a href="#"

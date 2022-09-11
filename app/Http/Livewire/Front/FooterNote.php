@@ -2,36 +2,38 @@
 
 namespace App\Http\Livewire\Front;
 
+use App\Models\Product;
+use Illuminate\Support\Collection;
 use Livewire\Component;
 
 class FooterNote extends Component
 {
-    public string $content = '';
-    public int $product_id;
+    public Collection $notes;
 
     protected $listeners = [
-        'addedToCart' => 'addedToCart',
-        'productQuantityChanged' => 'productQuantityChanged',
-        'deletedFromCart' => 'deletedFromCart',
+        'productAdded' => 'productAdded',
     ];
 
-    public function deletedFromCart($quantity, $product_id)
+    public function mount()
     {
-        if ($product_id === $this->product_id) {
-            $this->content = '';
+        $this->notes = collect();
+    }
+
+    public function remove($key)
+    {
+
+    }
+
+    public function productAdded($productTitle)
+    {
+        if ($this->notes->count() >= 2) {
+            $this->notes->shift(1);
         }
-    }
+        $this->notes->push([
+            'message' => "Товар - $productTitle был тобавлен в корзину",
+        ]);
 
-    public function productQuantityChanged($title, $quantity, $product_id)
-    {
-        $this->product_id = $product_id;
-        $this->content = "Товар - $title - был добавлен в корзину. (количество в корзине - $quantity шт.)";
-    }
-
-    public function addedToCart($product_id, $image_url, $title)
-    {
-        $this->product_id = $product_id;
-        $this->content = "Товар - $title - был добавлен в корзину. (количество в корзине - 1 шт.)";
+        $this->emit('noteShown');
     }
 
     public function render()
