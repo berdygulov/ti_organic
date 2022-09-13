@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="popup-center bg-white mt-10 md:mt-12.5 mb-5">
-            <div class="flex justify-between items-center px-2 sm:px-12.5 text-gray-2 text-sm">
+            <div class="flex justify-between items-center px-2 sm:px-12.5 text-gray-2 text-sm mb-5">
                 <p class="flex basis-[40%] md:basis-[50%]">продукт</p>
                 <p class="flex basis-[30%] md:basis-[25%]">кол-во</p>
                 <p class="flex basis-[30%] md:basis-[25%]">цена</p>

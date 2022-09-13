@@ -1,9 +1,9 @@
 @extends('front.layouts.main')
 
-@section('title', 'Увлажняющая маска Yves Rocher')
+@section('title',  $product->title)
 
 @section('content')
-    <x-front.page-title title="Увлажняющая маска Yves Rocher"/>
+    <x-front.page-title :title="$product->title"/>
     <section class="product">
         <div class="container">
             <div class="product-inner">
@@ -105,22 +105,7 @@
                             </p>
                             <p class="text-2xl text-blue line-through">{{ currencyFormat($product->old_price) }}</p>
                         </div>
-                        <div class="flex items-center">
-                            <div class="mr-[70px]">
-                                <div class="flex">
-                                    <input wire:input="change({{$product->id}}, $event.target.value )"
-                                           id="input-number-product-{{$product->id}}" class="input-number"
-                                           type="number"
-                                           value="{{ $product->qty }}"
-                                           min="1" max="100">
-                                    <span wire:click="increase({{$product->id}})" id="
-                                          input-number-increment-product-{{$product->id}}"
-                                          class="input-number-increment transition ease-in delay-100 hover:filter
-                                    hover:brightness-[80%]">+</span>
-                                </div>
-                            </div>
-                            <livewire:front.product.add-to-basket-button/>
-                        </div>
+                        <livewire:front.product.add-to-basket-button :productId="$product->id"/>
                     </div>
                 </div>
             </div>
@@ -138,7 +123,7 @@
                             @foreach($products as $product)
                                 <div class="swiper-slide h-full">
                                     <div
-                                        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in">
+                                        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
                                         @if($product->discount !== null && !$new)
                                             <div class="product-top mb-3.9 grid-rows-1 gap-1">
                                                 @if($discount !== null)

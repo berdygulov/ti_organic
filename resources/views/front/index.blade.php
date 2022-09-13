@@ -19,7 +19,7 @@
                             be distracted by the readable content of a page when looking at its layout.</p>
                         <div>
                             <a href="#" class="btn btn-lg btn-yellow mr-3.9 ">О нас</a>
-                            <a href="#" class="btn btn-lg btn-red mt-3.9 md:mt-0">
+                            <a href="{{ route('products.index') }}" class="btn btn-lg btn-red mt-3.9 md:mt-0">
                                 <div>Каталог</div>
                                 <svg class="w-6 h-6 ml-2">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
@@ -110,7 +110,7 @@
                                 </div>
                             </div>
                             <div class="hidden md:block">
-                                <a href="#" class="btn btn-lg btn-red mt-3.9 md:mt-0">
+                                <a href="{{ route('products.index') }}" class="btn btn-lg btn-red mt-3.9 md:mt-0">
                                     <div>Весь каталог</div>
                                     <svg class="w-6 h-6 ml-2">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
@@ -173,7 +173,7 @@
                                         @if($category->excerpt)
                                             <p class="text-base text-gray-2 mb-6.5">{{ $category->excerpt }}</p>
                                         @endif
-                                        <a href="#" class="btn btn-sm btn-red">
+                                        <a href="{{ route('products.index') }}" class="btn btn-sm btn-red">
                                             <div>В каталог</div>
                                             <svg class="w-6 h-6 ml-2">
                                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>

@@ -14,7 +14,7 @@
 <div class="wrapper ">
 
     {{--  Header start  --}}
-    <header class="header bg-yellow-extra-light shadow-shadow fixed w-full left-0 top-0 z-[999]">
+    <header class="header bg-yellow-extra-light shadow-shadow fixed w-full left-0 top-0 z-[99]">
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
@@ -28,16 +28,16 @@
                     <nav class="menu">
                         <ul class="flex menu-list">
                             <li class="menu-item">
-                                <a href="#">Главная</a>
+                                <a href="{{ route('pages.index') }}">Главная</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Каталог</a>
+                                <a href="{{ route('products.index') }}">Каталог</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">О нас</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Блог</a>
+                                <a href="{{ route('blogs.index') }}">Блог</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#">Контакты</a>
@@ -106,7 +106,41 @@
 
     {{-- Popup start --}}
     <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
-        <livewire:front.basket/>
+        <div class="popup-inner">
+            <div
+                class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
+                <h5>Корзина</h5>
+                <div class="absolute cursor-pointer pl-4 pb-4 pr-12.5 pt-7.5 top-0 right-0">
+                    <svg class="w-10 h-10" data-fancybox-close>
+                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-center bg-white mt-10 md:mt-12.5 mb-5">
+                <div class="flex justify-between items-center px-2 sm:px-12.5 text-gray-2 text-sm mb-5">
+                    <p class="flex basis-[40%] md:basis-[50%]">продукт</p>
+                    <p class="flex basis-[30%] md:basis-[25%]">кол-во</p>
+                    <p class="flex basis-[30%] md:basis-[25%]">цена</p>
+                </div>
+                <div class="popup-center-scroll h-[408px] overflow-y-scroll px-2 sm:px-12.5">
+                    <livewire:front.basket-products/>
+                </div>
+            </div>
+            <div class="popup-bottom mt-10 md:mt-12.5 px-2 md:px-12.5 mb-5">
+                <div class="popup-bottom-inner flex justify-between items-center">
+                    <div class="flex items-center">
+                        <span class="text-lg">Итого:</span>
+                        <h6 class="ml-2.5">
+                            <livewire:front.basket-total-amount/>
+                        </h6>
+                    </div>
+                    <livewire:front.order-confirm-button class="btn btn-yellow btn-md rounded-[25px] font-bold"
+                                                         buttonText="К оплате"
+                                                         href="{{ route('orders.create.confirm') }}"/>
+                </div>
+            </div>
+        </div>
+        {{--        <livewire:front.basket/>--}}
     </div>
     {{-- Popup end --}}
 

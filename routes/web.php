@@ -10,6 +10,13 @@ use App\Http\Controllers\Front\PagesController;
 use App\Http\Controllers\Blog\IndexController as BlogIndex;
 
 /*
+ * Order use controllers
+ */
+
+use App\Http\Controllers\Order\CreateController as OrderCreate;
+use App\Http\Controllers\Order\StoreController as OrderStore;
+
+/*
  * Product use controllers
  */
 
@@ -62,11 +69,29 @@ Route::group([
  * Products routes
  */
 
+Route::get('/products-session-delete', function (\Illuminate\Http\Request $request) {
+    $request->session()->forget('basket');
+});
+
 Route::group([
     'prefix' => 'products',
     'as' => 'products.'
 ], function () {
     Route::get('/', [ProductIndex::class, 'front'])->name('index');
     Route::get('/{product_id}', [ProductShow::class, 'front'])->name('show');
+});
+
+Route::group([
+    'prefix' => 'orders',
+    'as' => 'orders.'
+], function () {
+    Route::group([
+        'prefix' => 'create',
+        'as' => 'create.'
+    ], function () {
+        Route::get('confirm', [OrderCreate::class, 'confirm'])->name('confirm');
+        Route::get('send', [OrderCreate::class, 'send'])->name('send');
+    });
+    Route::post('/', OrderStore::class)->name('store');
 });
 

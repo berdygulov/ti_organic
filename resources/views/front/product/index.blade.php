@@ -10,7 +10,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7.5">
                 @foreach($products as $product)
                     <div
-                        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in">
+                        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
                         @if($product->discount !== null && !$new)
                             <div class="product-top mb-3.9 grid-rows-1 gap-1">
                                 @if($discount !== null)
@@ -27,12 +27,13 @@
                                 @endif
                             </div>
                         @endif
-                        <a href="#" class="product-image h-[197px] w-auto flex justify-center items-center mb-3.9">
+                        <a href="{{ route('products.show', ['product_id'=>$product->id]) }}"
+                           class="product-image h-[197px] w-auto flex justify-center items-center mb-3.9">
                             <img class="max-h-full" src="{{ $product->thumbnail?->url }}"
                                  alt="{{ $product->title }}">
                         </a>
                         <div class="product-content">
-                            <a href="#"
+                            <a href="{{ route('products.show', ['product_id'=>$product->id]) }}"
                                class="product-title text-lg mb-[3px] block font-bold lg:text-left text-center">
                                 {{ $product->title ? $product->title : 'Название товара' }}
                             </a>
@@ -56,7 +57,7 @@
                                 </div>
                             @endif
                             <span class="product-price block font-bold text-lg lg:text-left text-center">
-                                    {{ $product->price ? $product->price . ' ₸' : '-' }}
+                                    {{ $product->price ? currencyFormat($product->price) : '-' }}
                                 </span>
                         </div>
                         <livewire:front.add-to-basket-button

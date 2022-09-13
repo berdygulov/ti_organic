@@ -31,8 +31,7 @@ class AddToBasketButton extends Component
         basket()->add($this->productId, $qty);
         $this->emit('basketUpdated');
 
-//        $product = Product::find($this->productId);
-//        $this->emit('productAdded', $product->title);
+        session()->flash('product.add_to_cart.success', "Товар добавлен в корзину!");
     }
 
     public function render()
