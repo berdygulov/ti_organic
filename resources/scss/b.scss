@@ -1,0 +1,113 @@
+// Classes for notification block at the bottom
+.note {
+    @apply opacity-0 ease-in transition-all duration-100;
+    &.active {
+        @apply opacity-100;
+    }
+
+    &.success {
+        @apply bg-green text-green;
+        svg {
+            @apply stroke-white;
+        }
+    }
+
+    &.danger {
+        @apply bg-red text-white;
+        svg {
+            @apply stroke-white;
+        }
+    }
+
+    &.warning {
+        @apply bg-yellow text-black;
+        svg {
+            @apply stroke-black;
+        }
+    }
+}
+
+// Classes for form <a/>
+.btn {
+    &.disabled {
+        @apply cursor-default select-none pointer-events-none opacity-50;
+    }
+}
+
+// Classes for form button
+button {
+    &[disabled] {
+        @apply cursor-default select-none pointer-events-none opacity-50;
+    }
+}
+
+// Classes for form input fileds
+input[type="text"],
+select {
+
+    @apply py-3.5 px-6 rounded bg-white-2 w-full;
+}
+
+// Select2 Classes
+.select2 {
+    &-container {
+        height: 3.25rem !important;
+        @apply p-0 text-base z-10 w-full #{!important};
+    }
+
+    .selection {
+        @apply h-full block #{!important}
+    }
+
+    &-selection {
+        @apply py-3.5 px-6 bg-white-2 rounded w-full border-none h-full block #{!important};
+    }
+
+    &-selection__arrow {
+        top: 0.88rem !important;
+        right: 0.94rem !important;
+    }
+
+    &-selection__rendered {
+        @apply p-0 #{!important};
+    }
+
+    &-search {
+        @apply p-0 border-b border-t border-l-0 border-r-0 border-[#BDBDBD] #{!important};
+    }
+
+    &-search__field {
+        @apply py-2.5 px-6 border-0 #{!important};
+    }
+
+    &-dropdown {
+        @apply mt-1.5 rounded #{!important};
+    }
+
+    &-results__message {
+        @apply py-2.5 px-6 bg-[#F2F2F2] text-blue-dark #{!important};
+    }
+
+    &-results__option {
+        &--selectable, &--disabled {
+            @apply py-2.5 px-6 bg-[#F2F2F2] text-blue-dark #{!important};
+        }
+
+        &--disabled {
+            @apply py-2.5 px-6 bg-[#F2F2F2] text-[#E0E0E0] #{!important};
+        }
+
+        &--selected {
+            @apply bg-[#E0E0E0] text-blue-dark #{!important};
+        }
+
+        &--highlighted {
+            @apply bg-yellow text-blue-dark #{!important};
+        }
+    }
+}
+
+/* Form invalid feedback */
+.invalid-feedback {
+    @apply text-sm text-red ml-6 mt-1.5;
+}

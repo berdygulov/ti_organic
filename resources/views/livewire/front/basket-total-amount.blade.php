@@ -1,0 +1,1 @@
+<p>{{ currencyFormat($total) }}</p>
