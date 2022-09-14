@@ -46,9 +46,8 @@ Route::group([
     'as' => 'pages.'
 ], function () {
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
-    Route::get('/mailtest', function () {
-        $products = getProductsFromSession(basket()->all());
-        return view('front.mail.order', compact('products'));
+    Route::get('/contacts', function () {
+        return view('front.contacts');
     });
 });
 
@@ -58,7 +57,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'blogs',
-    'as'     => 'blogs.'
+    'as' => 'blogs.'
 ], function () {
     Route::get('/', [BlogIndex::class, 'front'])->name('index');
 });
@@ -69,7 +68,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'categories',
-    'as'     => 'categories.'
+    'as' => 'categories.'
 ], function () {
     //
 });
@@ -84,7 +83,7 @@ Route::get('/products-session-delete', function (\Illuminate\Http\Request $reque
 
 Route::group([
     'prefix' => 'products',
-    'as'     => 'products.'
+    'as' => 'products.'
 ], function () {
     Route::get('/', [ProductIndex::class, 'front'])->name('index');
     Route::get('/{product_id}', [ProductShow::class, 'front'])->name('show');
@@ -92,11 +91,11 @@ Route::group([
 
 Route::group([
     'prefix' => 'orders',
-    'as'     => 'orders.'
+    'as' => 'orders.'
 ], function () {
     Route::group([
         'prefix' => 'create',
-        'as'     => 'create.'
+        'as' => 'create.'
     ], function () {
         Route::get('confirm', [OrderCreate::class, 'confirm'])->name('confirm');
         Route::get('send', [OrderCreate::class, 'send'])->name('send');

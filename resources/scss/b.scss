@@ -1,32 +1,3 @@
-// Classes for notification block at the bottom
-.note {
-    @apply opacity-0 ease-in transition-all duration-100;
-    &.active {
-        @apply opacity-100;
-    }
-
-    &.success {
-        @apply bg-green text-green;
-        svg {
-            @apply stroke-white;
-        }
-    }
-
-    &.danger {
-        @apply bg-red text-white;
-        svg {
-            @apply stroke-white;
-        }
-    }
-
-    &.warning {
-        @apply bg-yellow text-black;
-        svg {
-            @apply stroke-black;
-        }
-    }
-}
-
 // Classes for form <a/>
 .btn {
     &.disabled {
@@ -41,10 +12,9 @@ button {
     }
 }
 
-// Classes for form input fileds
+// Classes for form input fields
 input[type="text"],
 select {
-
     @apply py-3.5 px-6 rounded bg-white-2 w-full;
 }
 
@@ -107,7 +77,11 @@ select {
     }
 }
 
-/* Form invalid feedback */
+/* Form feedbacks */
 .invalid-feedback {
     @apply text-sm text-red ml-6 mt-1.5;
+}
+
+.success-feedback {
+    @apply text-base text-green;
 }

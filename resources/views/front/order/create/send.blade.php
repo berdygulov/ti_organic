@@ -17,6 +17,11 @@
                     @csrf
                     <div class="sending-left grid gap-10 grid-cols-1 w-full lg:w-3/4">
                         <div class="info">
+                            @if (session('order_create.success'))
+                                <div class="success-feedback mb-5">
+                                    {{ session('order_create.success') }}
+                                </div>
+                            @endif
                             <div class="sending-header mb-7">
                                 <h6>Информация о заказе</h6>
                                 <span class="text-gray-3 mt-2 block">(* - обязательные поля)</span>
@@ -49,7 +54,8 @@
                                     @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="phone" value="{{ old('phone') }}" placeholder="Телефон *">
+                                    <input type="text" class="input-phone" name="phone" value="{{ old('phone') }}"
+                                           placeholder="Телефон *">
                                     @error('phone')
                                     <div class="invalid-feedback">
                                         {{ $message }}

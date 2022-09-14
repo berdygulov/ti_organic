@@ -108,7 +108,7 @@
     <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
         <div class="popup-inner">
             <div
-                    class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
+                class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
                 <h5>Корзина</h5>
                 <div class="absolute cursor-pointer pl-4 pb-4 pr-12.5 pt-7.5 top-0 right-0">
                     <svg class="w-10 h-10" data-fancybox-close>
@@ -152,24 +152,6 @@
 
     {{-- Footer start  --}}
     <footer class="mt-15 lg:mt-[90px]">
-        {{-- Notification block starts--}}
-        <div class="fixed right-[5px] top-[15%] z-[1000] note-wrapper">
-            <div
-                    class="note max-w-96 warning rounded shadow-shadow relative mt-1">
-                <div class="note-inner">
-                    <div class="note-content row py-2 pl-3 pr-10">
-                        Какой то текст
-                    </div>
-                </div>
-                <button type="button"
-                        class="note-close absolute right-3 top-0 bottom-0 rotate-45">
-                    <svg class="w-6 h-6">
-                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#add-outline') }}"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        {{-- Notification block ends--}}
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 md:gap-7 justify-between items-start">

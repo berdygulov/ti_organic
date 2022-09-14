@@ -30,7 +30,7 @@
                 </div>
                 <div class="absolute right-0 hidden lg:block basis-2/5">
                     <div>
-                        <img class="w-[772px] h-[553px]" src="{{ asset('assets/images/png/hero.png') }}"
+                        <img class="w-[772px] h-[553px]" src="{{ asset('assets/images/png/hero-main.png') }}"
                              alt="hero-img">
                     </div>
                 </div>
