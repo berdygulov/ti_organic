@@ -30,7 +30,7 @@
             </div>
             <div class="flex basis-[30%] md:basis-[25%]">
                 <div>
-                    <div class="text-lg text-blue-dark font-bold">{{ $product->price . ' ₸' }} </div>
+                    <div class="text-lg text-blue-dark font-bold">{{ currencyFormat($product->price) }} </div>
                     <button wire:click="remove({{$product->id}})" type="button"
                             class="absolute top-[20px] transition ease-in delay-100 hover:filter hover:brightness-[80%] right-0 bg-red border-red rounded  py-[3px] px-[2px] lg:py-[5px] lg:px-2 border-2 flex justify-center items-center">
                         <svg class="w-[24px] h-[24px] cursor-pointer">

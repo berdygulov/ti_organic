@@ -19,6 +19,9 @@ class OrderSendButton extends Component
     public function booted(): void
     {
         $this->productsCount = $this->getBasketProductsQtyFromSession();
+        if ($this->productsCount === 0) {
+            $this->buttonText = 'Корзина пуста';
+        }
         if ($this->productsCount <= 0) {
             $this->emit('basketEmpty');
         } else {

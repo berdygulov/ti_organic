@@ -889,6 +889,9 @@ video {
 .basis-\[50\%\]{
   flex-basis: 50%;
 }
+.border-collapse{
+  border-collapse: collapse;
+}
 .translate-x-24{
   --tw-translate-x: 6rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1352,6 +1355,9 @@ video {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.outline{
+  outline-style: solid;
 }
 .blur{
   --tw-blur: blur(8px);

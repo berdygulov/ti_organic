@@ -38,8 +38,9 @@ Route::group([
     'as' => 'pages.'
 ], function () {
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
-    Route::get('/test', function () {
-        return view('front.test');
+    Route::get('/mailtest', function () {
+        $products = getProductsFromSession(basket()->all());
+        return view('front.mail.order', compact('products'));
     });
 });
 
