@@ -106,3 +106,8 @@ select {
         }
     }
 }
+
+/* Form invalid feedback */
+.invalid-feedback {
+    @apply text-sm text-red ml-6 mt-1.5;
+}

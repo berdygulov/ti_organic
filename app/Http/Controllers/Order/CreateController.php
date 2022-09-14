@@ -12,7 +12,6 @@ class CreateController extends Controller
     {
 
         $basket = basket()->all();
-//        dd($basket);
         return view('front.order.create.confirm');
     }
 

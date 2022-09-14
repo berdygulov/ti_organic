@@ -23,19 +23,46 @@
                             </div>
                             <div class="form-fields grid grid-cols-1 gap-5 text-base">
                                 <div class="form-field">
-                                    <input type="text" name="surname" placeholder="Фамилия *">
+                                    <input type="text" name="surname" value="{{ old('surname') }}"
+                                           placeholder="Фамилия *">
+                                    @error('surname')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="name" placeholder="Имя *">
+                                    <input type="text" name="name" value="{{ old('city') }}" placeholder="Имя *">
+                                    @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="patronymic" placeholder="Отчество">
+                                    <input type="text" name="patronymic" value="{{ old('patronymic') }}"
+                                           placeholder="Отчество">
+                                    @error('patronymic')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="phone" placeholder="Телефон *">
+                                    <input type="text" name="phone" value="{{ old('phone') }}" placeholder="Телефон *">
+                                    @error('phone')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="email" placeholder="E-mail">
+                                    <input type="text" name="email" value="{{ old('email') }}" placeholder="E-mail">
+                                    @error('email')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -49,12 +76,30 @@
                                     <select class="select2" name="city">
                                         <option value="" selected>Выбрать город</option>
                                     </select>
+                                    @error('city')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="address" placeholder="Улица, дом, квартира *">
+                                    <input type="text" name="address" value="{{ old('address') }}"
+                                           value="{{ old('address') }}"
+                                           placeholder="Улица, дом, квартира *">
+                                    @error('address')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="postcode" placeholder="Индекс *">
+                                    <input type="text" name="postcode" value="{{ old('postcode') }}"
+                                           placeholder="Индекс *">
+                                    @error('postcode')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                             </div>
                         </div>

@@ -3,13 +3,16 @@
 namespace App\Http\Controllers\Order;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreOrderRequest;
+use App\Mail\Order;
+use Illuminate\Support\Facades\Mail;
 
 class StoreController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(StoreOrderRequest $request)
     {
-        dd($request->all());
+        Mail::to('tlegenbayangali@yandex.kz')->send(new Order($request->validated()));
+
         return back()->with('order_create.success', 'Заявка успешно отправлена!');
     }
 }
