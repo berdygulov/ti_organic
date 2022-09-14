@@ -1,6 +1,6 @@
 {
-    "/js/app.js": "/js/app.js?id=6264f8fac7a4c4b0f2d69f5f1a282863",
-    "/css/app.css": "/css/app.css?id=32cb71660666e2d433dd9a01700f0480",
+    "/js/app.js": "/js/app.js?id=7fbe3fad01ca34d07c5189131e0d9f28",
+    "/css/app.css": "/css/app.css?id=41d46b14edc40448c36ffe2d83294cd5",
     "/assets/images/png/blog.png": "/assets/images/png/blog.png?id=e645a8ba28dfdb99fc62ed070f99f528",
     "/assets/images/png/buy.png": "/assets/images/png/buy.png?id=ddc1d10490115973f260b9f3c51702d1",
     "/assets/images/png/cart.png": "/assets/images/png/cart.png?id=2b57e904463aa92458f7ffa9f9cbef68",
@@ -13,8 +13,8 @@
     "/assets/images/png/product-card-image.png": "/assets/images/png/product-card-image.png?id=ce4648c29466bf3ba6fa9acf841a91a6",
     "/assets/images/png/product.png": "/assets/images/png/product.png?id=62d6d291a8ea6d1efb5689520a9259e5",
     "/assets/images/png/single-product-big.png": "/assets/images/png/single-product-big.png?id=d6203dc8d72a0bc287b560546d8b3612",
-    "/assets/images/svg/add-outline.svg": "/assets/images/svg/add-outline.svg?id=3d5b3d922db077ffa30426cf58d20e00",
-    "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e8ee87420b03cc6dcde3d92427fc447b",
+    "/assets/images/svg/add-outline.svg": "/assets/images/svg/add-outline.svg?id=103e220c881a7e84bde6f60b9524dfdd",
+    "/assets/images/svg/arrow-burger.svg": "/assets/images/svg/arrow-burger.svg?id=e4e4d3dd6bbee69480d26bbcab4516fb",
     "/assets/images/svg/arrow-count.svg": "/assets/images/svg/arrow-count.svg?id=90ba5cf01b0af584e379771f8000dce7",
     "/assets/images/svg/arrow-next.svg": "/assets/images/svg/arrow-next.svg?id=68ec114b25917a0ab9fba9d655bb20af",
     "/assets/images/svg/arrow-prev.svg": "/assets/images/svg/arrow-prev.svg?id=48f49e035827f1f139c7f2dfa4e56264",
@@ -31,5 +31,5 @@
     "/assets/images/svg/plus.svg": "/assets/images/svg/plus.svg?id=53e2960021ec52f173f53e4b00c05962",
     "/assets/images/svg/product-element.svg": "/assets/images/svg/product-element.svg?id=105013a0e57175c1b5931ba36af84162",
     "/assets/images/svg/readmore.svg": "/assets/images/svg/readmore.svg?id=48fd68d1751cddd457b310ba5e95766a",
-    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=7e41bda38cf93673dbed92d280cdf55d"
+    "/assets/images/svg/sprite.svg": "/assets/images/svg/sprite.svg?id=185b3bd8fe3e398bb0c9fbaaf344a1d5"
 }

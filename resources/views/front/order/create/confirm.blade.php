@@ -9,7 +9,7 @@
             <a href="{{ route('products.index') }}" class="btn btn-lg btn-red mt-3.9 md:mt-0 mb-10">
                 <div>Вернуться в каталог</div>
                 <svg class="w-6 h-6 ml-2">
-                    <use xlink:href="http://127.0.0.1:8000/assets/images/svg/sprite.svg#bag"></use>
+                    <use xlink:href="{{ asset('assets/images/svg/sprite.svg#bag') }}"></use>
                 </svg>
             </a>
             <div class="confirm-inner grid grid-cols-1 lg:grid-cols-[65%_1fr] gap-7.5">

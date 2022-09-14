@@ -108,7 +108,7 @@
     <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
         <div class="popup-inner">
             <div
-                class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
+                    class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
                 <h5>Корзина</h5>
                 <div class="absolute cursor-pointer pl-4 pb-4 pr-12.5 pt-7.5 top-0 right-0">
                     <svg class="w-10 h-10" data-fancybox-close>
@@ -155,7 +155,7 @@
         {{-- Notification block starts--}}
         <div class="fixed right-[5px] top-[15%] z-[1000] note-wrapper">
             <div
-                class="note max-w-96 warning rounded shadow-shadow relative mt-1">
+                    class="note max-w-96 warning rounded shadow-shadow relative mt-1">
                 <div class="note-inner">
                     <div class="note-content row py-2 pl-3 pr-10">
                         Какой то текст
@@ -164,7 +164,7 @@
                 <button type="button"
                         class="note-close absolute right-3 top-0 bottom-0 rotate-45">
                     <svg class="w-6 h-6">
-                        <use xlink:href="http://127.0.0.1:8000/assets/images/svg/sprite.svg#add-outline"></use>
+                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#add-outline') }}"></use>
                     </svg>
                 </button>
             </div>

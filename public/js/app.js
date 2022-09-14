@@ -2491,20 +2491,20 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilts/inputCount */ "./resources/js/utilts/inputCount.js");
-/* harmony import */ var _utilts_cities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilts/cities */ "./resources/js/utilts/cities.js");
+/* harmony import */ var _utils_inputCount__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/inputCount */ "./resources/js/utils/inputCount.js");
+/* harmony import */ var _utils_cities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/cities */ "./resources/js/utils/cities.js");
 /* harmony import */ var _node_modules_select2_dist_js_select2_min__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/select2/dist/js/select2.min */ "./node_modules/select2/dist/js/select2.min.js");
 /* harmony import */ var _node_modules_select2_dist_js_select2_min__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_select2_dist_js_select2_min__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _node_modules_select2_dist_css_select2_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/select2/dist/css/select2.min.css */ "./node_modules/select2/dist/css/select2.min.css");
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utilts/burger */ "./resources/js/utilts/burger.js");
-/* harmony import */ var _utilts_burger__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_utilts_burger__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utilts_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utilts/sliders */ "./resources/js/utilts/sliders.js");
-/* harmony import */ var _utilts_product_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utilts/product-slider */ "./resources/js/utilts/product-slider.js");
-/* harmony import */ var _utilts_note__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./utilts/note */ "./resources/js/utilts/note.js");
-/* harmony import */ var _utilts_note__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_utilts_note__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _utilts_selec2__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./utilts/selec2 */ "./resources/js/utilts/selec2.js");
-/* harmony import */ var _utilts_selec2__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_utilts_selec2__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _utils_burger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/burger */ "./resources/js/utils/burger.js");
+/* harmony import */ var _utils_burger__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_utils_burger__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _utils_sliders__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/sliders */ "./resources/js/utils/sliders.js");
+/* harmony import */ var _utils_product_slider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/product-slider */ "./resources/js/utils/product-slider.js");
+/* harmony import */ var _utils_note__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./utils/note */ "./resources/js/utils/note.js");
+/* harmony import */ var _utils_note__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_utils_note__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _utils_select2__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./utils/select2 */ "./resources/js/utils/select2.js");
+/* harmony import */ var _utils_select2__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_utils_select2__WEBPACK_IMPORTED_MODULE_9__);
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
@@ -2517,11 +2517,11 @@ window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.
 
 
 
-(0,_utilts_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
+(0,_utils_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
 
 if ($('select[name="city"]').length > 0) {
   $('select[name="city"]').each(function (index, el) {
-    (0,_utilts_cities__WEBPACK_IMPORTED_MODULE_1__.pushCitiesToSelectField)(el);
+    (0,_utils_cities__WEBPACK_IMPORTED_MODULE_1__.pushCitiesToSelectField)(el);
   });
 }
 
@@ -2570,10 +2570,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/utilts/burger.js":
-/*!***************************************!*\
-  !*** ./resources/js/utilts/burger.js ***!
-  \***************************************/
+/***/ "./resources/js/utils/burger.js":
+/*!**************************************!*\
+  !*** ./resources/js/utils/burger.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
@@ -2590,10 +2590,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/utilts/cities.js":
-/*!***************************************!*\
-  !*** ./resources/js/utilts/cities.js ***!
-  \***************************************/
+/***/ "./resources/js/utils/cities.js":
+/*!**************************************!*\
+  !*** ./resources/js/utils/cities.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2881,10 +2881,10 @@ function pushCitiesToSelectField(select) {
 
 /***/ }),
 
-/***/ "./resources/js/utilts/inputCount.js":
-/*!*******************************************!*\
-  !*** ./resources/js/utilts/inputCount.js ***!
-  \*******************************************/
+/***/ "./resources/js/utils/inputCount.js":
+/*!******************************************!*\
+  !*** ./resources/js/utils/inputCount.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2907,10 +2907,10 @@ var inputCount = function inputCount(increment) {
 
 /***/ }),
 
-/***/ "./resources/js/utilts/note.js":
-/*!*************************************!*\
-  !*** ./resources/js/utilts/note.js ***!
-  \*************************************/
+/***/ "./resources/js/utils/note.js":
+/*!************************************!*\
+  !*** ./resources/js/utils/note.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
@@ -2919,10 +2919,10 @@ $(document).ready(function () {//
 
 /***/ }),
 
-/***/ "./resources/js/utilts/product-slider.js":
-/*!***********************************************!*\
-  !*** ./resources/js/utilts/product-slider.js ***!
-  \***********************************************/
+/***/ "./resources/js/utils/product-slider.js":
+/*!**********************************************!*\
+  !*** ./resources/js/utils/product-slider.js ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2981,9 +2981,9 @@ var gallerySingleProducts = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('
 
 /***/ }),
 
-/***/ "./resources/js/utilts/selec2.js":
+/***/ "./resources/js/utils/select2.js":
 /*!***************************************!*\
-  !*** ./resources/js/utilts/selec2.js ***!
+  !*** ./resources/js/utils/select2.js ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -2995,10 +2995,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./resources/js/utilts/sliders.js":
-/*!****************************************!*\
-  !*** ./resources/js/utilts/sliders.js ***!
-  \****************************************/
+/***/ "./resources/js/utils/sliders.js":
+/*!***************************************!*\
+  !*** ./resources/js/utils/sliders.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
