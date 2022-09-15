@@ -10,8 +10,10 @@
                 <div class="relative z-10 basis-full lg:basis-60">
                     <div>
                         <div class="hidden md:block">
-                            <p class="text-white font-bold py-2.5 px-3 bg-blue-dark inline-block rounded-3xl mr-2.5">
+                            <!-- Hidden element -->
+                            <p class="hidden text-white font-bold py-2.5 px-3 bg-blue-dark inline-block rounded-3xl mr-2.5">
                                 -50 %</p>
+                            <!-- Hidden element ends -->
                             <span class="font-bold">скидки на все товары</span>
                         </div>
                         <h1 class="text-blue-dark mt-2.5 mb-7.5">Cамый популярный уход за кожей для вас</h1>
@@ -64,13 +66,17 @@
                                                     <img src="{{ $product->thumbnail?->url }}" class="h-full w-auto"
                                                          alt="{{ $product->title }}">
                                                 </a>
-                                                @if($product->old_price)
-                                                    <span
-                                                        class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</span>
-                                                @endif
-                                                @if($product->novelty)
-                                                    <a href="#"
-                                                       class="sale absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                                @if($product->old_price || $product->novelty)
+                                                    <div class="absolute top-0 left-0 flex flex-row">
+                                                        @if($product->old_price)
+                                                            <span
+                                                                class="sale bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</span>
+                                                        @endif
+                                                        @if($product->novelty)
+                                                            <span
+                                                                class="sale bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</span>
+                                                        @endif
+                                                    </div>
                                                 @endif
                                             </div>
                                         </div>
@@ -153,7 +159,7 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-[90px]">
+    <section class="pt-15 lg:pt-[90px] hidden">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Категории товаров</h4>

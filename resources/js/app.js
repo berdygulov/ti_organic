@@ -14,11 +14,13 @@ import './utils/product-slider'
 import './utils/cities'
 import './utils/select2'
 
-new Cleave('.input-phone', {
-    phone: true,
-    prefix: '+7',
-    phoneRegionCode: 'kz'
-});
+if ($('.input-phone').length > 0) {
+    new Cleave('.input-phone', {
+        phone: true,
+        prefix: '+7',
+        phoneRegionCode: 'kz'
+    });
+}
 
 
 inputCount('.input-number-increment')

@@ -48,7 +48,10 @@ Route::group([
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
     Route::get('/contacts', function () {
         return view('front.contacts');
-    });
+    })->name('contacts');
+    Route::get('/about', function () {
+        return view('front.about');
+    })->name('about');
 });
 
 /*

@@ -10,6 +10,7 @@ class OrderConfirmButton extends Component
     use OrderSendButtonTrait;
 
     public string $buttonText;
+    public string $buttonTextInitial;
     public int $productsCount = 0;
     public string $href;
     public string $class;
@@ -23,6 +24,8 @@ class OrderConfirmButton extends Component
         $this->productsCount = $this->getBasketProductsQtyFromSession();
         if ($this->productsCount === 0) {
             $this->buttonText = 'Корзина пуста';
+        } else {
+            $this->buttonText = $this->buttonTextInitial;
         }
         if ($this->productsCount <= 0) {
             $this->emit('basketEmpty');
@@ -32,9 +35,9 @@ class OrderConfirmButton extends Component
 
     }
 
-    public function mount($href = '', $buttonText = "Отправить", $class = ''): void
+    public function mount($href = '', $buttonTextInitial = "Отправить", $class = ''): void
     {
-        $this->buttonText = $buttonText;
+        $this->buttonTextInitial = $buttonTextInitial;
         $this->class = $class;
         $this->href = $href;
 

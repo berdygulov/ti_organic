@@ -2519,11 +2519,15 @@ __webpack_require__(/*! ../../node_modules/cleave.js/dist/addons/cleave-phone.kz
 
 
 
-new cleave_js__WEBPACK_IMPORTED_MODULE_4__["default"]('.input-phone', {
-  phone: true,
-  prefix: '+7',
-  phoneRegionCode: 'kz'
-});
+
+if ($('.input-phone').length > 0) {
+  new cleave_js__WEBPACK_IMPORTED_MODULE_4__["default"]('.input-phone', {
+    phone: true,
+    prefix: '+7',
+    phoneRegionCode: 'kz'
+  });
+}
+
 (0,_utils_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
 
 if ($('select[name="city"]').length > 0) {

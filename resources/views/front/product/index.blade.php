@@ -11,15 +11,15 @@
                 @foreach($products as $product)
                     <div
                         class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
-                        @if($product->discount !== null && !$new)
+                        @if($product->novelty || $product->old_price)
                             <div class="product-top mb-3.9 grid-rows-1 gap-1">
-                                @if($discount !== null)
+                                @if($product->old_price)
                                     <span
                                         class="discount inline-block px-[7px] py-[5px] bg-green text-white text-sm rounded">
-                                            {{ $discount }}
+                                            {{ discountPercentage($product->old_price, $product->price) }}
                                         </span>
                                 @endif
-                                @if($new)
+                                @if($product->novelty)
                                     <span
                                         class="discount inline-block px-[7px] py-[5px] bg-yellow text-white text-sm rounded uppercase">
                                             Новинка
