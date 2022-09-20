@@ -111,7 +111,7 @@
                 class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
                 <h5>Корзина</h5>
                 <div class="absolute cursor-pointer pl-4 pb-4  pr-2 sm:pr-12.5 pt-7.5 top-0 right-0">
-                    <svg class="w-10 h-10" data-fancybox-close>
+                    <svg class="w-10 h-10 stroke-blue-dark" data-fancybox-close>
                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
                     </svg>
                 </div>

@@ -62,7 +62,8 @@
                                         <div class="popular-item-left basis-3/6	mr-6.5">
                                             <div
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                                <a href="#" class="flex items-center justify-center w-full h-full">
+                                                <a href="{{ route('products.show',['product_id'=>$product->id]) }}"
+                                                   class="flex items-center justify-center w-full h-full">
                                                     <img src="{{ $product->thumbnail?->url }}" class="h-full w-auto"
                                                          alt="{{ $product->title }}">
                                                 </a>
@@ -81,7 +82,8 @@
                                             </div>
                                         </div>
                                         <div class="popular-item-right basis-3/6 py-3">
-                                            <p class="text-lg text-blue-dark mb-2.5 font-bold">{{ $product->title }}</p>
+                                            <a href="{{ route('products.show',['product_id'=>$product->id]) }}"
+                                               class="text-lg text-blue-dark mb-2.5 font-bold">{{ $product->title }}</a>
                                             <p class="text-gray-2 text-sm mb-3.9">
                                                 @foreach($product->categories as $category)
                                                     {{ $category->title }} @if(!$loop->last) / @endif

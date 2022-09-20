@@ -30,7 +30,7 @@ class StoreOrderRequest extends FormRequest
             'phone' => 'required|size:15',
             'email' => 'nullable|email',
             'city' => 'required',
-            'address' => 'required',
+            'address' => 'required|min:3',
             'postcode' => 'required|min:3',
         ];
     }

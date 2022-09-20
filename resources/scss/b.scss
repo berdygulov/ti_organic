@@ -78,10 +78,24 @@ select {
 }
 
 /* Form feedbacks */
-.invalid-feedback {
-    @apply text-sm text-red ml-6 mt-1.5;
+.form-feedback {
+    @apply ml-6 mt-1.5;
+    &.invalid {
+        @apply text-sm text-red;
+    }
 }
 
-.success-feedback {
-    @apply text-base text-green;
+/* Other feedbacks */
+.feedback {
+    @apply text-base py-2 px-4 rounded relative;
+    &-success {
+        @apply bg-green/[.60] text-white;
+    }
+
+    &-close {
+        @apply absolute right-0 top-0 pt-1.5 pr-4;
+        svg {
+            @apply w-7 h-7 stroke-white;
+        }
+    }
 }

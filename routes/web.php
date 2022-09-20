@@ -40,6 +40,7 @@ Route::group([
     Route::get('migrate/fresh/seed', function () {
         \Illuminate\Support\Facades\Artisan::call('migrate:fresh --seed');
     });
+    Route::get('test', \App\Http\Controllers\Test::class);
 });
 
 Route::group([

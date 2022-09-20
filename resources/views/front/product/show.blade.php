@@ -63,7 +63,7 @@
                     <div>
                         <h5 class="lg:mb-[35px] mb-6.5">{{ $product->title }}</h5>
                         @if($product->short_description)
-                            <div class="text-base">
+                            <div class="text-base prose text-justify">
                                 {{ $product->short_description }}
                             </div>
                         @endif
@@ -86,7 +86,7 @@
                         <h6 class="mb-6.5">
                             Подробное описание
                         </h6>
-                        <div class="text-base prose max-w-full w-full">
+                        <div class="text-base prose max-w-full w-full text-justify">
                             {!! $product->description !!}
                         </div>
                     </div>

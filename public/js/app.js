@@ -2527,8 +2527,23 @@ if ($('.input-phone').length > 0) {
     phoneRegionCode: 'kz'
   });
 }
+/**
+ * Code fragment to close form success feedback
+ * */
+
+
+if ($('.feedback').length > 0) {
+  var close = $('.feedback-close');
+  close.on('click', function () {
+    $(this).parent('.feedback').addClass('hidden');
+  });
+}
 
 (0,_utils_inputCount__WEBPACK_IMPORTED_MODULE_0__["default"])('.input-number-increment');
+/**
+ * Imported  function
+ * to push cities array into select fields
+ */
 
 if ($('select[name="city"]').length > 0) {
   $('select[name="city"]').each(function (index, el) {

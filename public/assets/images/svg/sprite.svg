@@ -137,7 +137,7 @@
               stroke-linejoin="round"/>
     </symbol>
     <symbol id="close" viewBox="0 0 40 40" fill="none">
-        <path d="M12.045 28.2047L27.9549 12.2948M12.2218 12.4716L27.7782 28.028" stroke="black" stroke-width="2.5"
+        <path d="M12.045 28.2047L27.9549 12.2948M12.2218 12.4716L27.7782 28.028" stroke="" stroke-width="2.5"
               stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="line" viewBox="0 0 24 24" fill="none">
