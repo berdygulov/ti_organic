@@ -33,11 +33,11 @@ class CategoryEditLayout extends Rows
             Quill::make('category.description')
                 ->title('Описание'),
             Upload::make('category.thumbnail_id')
+                ->maxFileSize(5)
+                ->maxFiles()
                 ->title('Изображение')
                 ->media()
-                ->getAttributes()
-                ->maxFileSize(5)
-                ->maxFiles(1),
+                ->getAttributes(),
         ];
     }
 }

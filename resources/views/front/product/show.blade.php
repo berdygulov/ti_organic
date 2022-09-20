@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="hidden">
                                     <svg
-                                        class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                            class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                     </svg>
                                 </div>
@@ -44,14 +44,14 @@
                         </div>
                         <div class="flex justify-between items-center mt-6.5">
                             <div
-                                class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
+                                    class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                 </svg>
                             </div>
                             <div class="swiper-pagination single-product-pagination"></div>
                             <div
-                                class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
+                                    class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                 </svg>
@@ -63,14 +63,14 @@
                     <div>
                         <h5 class="lg:mb-[35px] mb-6.5">{{ $product->title }}</h5>
                         @if($product->short_description)
-                            <div class="text-base">
-                                {{ $product->short_description }}
+                            <div class="text-base text-justify">
+                                {!! \Illuminate\Support\Str::limit($product->short_description, 670) !!}
                             </div>
                         @endif
                         <div class="lg:mt-[35px] mt-6.5 flex items-end mb-[40px] lg:mb-12.5">
                             <p class="text-green text-32 font-bold mr-[7px] sm:mr-3.9">
                                 <span
-                                    class="text-2xl text-blue-dark mr-[7px] sm:mr-3.9">Цена:</span> {{ currencyFormat($product->price)}}
+                                        class="text-2xl text-blue-dark mr-[7px] sm:mr-3.9">Цена:</span> {{ currencyFormat($product->price)}}
                             </p>
                             @if($product->old_price)
                                 <p class="text-2xl text-blue line-through">{{ currencyFormat($product->old_price) }}</p>
@@ -86,7 +86,7 @@
                         <h6 class="mb-6.5">
                             Подробное описание
                         </h6>
-                        <div class="text-base prose max-w-full w-full">
+                        <div class="text-base prose max-w-full w-full text-justify">
                             {!! $product->description !!}
                         </div>
                     </div>
@@ -106,18 +106,18 @@
                             @foreach($products as $product)
                                 <div class="swiper-slide h-full">
                                     <div
-                                        class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
+                                            class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
                                         @if($product->novelty || $product->old_price)
                                             <div class="product-top mb-3.9 grid-rows-1 gap-1">
                                                 @if($product->old_price)
                                                     <span
-                                                        class="discount inline-block px-[7px] py-[5px] bg-green text-white text-sm rounded">
+                                                            class="discount inline-block px-[7px] py-[5px] bg-green text-white text-sm rounded">
                                             {{ discountPercentage($product->old_price, $product->price) }}
                                         </span>
                                                 @endif
                                                 @if($product->novelty)
                                                     <span
-                                                        class="discount inline-block px-[7px] py-[5px] bg-yellow text-white text-sm rounded uppercase">
+                                                            class="discount inline-block px-[7px] py-[5px] bg-yellow text-white text-sm rounded uppercase">
                                             Новинка
                                         </span>
                                                 @endif
@@ -140,7 +140,7 @@
                                             </p>
                                             @if($product->code !== null || $product->quantity !== null)
                                                 <div
-                                                    class="mb-3.9 text-gray-3 lowercase text-sm lg:text-left text-center">
+                                                        class="mb-3.9 text-gray-3 lowercase text-sm lg:text-left text-center">
                                                     @if($product->code !== null)
                                                         <span class="product-code block mb-[3px]">
                                                 id: {{ $product->code }}
@@ -154,12 +154,12 @@
                                                 </div>
                                             @endif
                                             <span
-                                                class="product-price block font-bold text-lg lg:text-left text-center">
+                                                    class="product-price block font-bold text-lg lg:text-left text-center">
                                     {{ $product->price ? currencyFormat($product->price) : '-' }}
                                 </span>
                                         </div>
                                         <livewire:front.add-to-basket-button
-                                            :productId="$product->id"/>
+                                                :productId="$product->id"/>
                                     </div>
                                 </div>
                             @endforeach
@@ -167,17 +167,17 @@
                         <div class="mt-7.5">
                             <div class="flex">
                                 <div
-                                    class="similar-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
+                                        class="similar-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full mr-3.9 cursor-pointer ">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
+                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                     </svg>
                                 </div>
                                 <div
-                                    class="similar-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
+                                        class="similar-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] flex items-center justify-center w-11 h-11 bg-green rounded-full cursor-pointer">
                                     <svg class="w-5 h-5 stroke-white fill-white">
                                         <use
-                                            xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
+                                                xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                     </svg>
                                 </div>
                             </div>
