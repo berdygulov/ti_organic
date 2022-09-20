@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="hidden">
                                     <svg
-                                        class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
+                                            class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
                                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
                                     </svg>
                                 </div>
@@ -44,14 +44,14 @@
                         </div>
                         <div class="flex justify-between items-center mt-6.5">
                             <div
-                                class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
+                                    class="swiper-button-prev transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-prev flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full mr-3.9 cursor-pointer ">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-prev') }}"></use>
                                 </svg>
                             </div>
                             <div class="swiper-pagination single-product-pagination"></div>
                             <div
-                                class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
+                                    class="swiper-button-next transition ease-in delay-100 hover:filter hover:brightness-[80%] single-product-button-next flex items-center justify-center w-11 h-11 bg-[#F2F2F2] rounded-full cursor-pointer">
                                 <svg class="w-5 h-5 stroke-blue-dark fill-blue-dark">
                                     <use xlink:href="{{ asset('assets/images/svg/sprite.svg#arrow-next') }}"></use>
                                 </svg>
@@ -63,8 +63,8 @@
                     <div>
                         <h5 class="lg:mb-[35px] mb-6.5">{{ $product->title }}</h5>
                         @if($product->short_description)
-                            <div class="text-base prose text-justify">
-                                {{ $product->short_description }}
+                            <div class="text-base text-justify">
+                                {!! \Illuminate\Support\Str::limit($product->short_description, 670) !!}
                             </div>
                         @endif
                         <div class="lg:mt-[35px] mt-6.5 flex items-end mb-[40px] lg:mb-12.5">
@@ -86,7 +86,7 @@
                         <h6 class="mb-6.5">
                             Подробное описание
                         </h6>
-                        <div class="text-base prose max-w-full w-full text-justify">
+                        <div class="text-base prose max-w-full w-full">
                             {!! $product->description !!}
                         </div>
                     </div>

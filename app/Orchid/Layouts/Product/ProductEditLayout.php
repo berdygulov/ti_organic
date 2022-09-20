@@ -9,6 +9,7 @@ use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Picture;
 use Orchid\Screen\Fields\Quill;
 use Orchid\Screen\Fields\Relation;
+use Orchid\Screen\Fields\TextArea;
 use Orchid\Screen\Fields\Upload;
 use Orchid\Screen\Layouts\Rows;
 
@@ -37,6 +38,8 @@ class ProductEditLayout extends Rows
                 ->title('Новинка'),
             Input::make('product.title')
                 ->title('Название продукта'),
+            Quill::make('product.short_description')
+                ->title('Краткое описание продукта'),
             Relation::make('product.categories')
                 ->fromModel(Category::class, 'title')
                 ->multiple()

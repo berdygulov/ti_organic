@@ -3,7 +3,6 @@ import 'swiper/css';
 
 Swiper.use([Navigation, Pagination]);
 
-
 /*
  Popular product slider
 */
@@ -136,3 +135,4 @@ const similarSlider = new Swiper(".similar-slider", {
 		}
 	}
 });
+
