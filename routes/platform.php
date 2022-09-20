@@ -110,23 +110,29 @@ Route::screen('example', ExampleScreen::class)
     });
 
 Route::group([
-    'prefix' => 'products',
-    'as'     => 'products.'
+    'prefix' => 'platform',
+    'as'     => 'platform.',
 ], function () {
+    Route::group([
+        'prefix' => 'products',
+        'as'     => 'products.'
+    ], function () {
 
-    Route::screen('list', ProductListScreen::class)->name('index');
-    Route::screen('create', ProductEditScreen::class)->name('create');
-    Route::screen('{id}/edit', ProductEditScreen::class)->name('edit');
+        Route::screen('list', ProductListScreen::class)->name('index');
+        Route::screen('create', ProductEditScreen::class)->name('create');
+        Route::screen('{id}/edit', ProductEditScreen::class)->name('edit');
 
+    });
+
+    Route::group([
+        'prefix' => 'categories',
+        'as'     => 'categories.'
+    ], function () {
+
+        Route::screen('list', CategoryListScreen::class)->name('index');
+        Route::screen('create', CategoryEditScreen::class)->name('create');
+        Route::screen('{id}/edit', CategoryEditScreen::class)->name('edit');
+
+    });
 });
 
-Route::group([
-    'prefix' => 'categories',
-    'as'     => 'categories.'
-], function () {
-
-    Route::screen('list', CategoryListScreen::class)->name('index');
-    Route::screen('create', CategoryEditScreen::class)->name('create');
-    Route::screen('{id}/edit', CategoryEditScreen::class)->name('edit');
-
-});

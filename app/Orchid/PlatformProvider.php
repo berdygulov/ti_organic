@@ -30,11 +30,11 @@ class PlatformProvider extends OrchidServiceProvider
         return [
             Menu::make('Товары')
                 ->icon('bag')
-                ->route('products.index'),
+                ->route('platform.products.index'),
 
             Menu::make('Категории')
                 ->icon('layers')
-                ->route('categories.index'),
+                ->route('platform.categories.index'),
 
             Menu::make(__('Users'))
                 ->icon('user')
@@ -46,6 +46,10 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('lock')
                 ->route('platform.systems.roles')
                 ->permission('platform.systems.roles'),
+
+            Menu::make('Перейти на сайт')
+                ->icon('globe')
+                ->url('/')
         ];
     }
 
