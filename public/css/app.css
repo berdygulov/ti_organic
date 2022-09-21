@@ -1718,9 +1718,6 @@ video {
 .text-center{
   text-align: center;
 }
-.text-justify{
-  text-align: justify;
-}
 .text-start{
   text-align: start;
 }
@@ -1871,7 +1868,7 @@ video {
 }
 .readmore::before {
   content: "";
-  background-image: url(/images/readmore.svg?897b40e9e44382f526030be05f8c8e28);
+  background-image: url(/images/readmore.svg?ef11e2bd24a1f4d5e56b9f4e48c4a76e);
   position: absolute;
   top: 2px;
   right: -10px;
@@ -1882,7 +1879,7 @@ video {
 
 .product-select::after {
   content: "";
-  background: url(/images/arrow-count.svg?b182ab94ac60973da481819578d5a477) no-repeat center center;
+  background: url(/images/arrow-count.svg?355464ff8ccf5e6eeaf0b39af2f19138) no-repeat center center;
   pointer-events: none;
   position: absolute;
   top: 0px;
@@ -2750,6 +2747,9 @@ h6{
 @media (min-width: 1200px){
   .xl\:mb-0{
     margin-bottom: 0px;
+  }
+  .xl\:mr-\[50px\]{
+    margin-right: 50px;
   }
   .xl\:w-4\/5{
     width: 80%;
