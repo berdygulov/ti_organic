@@ -37,7 +37,7 @@ class TestExport implements FromQuery, WithMapping, WithHeadings
         return [
             $product->id,
             $product->title,
-            $product->short_desc ?? 'Описание для этого товара отсутствует',
+            $product->short_description ? strip_tags($product->short_description) : 'Описание для этого товара отсутствует',
             'in stock',
             'new',
             $product->price . ' KZT',

@@ -63,8 +63,8 @@
                     <div>
                         <h5 class="lg:mb-[35px] mb-6.5">{{ $product->title }}</h5>
                         @if($product->short_description)
-                            <div class="text-base">
-                                {{ $product->short_description }}
+                            <div class="text-base prose">
+                                {!!$product->short_description !!}
                             </div>
                         @endif
                         <div class="lg:mt-[35px] mt-6.5 flex items-end mb-[40px] lg:mb-12.5">
