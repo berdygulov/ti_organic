@@ -35,14 +35,6 @@ use App\Http\Controllers\Product\IndexController as ProductIndex;
 */
 
 Route::group([
-    'prefix' => 'system'
-], function () {
-    Route::get('migrate/fresh/seed', function () {
-        \Illuminate\Support\Facades\Artisan::call('migrate:fresh --seed');
-    });
-});
-
-Route::group([
     'as' => 'pages.'
 ], function () {
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
