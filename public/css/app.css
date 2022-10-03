@@ -1025,6 +1025,10 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+.-mx-\[22\.5px\]{
+  margin-left: -22.5px;
+  margin-right: -22.5px;
+}
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -1542,6 +1546,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 .p-3\.9{
   padding: 15px;
@@ -2658,9 +2666,6 @@ h6{
   }
   .lg\:mt-\[90px\]{
     margin-top: 90px;
-  }
-  .lg\:mr-\[50px\]{
-    margin-right: 50px;
   }
   .lg\:mb-\[35px\]{
     margin-bottom: 35px;
