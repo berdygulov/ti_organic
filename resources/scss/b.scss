@@ -128,7 +128,7 @@ section.page {
 
             &.with_link {
                 a {
-                    @apply flex items-center;
+                    @apply inline-flex items-center;
                 }
             }
         }

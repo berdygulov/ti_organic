@@ -243,7 +243,8 @@
     </section>
 
     <!-- Hidden BLock Ends -->
-    <section class="pt-15 lg:pt-[90px]">
+    <!-- Hidden block -->
+    <section class="pt-15 lg:pt-[90px] hidden">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Наш блог</h4>

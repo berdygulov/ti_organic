@@ -37,10 +37,13 @@
                                 <a href="{{ route('pages.about') }}">О нас</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('blogs.index') }}">Блог</a>
+                                <a href="{{ route('pages.contacts') }}">Контакты</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('pages.contacts') }}">Контакты</a>
+                                <a href="{{ route('pages.policy') }}">Политики</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ route('pages.faq') }}">FAQ</a>
                             </li>
                         </ul>
                     </nav>
@@ -177,6 +180,12 @@
                             <li class="mb-4">
                                 <a href="" class="text-gray-3 text-base">Акции</a>
                             </li>
+                            <li class="mb-4">
+                                <a href="{{ route('pages.policy') }}" class="text-gray-3 text-base">Политики</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="{{ route('pages.faq') }}" class="text-gray-3 text-base">FAQ</a>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -189,9 +198,6 @@
                             </li>
                             <li class="mb-4">
                                 <a href="{{ route('pages.contacts') }}" class="text-gray-3 text-base">Контакты</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="{{ route('blogs.index') }}" class="text-gray-3 text-base">Блог</a>
                             </li>
                         </ul>
                     </div>
