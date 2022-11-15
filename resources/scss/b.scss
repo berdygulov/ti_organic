@@ -99,3 +99,38 @@ select {
         }
     }
 }
+
+/* Page Layout content classes */
+
+section.page {
+    .content {
+        @apply mt-12;
+        &-section {
+            &:not(:last-child) {
+                @apply mb-5;
+            }
+
+            p {
+                @apply mt-3.5;
+            }
+        }
+
+        &-list {
+            &:not(:last-child) {
+                @apply mb-6;
+            }
+
+            &.with_icon {
+                svg {
+                    @apply mr-4;
+                }
+            }
+
+            &.with_link {
+                a {
+                    @apply flex items-center;
+                }
+            }
+        }
+    }
+}

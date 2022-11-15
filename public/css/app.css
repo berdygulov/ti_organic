@@ -1049,6 +1049,12 @@ video {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.mb-7{
+  margin-bottom: 1.75rem;
+}
+.mt-12{
+  margin-top: 3rem;
+}
 .mr-2\.5{
   margin-right: 0.625rem;
 }
@@ -1063,9 +1069,6 @@ video {
 }
 .mt-2{
   margin-top: 0.5rem;
-}
-.mb-7{
-  margin-bottom: 1.75rem;
 }
 .mb-\[55px\]{
   margin-bottom: 55px;
@@ -1174,9 +1177,6 @@ video {
 }
 .mr-\[7px\]{
   margin-right: 7px;
-}
-.mt-12{
-  margin-top: 3rem;
 }
 .mt-\[90px\]{
   margin-top: 90px;
@@ -1740,6 +1740,10 @@ video {
 .align-middle{
   vertical-align: middle;
 }
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1747,10 +1751,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 .text-base{
   font-size: 1rem;
@@ -2245,6 +2245,27 @@ select{
   height: 1.75rem;
   width: 1.75rem;
   stroke: #ffffff;
+}
+
+/* Page Layout content classes */
+section.page .content{
+  margin-top: 3rem;
+}
+section.page .content-section:not(:last-child){
+  margin-bottom: 1.25rem;
+}
+section.page .content-section p{
+  margin-top: 0.875rem;
+}
+section.page .content-list:not(:last-child){
+  margin-bottom: 1.5rem;
+}
+section.page .content-list.with_icon svg{
+  margin-right: 1rem;
+}
+section.page .content-list.with_link a{
+  display: flex;
+  align-items: center;
 }
 
 body {
