@@ -12,8 +12,8 @@
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
                                 <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative">
-                                    <div class="panzoom__content">
-                                        <img class="w-full h-full"
+                                    <div class="panzoom__content w-full h-full">
+                                        <img class="w-full h-full object-cover object-center"
                                              src="{{ $product->thumbnail?->url }}" alt="{{ $product->title }}">
                                     </div>
                                 </div>

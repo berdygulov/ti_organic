@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    @apply text-sm;
     @apply text-blue-dark;
     @media (min-width: 320px) and (max-width: 992px) {
         &.lock {

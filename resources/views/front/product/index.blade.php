@@ -29,7 +29,8 @@
                         @endif
                         <a href="{{ route('products.show', ['product_id'=>$product->id]) }}"
                            class="product-image h-[197px] w-auto flex justify-center items-center mb-3.9">
-                            <img class="max-h-full" src="{{ $product->thumbnail?->url }}"
+                            <img class="object-cover max-h-full w-full h-full object-center"
+                                 src="{{ $product->thumbnail?->url }}"
                                  alt="{{ $product->title }}">
                         </a>
                         <div class="product-content">

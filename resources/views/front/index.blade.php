@@ -16,10 +16,14 @@
                             <!-- Hidden element ends -->
                             <span class="font-bold">скидки на все товары</span>
                         </div>
-                        <h1 class="text-blue-dark mt-2.5 mb-7.5">Cамый популярный уход за кожей для вас</h1>
-                        <p class="text-lg text-blue-dark mb-[55px]">It is a long established fact that a reader will
+                        <h1 class="text-blue-dark mt-2.5 mb-7.5"> Живая косметика для волос и тела</h1>
+
+                        <!-- Hidden element -->
+                        <p class="text-lg text-blue-dark mb-[55px] hidden">
+                            It is a long established fact that a reader will
                             be distracted by the readable content of a page when looking at its layout.</p>
                         <div>
+                            <!-- Hidden element ends -->
                             <a href="#" class="btn btn-lg btn-yellow mr-3.9 ">О нас</a>
                             <a href="{{ route('products.index') }}" class="btn btn-lg btn-red mt-3.9 md:mt-0">
                                 <div>Каталог</div>
@@ -131,8 +135,8 @@
             </div>
         </div>
     </section>
-
-    <section class="sale">
+    <!-- Hidden BLock -->
+    <section class="sale hidden">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-7.5">
                 <div class="flex justify-between items-center bg-[#D3E3E6] rounded shadow-shadow py-6.5 px-[35px]">
@@ -161,6 +165,9 @@
         </div>
     </section>
 
+    <!-- Hidden BLock Ends -->
+
+    <!-- Hidden BLock -->
     <section class="pt-15 lg:pt-[90px] hidden">
         <div>
             <div class="container">
@@ -215,7 +222,9 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-[90px]">
+    <!-- Hidden BLock Ends -->
+    <!-- Hidden BLock -->
+    <section class="pt-15 lg:pt-[90px] hidden">
         <div class="container">
             <div class="buy-inner">
                 <div class="flex justify-between bg-yellow-extra-light rounded shadow-shadow">
@@ -233,7 +242,9 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-[90px]">
+    <!-- Hidden BLock Ends -->
+    <!-- Hidden block -->
+    <section class="pt-15 lg:pt-[90px] hidden">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Наш блог</h4>

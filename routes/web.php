@@ -53,6 +53,12 @@ Route::group([
     Route::get('/about', function () {
         return view('front.about');
     })->name('about');
+    Route::get('/policy', function () {
+        return view('front.policy');
+    })->name('policy');
+    Route::get('/faq', function () {
+        return view('front.faq');
+    })->name('faq');
 });
 
 /*

@@ -29,6 +29,7 @@ class TestExport implements FromQuery, WithMapping, WithHeadings
             'link',
             'image_link',
             'brand',
+            'google_product_category',
         ];
     }
 
@@ -44,6 +45,7 @@ class TestExport implements FromQuery, WithMapping, WithHeadings
             route('products.show', ['product_id' => $product->id]),
             $product->thumbnail?->url,
             'TI Organic',
+            473,
         ];
     }
 }

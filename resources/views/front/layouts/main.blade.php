@@ -19,7 +19,7 @@
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
                     <a href="{{ route('pages.index') }}">
-                        <svg class="w-24 h-16">
+                        <svg class="w-[90px] h-[44px]">
                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
                         </svg>
                     </a>
@@ -37,10 +37,13 @@
                                 <a href="{{ route('pages.about') }}">О нас</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('blogs.index') }}">Блог</a>
+                                <a href="{{ route('pages.contacts') }}">Контакты</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('pages.contacts') }}">Контакты</a>
+                                <a href="{{ route('pages.policy') }}">Политика</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="{{ route('pages.faq') }}">FAQ</a>
                             </li>
                         </ul>
                     </nav>
@@ -161,7 +164,7 @@
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
                             </svg>
                         </a>
-                        <p class="text-gray-2 text-sm">
+                        <p class="text-gray-2 text-sm hidden">
                             It is a long established fact that a
                             reader will be distracted by the readable content of a page when looking at its layout.
                         </p>
@@ -177,6 +180,12 @@
                             <li class="mb-4">
                                 <a href="" class="text-gray-3 text-base">Акции</a>
                             </li>
+                            <li class="mb-4">
+                                <a href="{{ route('pages.policy') }}" class="text-gray-3 text-base">Политика</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="{{ route('pages.faq') }}" class="text-gray-3 text-base">FAQ</a>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -190,9 +199,6 @@
                             <li class="mb-4">
                                 <a href="{{ route('pages.contacts') }}" class="text-gray-3 text-base">Контакты</a>
                             </li>
-                            <li class="mb-4">
-                                <a href="{{ route('blogs.index') }}" class="text-gray-3 text-base">Блог</a>
-                            </li>
                         </ul>
                     </div>
                     <div>
@@ -201,16 +207,16 @@
                         </p>
                         <ul>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Facebook</a>
+                                <a href="https://instagram.com/tiorganic?igshid=YmMyMTA2M2Y="
+                                   class="text-gray-3 text-base">Instagram: @tiorganic</a>
                             </li>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Facebook</a>
+                                <a href="https://wa.me/77024337971" class="text-gray-3 text-base">WhatsApp: +7 702 433
+                                    7971</a>
                             </li>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Facebook</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-gray-3 text-base">Facebook</a>
+                                <a href="https://www.facebook.com/profile.php?id=100005843558063"
+                                   class="text-gray-3 text-base">Facebook: Турсынай Ислямова</a>
                             </li>
                         </ul>
                     </div>
