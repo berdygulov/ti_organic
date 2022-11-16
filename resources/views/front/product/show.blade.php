@@ -7,42 +7,14 @@
     <section class="product">
         <div class="container">
             <div class="product-inner">
-                <div class="mb-7.5 xl:mb-0 lg:mr-[50px] product-left">
+                <div class="mb-7.5 xl:mb-0 xl:mr-[50px] product-left">
                     <div class="swiper-container product-big-slider rounded shadow-shadow">
                         <div class="swiper-wrapper rounded ">
                             <div class="swiper-slide">
                                 <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative">
                                     <div class="panzoom__content">
                                         <img class="w-full h-full"
-                                             src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="hidden">
-                                    <svg
-                                        class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
-                                    <div class="panzoom__content">
-                                        <img class="w-full h-full"
-                                             src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <div class="hidden">
-                                    <svg
-                                        class="absolute cursor-pointer z-10 w-10 h-10 transition ease-in delay-100 stroke-red fill-white hover:fill-red absolute top-4 right-4">
-                                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#favorite') }}"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="panzoom zooms h-[401px] bg-white cursor-pointer relative ">
-                                    <div class="panzoom__content">
-                                        <img class="w-full h-full"
-                                             src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
+                                             src="{{ $product->thumbnail?->url }}" alt="{{ $product->title }}">
                                     </div>
                                 </div>
                                 <div class="hidden">
@@ -54,7 +26,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-container products-gallery-slider">
+                    <!-- Product bottom slider is hidden -->
+                    <div class="swiper-container hidden products-gallery-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide overflow-hidden">
                                 <div class="products-gallery-item w-full h-full">
@@ -66,12 +39,6 @@
                                 <div class="products-gallery-item w-full h-full">
                                     <img class="object-cover w-full h-auto"
                                          src="{{ asset('assets/images/png/single-product-big.png') }}" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-slide overflow-hidden">
-                                <div class="products-gallery-item w-full h-full">
-                                    <img class="object-cover w-full h-auto"
-                                         src="{{ asset('assets/images/png/category-product.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -95,20 +62,36 @@
                 <div>
                     <div>
                         <h5 class="lg:mb-[35px] mb-6.5">{{ $product->title }}</h5>
-                        <div>
-                            <p class="product-content text-base	">{{ $product->description }} </p>
-                        </div>
+                        @if($product->short_description)
+                            <div class="text-base prose">
+                                {!!$product->short_description !!}
+                            </div>
+                        @endif
                         <div class="lg:mt-[35px] mt-6.5 flex items-end mb-[40px] lg:mb-12.5">
                             <p class="text-green text-32 font-bold mr-[7px] sm:mr-3.9">
                                 <span
                                     class="text-2xl text-blue-dark mr-[7px] sm:mr-3.9">Цена:</span> {{ currencyFormat($product->price)}}
                             </p>
-                            <p class="text-2xl text-blue line-through">{{ currencyFormat($product->old_price) }}</p>
+                            @if($product->old_price)
+                                <p class="text-2xl text-blue line-through">{{ currencyFormat($product->old_price) }}</p>
+                            @endif
                         </div>
                         <livewire:front.product.add-to-basket-button :productId="$product->id"/>
                     </div>
                 </div>
             </div>
+            @if($product->description)
+                <div class="product-info mt-12 md:mt-16 flex justify-center">
+                    <div class="w-full xl:w-4/5">
+                        <h6 class="mb-6.5">
+                            Подробное описание
+                        </h6>
+                        <div class="text-base prose max-w-full w-full">
+                            {!! $product->description !!}
+                        </div>
+                    </div>
+                </div>
+            @endif
         </div>
     </section>
     <section class="mt-[90px] lg:mt-[110px]">
@@ -124,15 +107,15 @@
                                 <div class="swiper-slide h-full">
                                     <div
                                         class="product_card rounded p-3.9 w-full  shadow-shadow bg-white hover:bg-[#F2F3F6] hover:shadow-none transition-all duration-150 ease-in flex flex-col justify-between">
-                                        @if($product->discount !== null && !$new)
+                                        @if($product->novelty || $product->old_price)
                                             <div class="product-top mb-3.9 grid-rows-1 gap-1">
-                                                @if($discount !== null)
+                                                @if($product->old_price)
                                                     <span
                                                         class="discount inline-block px-[7px] py-[5px] bg-green text-white text-sm rounded">
-                                            {{ $discount }}
+                                            {{ discountPercentage($product->old_price, $product->price) }}
                                         </span>
                                                 @endif
-                                                @if($new)
+                                                @if($product->novelty)
                                                     <span
                                                         class="discount inline-block px-[7px] py-[5px] bg-yellow text-white text-sm rounded uppercase">
                                             Новинка
@@ -140,13 +123,13 @@
                                                 @endif
                                             </div>
                                         @endif
-                                        <a href="#"
+                                        <a href="{{ route('products.show', ['product_id'=>$product->id]) }}"
                                            class="product-image h-[197px] w-auto flex justify-center items-center mb-3.9">
                                             <img class="max-h-full" src="{{ $product->thumbnail?->url }}"
                                                  alt="{{ $product->title }}">
                                         </a>
                                         <div class="product-content">
-                                            <a href="#"
+                                            <a href="{{ route('products.show', ['product_id'=>$product->id]) }}"
                                                class="product-title text-lg mb-[3px] block font-bold lg:text-left text-center">
                                                 {{ $product->title ? $product->title : 'Название товара' }}
                                             </a>
@@ -164,8 +147,7 @@
                                             </span>
                                                     @endif
                                                     @if($product->quantity !== null)
-                                                        <span
-                                                            class="product-quantity block lg:text-left text-center">
+                                                        <span class="product-quantity block lg:text-left text-center">
                                                 количество: {{ $product->quantity }}
                                             </span>
                                                     @endif
@@ -173,7 +155,7 @@
                                             @endif
                                             <span
                                                 class="product-price block font-bold text-lg lg:text-left text-center">
-                                    {{ $product->price ? $product->price . ' ₸' : '-' }}
+                                    {{ $product->price ? currencyFormat($product->price) : '-' }}
                                 </span>
                                         </div>
                                         <livewire:front.add-to-basket-button

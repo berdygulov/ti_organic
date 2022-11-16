@@ -44,7 +44,7 @@
                     </div>
                     <div class="flex justify-end mt-[70px]">
                         <livewire:front.order-confirm-button class="btn btn-lg btn-yellow"
-                                                             buttonText="Оформить заказ"
+                                                             buttonTextInitial="Оформить заказ"
                                                              href="{{ route('orders.create.send') }}"/>
                     </div>
                 </div>

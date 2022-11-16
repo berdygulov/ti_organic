@@ -18,7 +18,7 @@
         <div class="container">
             <div class="flex items-center justify-between py-5 lg:py-7">
                 <div class="header-relative">
-                    <a href="#">
+                    <a href="{{ route('pages.index') }}">
                         <svg class="w-24 h-16">
                             <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
                         </svg>
@@ -34,13 +34,13 @@
                                 <a href="{{ route('products.index') }}">Каталог</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">О нас</a>
+                                <a href="{{ route('pages.about') }}">О нас</a>
                             </li>
                             <li class="menu-item">
                                 <a href="{{ route('blogs.index') }}">Блог</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">Контакты</a>
+                                <a href="{{ route('pages.contacts') }}">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -81,22 +81,22 @@
             <nav>
                 <ul class="flex menu-list flex-col ">
                     <li class="menu-item-second">
-                        <a href="#">Главная</a>
+                        <a href="{{ route('pages.index') }}">Главная</a>
                     </li>
                     <li class="menu-item-second">
-                        <a href="#">Каталог</a>
+                        <a href="{{ route('products.index') }}">Каталог</a>
                     </li>
                     <li class="menu-item-second">
-                        <a href="#">О нас</a>
+                        <a href="{{ route('pages.about') }}">О нас</a>
                     </li>
                     <li class="menu-item-second">
-                        <a href="#">Блог</a>
+                        <a href="{{ route('blogs.index') }}">Блог</a>
                     </li>
                     <li class="menu-item-second">
-                        <a href="#">Контакты</a>
+                        <a href="{{ route('pages.contacts') }}">Контакты</a>
                     </li>
                 </ul>
-                <a href=""
+                <a href="{{ route('products.index') }}"
                    class="btn-red transition mt-7 ease-in delay-100 text-white bg-red py-3 px-5 text-lg font-bold border-red border-2 rounded-3xl inline-block lg:hidden">В
                     каталог</a>
             </nav>
@@ -108,10 +108,10 @@
     <div class="popup hidden w-full sm:w-[580px] md:w-[730px]" id="popup-cart">
         <div class="popup-inner">
             <div
-                    class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
+                class="popup-top py-7.5 px-2 sm:px-12.5 flex justify-between items-center bg-yellow-extra-light shadow-shadow relative">
                 <h5>Корзина</h5>
-                <div class="absolute cursor-pointer pl-4 pb-4 pr-12.5 pt-7.5 top-0 right-0">
-                    <svg class="w-10 h-10" data-fancybox-close>
+                <div class="absolute cursor-pointer pl-4 pb-4  pr-2 sm:pr-12.5 pt-7.5 top-0 right-0">
+                    <svg class="w-10 h-10 stroke-blue-dark" data-fancybox-close>
                         <use xlink:href="{{ asset('assets/images/svg/sprite.svg#close') }}"></use>
                     </svg>
                 </div>
@@ -135,7 +135,7 @@
                         </h6>
                     </div>
                     <livewire:front.order-confirm-button class="btn btn-yellow btn-md rounded-[25px] font-bold"
-                                                         buttonText="К оплате"
+                                                         buttonTextInitial="К оплате"
                                                          href="{{ route('orders.create.confirm') }}"/>
                 </div>
             </div>
@@ -152,29 +152,11 @@
 
     {{-- Footer start  --}}
     <footer class="mt-15 lg:mt-[90px]">
-        {{-- Notification block starts--}}
-        <div class="fixed right-[5px] top-[15%] z-[1000] note-wrapper">
-            <div
-                    class="note max-w-96 warning rounded shadow-shadow relative mt-1">
-                <div class="note-inner">
-                    <div class="note-content row py-2 pl-3 pr-10">
-                        Какой то текст
-                    </div>
-                </div>
-                <button type="button"
-                        class="note-close absolute right-3 top-0 bottom-0 rotate-45">
-                    <svg class="w-6 h-6">
-                        <use xlink:href="{{ asset('assets/images/svg/sprite.svg#add-outline') }}"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        {{-- Notification block ends--}}
         <div class="footer-top bg-yellow-extra-light py-10 md:py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 md:gap-7 justify-between items-start">
                     <div>
-                        <a href="#" class="mb-7 block">
+                        <a href="{{ route('pages.index') }}" class="mb-7 block">
                             <svg class="w-24 h-16">
                                 <use xlink:href="{{ asset('assets/images/svg/sprite.svg#logo') }}"></use>
                             </svg>
@@ -186,20 +168,14 @@
                     </div>
                     <div>
                         <p class="text-blue-dark font-bold text-lg mb-5">
-                            Категории
+                            Продукция
                         </p>
                         <ul>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Уход за кожей</a>
+                                <a href="{{ route('products.index') }}" class="text-gray-3 text-base">Каталог</a>
                             </li>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Красота и здоровье</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Персональный уход</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-gray-3 text-base">Красота и здоровье</a>
+                                <a href="" class="text-gray-3 text-base">Акции</a>
                             </li>
                         </ul>
                     </div>
@@ -209,16 +185,13 @@
                         </p>
                         <ul>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">О нас</a>
+                                <a href="{{ route('pages.about') }}" class="text-gray-3 text-base">О нас</a>
                             </li>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Акции</a>
+                                <a href="{{ route('pages.contacts') }}" class="text-gray-3 text-base">Контакты</a>
                             </li>
                             <li class="mb-4">
-                                <a href="" class="text-gray-3 text-base">Блог</a>
-                            </li>
-                            <li>
-                                <a href="" class="text-gray-3 text-base">Контакты</a>
+                                <a href="{{ route('blogs.index') }}" class="text-gray-3 text-base">Блог</a>
                             </li>
                         </ul>
                     </div>
@@ -248,9 +221,10 @@
             <div class="container">
                 <div class="flex flex-wrap flex-col sm:flex-row justify-between items-start sm:items-center">
                     <p class="text-white block">
-                        Copyright 2022 © Все права защищены TI Organic
+                        Copyright {{ date("Y") }} © Все права защищены TI Organic
                     </p>
-                    <div class="text-white flex items-center mt-5 md:mt-0">
+                    <!-- Payment methods black is hidden -->
+                    <div class="hidden text-white flex items-center mt-5 md:mt-0">
                         <p class="mr-5">Методы оплаты</p>
                         <div class="flex items-center">
                             <a href="" class="mr-1 w-8 h-8">

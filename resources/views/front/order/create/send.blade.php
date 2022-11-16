@@ -17,6 +17,17 @@
                     @csrf
                     <div class="sending-left grid gap-10 grid-cols-1 w-full lg:w-3/4">
                         <div class="info">
+                            @if (session('order_create.success'))
+                                <div class="feedback feedback-success mb-5">
+                                    {{ session('order_create.success') }}
+                                    <button class="feedback-close" type="button">
+                                        <svg>
+                                            <use
+                                                xlink:href="http://127.0.0.1:8000/assets/images/svg/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            @endif
                             <div class="sending-header mb-7">
                                 <h6>Информация о заказе</h6>
                                 <span class="text-gray-3 mt-2 block">(* - обязательные поля)</span>
@@ -26,15 +37,15 @@
                                     <input type="text" name="surname" value="{{ old('surname') }}"
                                            placeholder="Фамилия *">
                                     @error('surname')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="name" value="{{ old('city') }}" placeholder="Имя *">
+                                    <input type="text" name="name" value="{{ old('name') }}" placeholder="Имя *">
                                     @error('name')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
@@ -43,15 +54,16 @@
                                     <input type="text" name="patronymic" value="{{ old('patronymic') }}"
                                            placeholder="Отчество">
                                     @error('patronymic')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
                                 </div>
                                 <div class="form-field">
-                                    <input type="text" name="phone" value="{{ old('phone') }}" placeholder="Телефон *">
+                                    <input type="text" class="input-phone" name="phone" value="{{ old('phone') }}"
+                                           placeholder="Телефон *">
                                     @error('phone')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
@@ -59,7 +71,7 @@
                                 <div class="form-field">
                                     <input type="text" name="email" value="{{ old('email') }}" placeholder="E-mail">
                                     @error('email')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
@@ -77,7 +89,7 @@
                                         <option value="" selected>Выбрать город</option>
                                     </select>
                                     @error('city')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
@@ -87,7 +99,7 @@
                                            value="{{ old('address') }}"
                                            placeholder="Улица, дом, квартира *">
                                     @error('address')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror
@@ -96,7 +108,7 @@
                                     <input type="text" name="postcode" value="{{ old('postcode') }}"
                                            placeholder="Индекс *">
                                     @error('postcode')
-                                    <div class="invalid-feedback">
+                                    <div class="form-feedback invalid">
                                         {{ $message }}
                                     </div>
                                     @enderror

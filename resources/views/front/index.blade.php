@@ -10,8 +10,10 @@
                 <div class="relative z-10 basis-full lg:basis-60">
                     <div>
                         <div class="hidden md:block">
-                            <p class="text-white font-bold py-2.5 px-3 bg-blue-dark inline-block rounded-3xl mr-2.5">
+                            <!-- Hidden element -->
+                            <p class="hidden text-white font-bold py-2.5 px-3 bg-blue-dark inline-block rounded-3xl mr-2.5">
                                 -50 %</p>
+                            <!-- Hidden element ends -->
                             <span class="font-bold">скидки на все товары</span>
                         </div>
                         <h1 class="text-blue-dark mt-2.5 mb-7.5">Cамый популярный уход за кожей для вас</h1>
@@ -30,7 +32,7 @@
                 </div>
                 <div class="absolute right-0 hidden lg:block basis-2/5">
                     <div>
-                        <img class="w-[772px] h-[553px]" src="{{ asset('assets/images/png/hero.png') }}"
+                        <img class="w-[772px] h-[553px]" src="{{ asset('assets/images/png/hero-main.png') }}"
                              alt="hero-img">
                     </div>
                 </div>
@@ -60,22 +62,28 @@
                                         <div class="popular-item-left basis-3/6	mr-6.5">
                                             <div
                                                 class="bg-white-2 relative flex items-center justify-center w-full h-[142px]">
-                                                <a href="#" class="flex items-center justify-center w-full h-full">
+                                                <a href="{{ route('products.show',['product_id'=>$product->id]) }}"
+                                                   class="flex items-center justify-center w-full h-full">
                                                     <img src="{{ $product->thumbnail?->url }}" class="h-full w-auto"
                                                          alt="{{ $product->title }}">
                                                 </a>
-                                                @if($product->old_price)
-                                                    <span
-                                                        class="sale absolute top-0 left-0 bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</span>
-                                                @endif
-                                                @if($product->novelty)
-                                                    <a href="#"
-                                                       class="sale absolute top-0 left-0 bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</a>
+                                                @if($product->old_price || $product->novelty)
+                                                    <div class="absolute top-0 left-0 flex flex-row">
+                                                        @if($product->old_price)
+                                                            <span
+                                                                class="sale bg-red py-[5px] px-[7px] text-white font-bold text-xs rounded-br rounded-tl">{{ discountPercentage($product->old_price, $product->price) }}</span>
+                                                        @endif
+                                                        @if($product->novelty)
+                                                            <span
+                                                                class="sale bg-yellow py-[5px] px-[7px] text-black font-bold text-xs rounded-br rounded-tl">НОВИНКА</span>
+                                                        @endif
+                                                    </div>
                                                 @endif
                                             </div>
                                         </div>
                                         <div class="popular-item-right basis-3/6 py-3">
-                                            <p class="text-lg text-blue-dark mb-2.5 font-bold">{{ $product->title }}</p>
+                                            <a href="{{ route('products.show',['product_id'=>$product->id]) }}"
+                                               class="text-lg text-blue-dark mb-2.5 font-bold">{{ $product->title }}</a>
                                             <p class="text-gray-2 text-sm mb-3.9">
                                                 @foreach($product->categories as $category)
                                                     {{ $category->title }} @if(!$loop->last) / @endif
@@ -153,7 +161,7 @@
         </div>
     </section>
 
-    <section class="pt-15 lg:pt-[90px]">
+    <section class="pt-15 lg:pt-[90px] hidden">
         <div>
             <div class="container">
                 <h4 class="text-blue-dark">Категории товаров</h4>

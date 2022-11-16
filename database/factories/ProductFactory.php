@@ -17,9 +17,10 @@ class ProductFactory extends Factory
     public function definition ()
     {
         return [
-            'title'     => $this->faker->words(3, true),
-            'price'     => $this->faker->randomElement([3000, 5000, 6000, 9000, 15000, 10000, 4500, 1500, 9500, 6800]),
-            'old_price' => $this->faker->randomElement([3000, 5000, 6000, 9000, 15000, 10000, 4500, 1500, 9500, 6800]),
+            'title'             => $this->faker->words(3, true),
+            'price'             => $this->faker->randomElement([3000, 5000, 6000, 9000, 15000, 10000, 4500, 1500, 9500, 6800]),
+            'old_price'         => $this->faker->randomElement([3000, 5000, 6000, 9000, 15000, 10000, 4500, 1500, 9500, 6800]),
+            'short_description' => $this->faker->text
         ];
     }
 }

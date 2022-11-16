@@ -35,12 +35,24 @@ use App\Http\Controllers\Product\IndexController as ProductIndex;
 */
 
 Route::group([
+    'prefix' => 'system'
+], function () {
+    Route::get('migrate/fresh/seed', function () {
+        \Illuminate\Support\Facades\Artisan::call('migrate:fresh --seed');
+    });
+    Route::get('test', \App\Http\Controllers\Test::class);
+});
+
+Route::group([
     'as' => 'pages.'
 ], function () {
     Route::get('/', [PagesController::class, 'indexPage'])->name('index');
-    Route::get('/test', function () {
-        return view('front.test');
-    });
+    Route::get('/contacts', function () {
+        return view('front.contacts');
+    })->name('contacts');
+    Route::get('/about', function () {
+        return view('front.about');
+    })->name('about');
 });
 
 /*
@@ -49,7 +61,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'blogs',
-    'as'     => 'blogs.'
+    'as' => 'blogs.'
 ], function () {
     Route::get('/', [BlogIndex::class, 'front'])->name('index');
 });
@@ -60,7 +72,7 @@ Route::group([
 
 Route::group([
     'prefix' => 'categories',
-    'as'     => 'categories.'
+    'as' => 'categories.'
 ], function () {
     //
 });
@@ -75,7 +87,7 @@ Route::get('/products-session-delete', function (\Illuminate\Http\Request $reque
 
 Route::group([
     'prefix' => 'products',
-    'as'     => 'products.'
+    'as' => 'products.'
 ], function () {
     Route::get('/', [ProductIndex::class, 'front'])->name('index');
     Route::get('/{product_id}', [ProductShow::class, 'front'])->name('show');
@@ -83,11 +95,11 @@ Route::group([
 
 Route::group([
     'prefix' => 'orders',
-    'as'     => 'orders.'
+    'as' => 'orders.'
 ], function () {
     Route::group([
         'prefix' => 'create',
-        'as'     => 'create.'
+        'as' => 'create.'
     ], function () {
         Route::get('confirm', [OrderCreate::class, 'confirm'])->name('confirm');
         Route::get('send', [OrderCreate::class, 'send'])->name('send');

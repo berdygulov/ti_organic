@@ -20,6 +20,7 @@ class Product extends Model
         'title',
         'price',
         'old_price',
+        'short_description',
         'description',
         'thumbnail_id',
         'status',
