@@ -40,7 +40,7 @@
                                 <a href="{{ route('pages.contacts') }}">Контакты</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{ route('pages.policy') }}">Политики</a>
+                                <a href="{{ route('pages.policy') }}">Политика</a>
                             </li>
                             <li class="menu-item">
                                 <a href="{{ route('pages.faq') }}">FAQ</a>
@@ -181,7 +181,7 @@
                                 <a href="" class="text-gray-3 text-base">Акции</a>
                             </li>
                             <li class="mb-4">
-                                <a href="{{ route('pages.policy') }}" class="text-gray-3 text-base">Политики</a>
+                                <a href="{{ route('pages.policy') }}" class="text-gray-3 text-base">Политика</a>
                             </li>
                             <li class="mb-4">
                                 <a href="{{ route('pages.faq') }}" class="text-gray-3 text-base">FAQ</a>

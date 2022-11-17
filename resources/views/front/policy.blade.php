@@ -1,9 +1,9 @@
 @extends('front.layouts.main')
 
-@section('title', 'Политики')
+@section('title', 'Политика')
 
 @section('content')
-    <x-front.page-title title="Политики"/>
+    <x-front.page-title title="Политика"/>
 
     <section class="page">
         <div class="container">

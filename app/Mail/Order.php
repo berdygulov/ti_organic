@@ -21,7 +21,7 @@ class Order extends Mailable
      *
      * @return void
      */
-    public function __construct($formData, $products, $total)
+    public function __construct ($formData, $products, $total)
     {
         $this->formData = $formData;
         $this->total = $total;
@@ -33,7 +33,7 @@ class Order extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build ()
     {
         return $this->view('front.mail.order')
             ->from('berdygulov1997@yandex.kz', 'TI Organic Web site')
@@ -41,7 +41,7 @@ class Order extends Mailable
             ->with([
                 'formData' => $this->formData,
                 'products' => $this->products,
-                'total' => $this->total,
+                'total'    => $this->total,
             ]);
     }
 }
